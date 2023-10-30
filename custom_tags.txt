@@ -1,0 +1,6 @@
+VERSION        :v7140 (178d7491052b)
+VERSION_STRING :v7140 (178d7491052b)
+TITLE          :OpenGFX+ Landscape Minus v7140 (178d7491052b)
+FILENAME       :ogfx-landscape-minus.grf
+REPO_HASH      :178d7491052b
+NEWGRF_VERSION :7140

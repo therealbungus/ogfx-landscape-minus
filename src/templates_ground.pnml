@@ -6,7 +6,6 @@
  */
 
 #define var_groundsprite 1
-#define var_tree_sprite 10
 
 /*
  * General procedure to obtain the ground tile:
@@ -41,17 +40,3 @@ STORE_TEMP( ((nearby_tile_height(0, 0) == 0) && (nearby_tile_slope(0, 0) !=  SLO
 			&& (openttd_version  >= version_openttd(1, 4, 0, 25230)) && \
 			((nearby_tile_water_class(-1, 0) == WATER_CLASS_SEA) || (nearby_tile_water_class(1, 0) == WATER_CLASS_SEA) || \
 			 (nearby_tile_water_class(0, -1) == WATER_CLASS_SEA) || (nearby_tile_water_class(0, 1) == WATER_CLASS_SEA))) ? base_sprite_shores : LOAD_TEMP(var_groundsprite), var_groundsprite)
-
-/*
- * Decide on a nice tree to display. This must be run after a groundsprite
- * ID has been chosen and stored in var_groundsprite
- */
-
-#define DECIDE_TREE_NORMAL \
-			STORE_TEMP( 1712, var_tree_sprite)
-
-#define DECIDE_TREE_ARCTIC \
-			STORE_TEMP( (LOAD_TEMP(var_groundsprite) >= 4531) ? 1768 : 1712, var_tree_sprite)
-
-#define DECIDE_TREE_TROPICAL \
-			STORE_TEMP( (LOAD_TEMP(var_groundsprite) == GROUNDSPRITE_DESERT) ? 1915: 1887, var_tree_sprite)
