@@ -1,8 +1,8 @@
 ##grflangid 0x03
 ##plural 2
 ##gender m m2 f
-STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
-STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} Modifie le paysage dans le style OpenGFX.{}Programmation{NBSP}: {SILVER}planetmaker{}{BLACK}Graphismes{NBSP}: {SILVER}Zephyris et d'autres{}{BLACK}Licence{NBSP}: {SILVER}GPL v2+
+STR_GRF_NAME                                                    :OpenGFX+ Landscape Moins {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape Moins{}Programmation{NBSP}: {SILVER}planetmaker{}{BLACK}Graphismes{NBSP}: {SILVER}Zephyris et d'autres{}{BLACK}Licence{NBSP}: {SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

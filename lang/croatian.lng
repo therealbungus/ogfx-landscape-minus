@@ -2,8 +2,8 @@
 ##plural 6
 ##gender male female middle
 ##case aku dat gen ins lok nom vok
-STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
-STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} Mijenja pejzaž u OpenGFX stil.{}Programiranje: {SILVER}planetmaker{}{BLACK}Grafika: {SILVER}Zephyris and others{}{BLACK}Licenca: {SILVER}GPL v2+
+STR_GRF_NAME                                                    :OpenGFX+ Landscape Minus {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape Minus{}Programiranje: {SILVER}planetmaker{}{BLACK}Grafika: {SILVER}Zephyris and others{}{BLACK}Licenca: {SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

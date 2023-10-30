@@ -2,7 +2,7 @@
 ##plural 10
 ##gender fp map f mnp m n np
 ##case acc nom loc big voc ins dat small gen
-STR_GRF_DESCRIPTION                                             :{ORANGE} OpenGFX + Landscape {BLACK} Upravuje krajinu ve stylu OpenGFX.{} Programování: {SILVER} planetmaker{} {BLACK} Grafika: {SILVER} Zephyris a další{} {BLACK} Licence: {SILVER} GPL v2 +
+STR_GRF_DESCRIPTION                                             :{ORANGE} OpenGFX + Landscape Minus{} Programování: {SILVER} planetmaker{} {BLACK} Grafika: {SILVER} Zephyris a další{} {BLACK} Licence: {SILVER} GPL v2 +
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
 

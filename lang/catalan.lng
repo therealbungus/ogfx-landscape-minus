@@ -1,8 +1,8 @@
 ##grflangid 0x22
 ##plural 0
 ##gender Masculin Femenin
-STR_GRF_NAME                                                    :OpenGFX+ Paisatges {VERSION}
-STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Paisatges{BLACK} Modifica el paisatge seguint l'estil d'OpenGFX.{}Programació: {SILVER}planetmaker{}{BLACK}Gràfics: {SILVER}Zephyris i altres{}{BLACK}Llicència: {SILVER}GPL v2+
+STR_GRF_NAME                                                    :OpenGFX+ Paisatges Menys {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Paisatges Menys{}Programació: {SILVER}planetmaker{}{BLACK}Gràfics: {SILVER}Zephyris i altres{}{BLACK}Llicència: {SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

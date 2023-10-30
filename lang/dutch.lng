@@ -1,7 +1,7 @@
 ##grflangid 0x1f
 ##plural 0
-STR_GRF_NAME                                                    :OpenGFX+ Landschap {VERSION}
-STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landschap{BLACK} Verandert het landschap naar OpenGFX-stijl.{}Programmering: {SILVER}planetmaker{}{BLACK}Grafisch: {SILVER}Zephyris en anderen{}{BLACK}Licentie: {SILVER}GPL v2+
+STR_GRF_NAME                                                    :OpenGFX+ Landschap Minus {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landschap Minus{}Programmering: {SILVER}planetmaker{}{BLACK}Grafisch: {SILVER}Zephyris en anderen{}{BLACK}Licentie: {SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

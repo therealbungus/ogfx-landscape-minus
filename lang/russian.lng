@@ -2,8 +2,8 @@
 ##plural 6
 ##gender p n m f
 ##case acc nom pre f abl m n dat p gen
-STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
-STR_GRF_DESCRIPTION                                             :Набор {ORANGE}Ландшафт OpenGFX+{BLACK} содержит альтернативные спрайты поверхности.{}Разработан в соответствии со стилем OpenGFX.{}Программирование: {SILVER}planetmaker{}{BLACK}Графика: {SILVER}Zephyris и другие{}{BLACK}Лицензия: {SILVER}GPL v2+{}{BLACK}Вебсайт: {SILVER}http://dev.openttdcoop.org/projects/ogfx-landscape
+STR_GRF_NAME                                                    :OpenGFX+ Landscape Минус {VERSION}
+STR_GRF_DESCRIPTION                                             :Набор {ORANGE}Ландшафт Минус OpenGFX+{}Программирование: {SILVER}planetmaker{}{BLACK}Графика: {SILVER}Zephyris и другие{}{BLACK}Лицензия: {SILVER}GPL v2+{}{BLACK}Вебсайт: {SILVER}http://dev.openttdcoop.org/projects/ogfx-landscape
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

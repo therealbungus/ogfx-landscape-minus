@@ -1,7 +1,7 @@
 ##grflangid 0x00
 ##plural 0
-STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
-STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} Modifies landscape in OpenGFX style.{}Programming: {SILVER}planetmaker{}{BLACK}Graphics: {SILVER}Zephyris and others{}{BLACK}License: {SILVER}GPL v2+
+STR_GRF_NAME                                                    :OpenGFX+ Landscape Minus {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape Minus{}Programming: {SILVER}planetmaker{}{BLACK}Graphics: {SILVER}Zephyris and others{}{BLACK}License: {SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

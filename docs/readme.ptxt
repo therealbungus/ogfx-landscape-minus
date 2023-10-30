@@ -1,4 +1,4 @@
-OpenGFX+ Landscape
+OpenGFX+ Landscape Minus
 ------------------
 
 This version: {{GRF_TITLE}}
@@ -21,8 +21,9 @@ Contents:
 1 About
 -------
 
-OpenGFX+ Landscape provides alternative ground tiles in OpenGFX style and
-a few selected NewObjects to populate a landscape.
+OpenGFX+ Landscape Minus is a stripped down version of OpenGFX+ Landscape 
+to use with other landscape basesets or GRFs. It keeps the configurable
+snowline and provides a few selected NewObjects to populate a landscape.
 
 Minimum required OpenTTD version is 1.2.0 or r22723.
 Some features require OpenTTD version 1.4.0 or r25230.
@@ -39,15 +40,6 @@ MD5 sum:            {{GRF_MD5}}
 -------
 
 Features of this NewGRF:
-A gridless landscape all climates:
-	Mind that this does not yet work for road and rail tiles (unless you
-	use a railtypes NewGRF like SwedishRails).
-
-Alpine landscape:
-	Temperate grass in arctic climate. Selection in desert climate is
-	allowed and it will give you snow instead of desert, but it will also
-	glitch with things like cacti on snow, wrong ground tiles for many
-	industries, roads, houses and alike.
 
 Variable, configurable snowline:
 	Available for arctic and alpine landscape. You can set the snow height
@@ -59,9 +51,6 @@ NewObjects:
 	  eachother
 	* Company fenced land. Plain ground tiles or ground tiles with a fir
 	  tree, surrounded by a fence. [OpenTTD 1.4.0 (r25230) recommended]
-	* Rocky land. Ground tile with rocks. Works on all terrain types,
-	  including water. On sea water they're surrounded by waves.
-	  [OpenTTD 1.4.0 (r25230) recommended]
 	* Communication tower from 1950 onwards.
 	* Light house from 1492 onward
 
@@ -71,23 +60,10 @@ Rock instead of communication tower:
 
 2.1 Parameters
 --------------
-* Show gridlines
-	yes: Show gridlines as usual
-	no:  Disable the display of grid lines. This is the default
 * Transmitter replaced by rocks
 	yes: Replace the communication transmitter by a rock. Suitable for
 	     scenarios which play at an early time
 	no:  No change. This is the default.
-* Provide groundsprites
-	yes: Provide replacements for groundsprites. This is the default.
-	no:  Do not replace any ground sprites. Basically this means that only
-	     the objects within this set are made available
-* Landscape type
-	normal: use whatever was selected in OpenTTD main menu
-	alpine: use green grass in arctic climate instead of brownish one
-* Road tunnels
-	gray concrete:      default choice, gray concret tunnels
-	wide gray concrete: wider version of the tunnels
 * Snow line mid January
 	0 .. 16 (16 = nowhere) given in tile heights.
 	default: 4

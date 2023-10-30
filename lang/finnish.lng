@@ -1,7 +1,7 @@
 ##grflangid 0x35
 ##plural 0
-STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
-STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} Muokkaa maastoa OpenGFX:n tapaan.{}Ohjelmointi: {SILVER}planetmaker{}{BLACK}Grafiikat: {SILVER}Zephyris and others{}{BLACK}Lisenssi: {SILVER}GPL v2+
+STR_GRF_NAME                                                    :OpenGFX+ Landscape Miinus {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape Miinus{}Ohjelmointi: {SILVER}planetmaker{}{BLACK}Grafiikat: {SILVER}Zephyris and others{}{BLACK}Lisenssi: {SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

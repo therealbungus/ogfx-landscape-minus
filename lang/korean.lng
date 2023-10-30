@@ -1,8 +1,8 @@
 ##grflangid 0x3a
 ##plural 11
 ##gender m f
-STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
-STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} 지형 요소를 OpenGFX형식에 따라 재배치합니다.{} 프로그래밍: {SILVER}planetmaker{}{BLACK}그래픽: {SILVER}Zephyris and others{}{BLACK}라이선스: {SILVER}GPL v2+
+STR_GRF_NAME                                                    :OpenGFX+ Landscape 마이너스{VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape 마이너스{} 프로그래밍: {SILVER}planetmaker{}{BLACK}그래픽: {SILVER}Zephyris and others{}{BLACK}라이선스: {SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

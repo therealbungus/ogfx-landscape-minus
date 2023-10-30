@@ -2,8 +2,8 @@
 ##plural 0
 ##gender m f n mp fp np
 ##case abl acc dat gen
-STR_GRF_NAME                                                    :OpenGFX+ Terra {VERSION}
-STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Terra{BLACK} Mutat terram in formam OpenGFX.{}Programmatio: {SILVER}planetifex{}{BLACK}Graphica: {SILVER}Zephyris et al.{}{BLACK}Licentia: {SILVER}GPL v2+
+STR_GRF_NAME                                                    :OpenGFX+ Terra Minus {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Terra Minus{}Programmatio: {SILVER}planetifex{}{BLACK}Graphica: {SILVER}Zephyris et al.{}{BLACK}Licentia: {SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

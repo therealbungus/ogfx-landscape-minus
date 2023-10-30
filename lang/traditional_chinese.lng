@@ -1,7 +1,7 @@
 ##grflangid 0x0c
 ##plural 1
-STR_GRF_NAME                                                    :OpenGFX+ 地形套件 {VERSION}
-STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ 地形套件{BLACK} 提供 OpenGFX 風格的地形圖案。{}編程：{SILVER}planetmaker{}{BLACK}圖形：{SILVER}Zephyris 等{}{BLACK}認證：{SILVER}GPL v2+
+STR_GRF_NAME                                                    :OpenGFX+ 地形套件 減 {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ 地形套件 減{}編程：{SILVER}planetmaker{}{BLACK}圖形：{SILVER}Zephyris 等{}{BLACK}認證：{SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

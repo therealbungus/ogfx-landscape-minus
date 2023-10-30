@@ -2,8 +2,8 @@
 ##plural 0
 ##gender m ma f
 ##case fp fs mp ms
-STR_GRF_NAME                                                    :Paesaggi OpenGFX+ {VERSION}
-STR_GRF_DESCRIPTION                                             :{ORANGE}Paesaggi OpenGFX+{BLACK} Modifica il paesaggo in stile OpenGFX.{}Programmazione: {SILVER}planetmaker{}{BLACK}Grafica: {SILVER}Zephyris e altri{}{BLACK}Licenza: {SILVER}GPL v2+
+STR_GRF_NAME                                                    :Paesaggi OpenGFX+ Meno {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}Paesaggi OpenGFX+ Meno{}Programmazione: {SILVER}planetmaker{}{BLACK}Grafica: {SILVER}Zephyris e altri{}{BLACK}Licenza: {SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

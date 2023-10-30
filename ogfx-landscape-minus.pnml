@@ -11,18 +11,8 @@
 #include "src/templates_sprites.pnml"
 #include "src/templates_ground.pnml"
 
-#include "src/farm_fields.pnml"
 #include "src/waterfeatures.pnml"
-#include "src/rivers.pnml"
-#include "src/canals.pnml"
 
-#include "src/temperate.pnml"
-#include "src/arctic.pnml"
-#include "src/alpine.pnml"
-#include "src/tropical.pnml"
-#include "src/toyland.pnml"
-
-#include "src/general.pnml"
 #include "src/misc.pnml"
 #include "src/foundations.pnml"
 #include "src/snowline.pnml"
@@ -34,5 +24,3 @@
 #include "src/company_land.pnml"
 #include "src/antenna.pnml"
 #include "src/lighthouse.pnml"
-
-#include "src/rocky_land.pnml"

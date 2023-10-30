@@ -1,7 +1,7 @@
 ##grflangid 0x5a
 ##plural 1
-STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
-STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape (Lanskap){BLACK} Gantikan lanskap jadi jenis OpenGFX.{}Pemrogram: {SILVER}planetmaker{}{BLACK}Grafik: {SILVER}Zephyris dan lain{}{BLACK}Lisensi: {SILVER}GPL v2+
+STR_GRF_NAME                                                    :OpenGFX+ Landscape dikurangi {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape (Lanskap) dikurangi{}Pemrogram: {SILVER}planetmaker{}{BLACK}Grafik: {SILVER}Zephyris dan lain{}{BLACK}Lisensi: {SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)

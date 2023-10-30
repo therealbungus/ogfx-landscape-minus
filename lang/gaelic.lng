@@ -2,8 +2,8 @@
 ##plural 13
 ##gender m f
 ##case dat gen nom voc
-STR_GRF_NAME                                                    :Cruth-tìre OpenGFX+ {VERSION}
-STR_GRF_DESCRIPTION                                             :{BLACK}Atharraichidh {ORANGE}OpenGFX+ Landscape{BLACK} an cruth-tìre gu stoidhle OpenGFX.{}Prògramachadh: {SILVER}planetmaker{}{BLACK}Grafaigeachd: {SILVER}Zephyris is eile{}{BLACK}Ceadachas: {SILVER}GPL v2+
+STR_GRF_NAME                                                    :Cruth-tìre OpenGFX+ Minus {VERSION}
+STR_GRF_DESCRIPTION                                             :{BLACK}Atharraichidh {ORANGE}OpenGFX+ Landscape Minus{}Prògramachadh: {SILVER}planetmaker{}{BLACK}Grafaigeachd: {SILVER}Zephyris is eile{}{BLACK}Ceadachas: {SILVER}GPL v2+
 STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
 
 STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
