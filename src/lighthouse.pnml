@@ -1,0 +1,83 @@
+/*
+ * This file is part of OpenGFX+ Landscape.
+ * OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+ * OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#define var_groundsprite 1
+
+// Spriteset of OpenGFX lighthouse
+spriteset (lighthouse_opengfx, "src/gfx/lighthouse_opengfx.png") { [ 13, 10,  41,  61, -22, -39] }
+
+spritelayout lighthouse_purchase_layout {
+	ground {
+		// normal ground sprite - always draw
+		sprite: GROUNDSPRITE_NORMAL;
+	}
+	building {
+		sprite: lighthouse_opengfx;
+	}
+}
+
+spritelayout lighthouse_layout {
+	ground {
+		// normal ground sprite - always draw
+		sprite: LOAD_TEMP(var_groundsprite);
+	}
+	building {
+		sprite: lighthouse_opengfx;
+	}
+}
+
+switch (FEAT_OBJECTS, SELF, lighthouse_arctic_decide_snow, [
+			DECIDE_GROUND_ARCTIC
+			]) {
+	lighthouse_layout;
+}
+switch (FEAT_OBJECTS, SELF, lighthouse_tropic_decide_ground, [
+			DECIDE_GROUND_TROPICAL
+			]) {
+	lighthouse_layout;
+}
+
+switch (FEAT_OBJECTS, SELF, lighthouse_other_decide_ground, [
+			DECIDE_GROUND_NORMAL
+			]) {
+	lighthouse_layout;
+}
+
+switch (FEAT_OBJECTS, SELF, lighthouse_decide_climate,
+		[
+			STORE_TEMP(GROUNDSPRITE_NORMAL, var_groundsprite),
+			climate
+		]) {
+	CLIMATE_ARCTIC: lighthouse_arctic_decide_snow;
+	CLIMATE_TROPIC: lighthouse_tropic_decide_ground;
+	lighthouse_other_decide_ground;
+}
+
+
+item(FEAT_OBJECTS, lighthouse) {
+	property {
+		class:                  "INFR";
+		classname:              string(STR_NAME_OBJCLASS_INFRASTRUCTURE);
+		name:                   string(STR_NAME_LIGHTHOUSE);
+		climates_available:     ALL_CLIMATES;
+		size:                   [1, 1];
+		build_cost_multiplier:  30;
+		remove_cost_multiplier: 30;
+		introduction_date:      date(1492,1,1);
+		end_of_life_date:       0xFFFFFFFF;
+		object_flags:           0;
+		height:                 9; // * 8 = 72  > 66px
+		num_views:              1;
+	}
+	graphics {
+		purchase:            lighthouse_purchase_layout;
+		additional_text:     return string(STR_NAME_LIGHTHOUSE);
+		lighthouse_decide_climate;
+	}
+}
+
+#undef var_groundsprite

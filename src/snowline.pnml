@@ -1,0 +1,38 @@
+/*
+ * This file is part of OpenGFX+ Landscape.
+ * OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+ * OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+// Variable snowline
+
+#define setsnowline(date) \
+	date: min(int(-50 * cos(2.0 * 3.141596 * (date - 15) / 365)) * snowline_2xamplitude / 100 + snowline_offset, 255);
+
+snowline_2xamplitude = (param_snow_july - param_snow_january) * 255 / max_height_level;
+snowline_offset = min(param_snow_january, param_snow_july) * 255 / max_height_level + abs(snowline_2xamplitude / 2);
+
+snowline (equal) {
+	setsnowline(1)
+	setsnowline(45)
+	setsnowline(59)
+	setsnowline(74)
+	setsnowline(90)
+	setsnowline(103)
+	setsnowline(120)
+	setsnowline(135)
+	setsnowline(149)
+	setsnowline(164)
+	setsnowline(177)
+	setsnowline(219)
+	setsnowline(229)
+	setsnowline(244)
+	setsnowline(259)
+	setsnowline(275)
+	setsnowline(289)
+	setsnowline(305)
+	setsnowline(320)
+	setsnowline(337)
+	setsnowline(351)
+}

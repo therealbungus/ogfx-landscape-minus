@@ -1,0 +1,69 @@
+##grflangid 0x13
+##plural 13
+##gender m f
+##case dat gen nom voc
+STR_GRF_NAME                                                    :Cruth-tìre OpenGFX+ {VERSION}
+STR_GRF_DESCRIPTION                                             :{BLACK}Atharraichidh {ORANGE}OpenGFX+ Landscape{BLACK} an cruth-tìre gu stoidhle OpenGFX.{}Prògramachadh: {SILVER}planetmaker{}{BLACK}Grafaigeachd: {SILVER}Zephyris is eile{}{BLACK}Ceadachas: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Chuir thu na feansaichean tùsail à comas ann an {RED}{STRING}{WHITE}. Mar sin, chan fhaic thu na feansaichean idir.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Dh'atharraich thu na feansaichean tùsail ann an {RED}{STRING}{WHITE}. Le sin, seallaidh tìr le feansa feansaichean eadar-dhealaichte.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Chan obraich an cruth-tìre Alpach ach am broinn cruth-tìre artach. Thèid an cruth-tìre bunaiteach a chleachdadh.
+
+STR_PARAM_GRID                                                  :Seall loidhnichean a' ghrioda
+STR_PARAM_GRID_DESC                                             :Leigidh an roghainn seo leat gach sprite talmhainn a chur an àite ach an tèid an cruth-tìre a tharraing gun loidhnichean grioda (sa mhòrchuid).
+STR_PARAM_TRANSMITTER                                           :Cuir creag an àite an tùir chraobh-sgaoilidh
+STR_PARAM_TRANSMITTER_DESC                                      :Cuir an comas gus creag a chur an àite an tùir chraobh-sgaoilidh (tha seo feumail airson cnàmh-sgeulan tràtha gun tùir chraobh-sgaoilidh)
+STR_PARAM_PROVIDE_TERRAIN                                       :Solair sprites talmhainn
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Cuir an àite na h-uile leac tìre ge b' e dè roghainnean a' ghrioda. Ma tha seo à comas, cha tèid ach na h-oibseactan san t-seata seo a sholar.
+STR_PARAM_PROVIDE_FIELDS                                        :Solair sprites raoin
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Cuir an àite gach achaidh ge b’ e dè suidheachadh a’ ghrioda. Ma tha seo à comas, cha tèid leacagan achaidh a chur an àite. Leigear am paramadair seo seachad ma bhios am paramadair “Solair sprites talmhainn” à comas.
+
+STR_PARAM_LANDSCAPE                                             :Seòrsa a' chrutha-tìre
+STR_PARAM_LANDSCAPE_DESC                                        :Tagh seòrsa a' chrutha-tire (leacan tìre)
+STR_PARAM_LANDSCAPE_NORMAL                                      :àbhaisteach (a-rèir a’ chrutha-thìre)
+STR_PARAM_LANDSCAPE_ALPINE                                      :Alpach (feur measarra air cruth-tìre artach)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :measarra (chan eil seo ri fhaighinn fhathast)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :artach (chan eil seo ri fhaighinn fhathast)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :tropaigeach (chan eil seo ri fhaighinn fhathast)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :Cruth-tìre nan dèideag (chan eil seo ri fhaighinn fhathast)
+
+STR_PARAM_ROAD_TUNNELS                                          :Tunailean rathaid
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Tagh an seòrsa de thunailean rathaid ri chleachdadh
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :concraid liath
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :concraid leathan liath
+STR_PARAM_ROAD_TUNNELS_OLD                                      :concrait liath-dhonn
+
+STR_PARAM_FOUNDATIONS                                           :Seòrsa a' bhuinn
+STR_PARAM_FOUNDATIONS_DESC                                      :Tagh am bonn ri chleachdadh. ‘S urrainn dhut an fheadhainn thùsail a chleachdadh a-rèir crutha-tìre no bonn o chruth-tìre eile iarraidh. Seo na bun-roghainnean:{}clach (measarra), balla fiodha (artach), concrait (tropaigeach) agus concrait air a pheantadh (tìr nan dèideag).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :àbhaisteach (a-rèir a' chrutha-tìre)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :measarra (creagach)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :artach (balla fiodha)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :tropaigeach (concrait)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :Cruth-tìre nan dèideag
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :clach ghlas
+STR_PARAM_FOUNDATIONS_BRICKS                                    :breigichean
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :clach ghlas chòinneachail
+
+STR_PARAM_SNOW_JANUARY                                          :An loidhne-shneachda ann am meadhan an Fhoillich
+STR_PARAM_SNOW_JANUARY_DESC                                     :An loidhne-shneachda ann am meadhan an Fhoillich (mar àirde lice). Bidh sneachd air na leacan a tha nas àirde. Chan fhaod leac a bhith nas àirde na 15 le tionndaidhean de dh'OpenTTD as sine na 1.5.0 no r27010.
+STR_PARAM_SNOW_JULY                                             :An loidhne-shneachda ann am meadhan an Iuchair
+STR_PARAM_SNOW_JULY_DESC                                        :An loidhne-shneachda ann am meadhan an Iuchair (mar àirde lice). Bidh sneachd air na leacan a tha nas àirde. Chan fhaod leac a bhith nas àirde na 15 le tionndaidhean de dh'OpenTTD as sine na 1.5.0 no r27010.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (sna h-uile àite, cha bhi sneachd air an oirthir gu bràth)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (cha mhòr sna h-uile àite)
+STR_PARAM_SNOW_NOWHERE                                          :255 (chan eil e ann)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Bun-structar
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Eileamaidean crutha-tìre
+
+STR_NAME_WIND_TURBINE                                           :Crann-gaoithe
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Tha crann-gaoithe ro fhaisg air
+STR_NAME_COMPANY_LAND                                           :Tìr callaideach
+STR_NAME_ANTENNA                                                :Tùr conaltraidh
+STR_NAME_LIGHTHOUSE                                             :Taigh-solais
+
+STR_NAME_ROCKY_LAND                                             :Tìr creagach

@@ -1,0 +1,272 @@
+/*
+ * This file is part of OpenGFX+ Landscape.
+ * OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+ * OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#define var_groundsprite 1
+
+#define var_fence_spriteoffset_ne 2
+#define var_fence_spriteoffset_nw 4
+#define var_fence_spriteoffset_sw 3
+#define var_fence_spriteoffset_se 5
+
+#define var_fence_zoffset_ne 6
+#define var_fence_zoffset_nw 7
+#define var_fence_zoffset_sw 9
+#define var_fence_zoffset_se 8
+
+#define var_tree_sprite 10
+
+
+// Spriteset of the 19 possible landslopes with company-coloured grid
+spriteset (cc_frame, "src/gfx/cc_grid.png") { tmpl_groundsprites(1, 1) }
+
+spritelayout company_land_layout {
+	ground {
+		// normal ground sprite - always draw
+		sprite: LOAD_TEMP(var_groundsprite) + slope_to_sprite_offset(nearby_tile_slope(0, 0));
+	}
+	building { // NE fence
+		sprite: 1302 + LOAD_TEMP(var_fence_spriteoffset_ne);
+		hide_sprite: nearby_tile_object_type(-1,  0) == company_land || nearby_tile_water_class(-1, 0) == WATER_CLASS_SEA && LOAD_TEMP(var_fence_spriteoffset_ne) == 0 && nearby_tile_height(0, 0) == 0 ? 1 : 0;
+		xoffset:  0;
+		yoffset:  0;
+		zoffset:  LOAD_TEMP(var_fence_zoffset_ne) * 8;
+		xextent: 1;
+		yextent: 16;
+		zextent: 6;
+		recolour_mode: RECOLOUR_REMAP;
+		palette:       PALETTE_USE_DEFAULT;
+	}
+	building { // NW fence
+		sprite: 1301 + LOAD_TEMP(var_fence_spriteoffset_nw);
+		hide_sprite: nearby_tile_object_type( 0, -1) == company_land || nearby_tile_water_class(0, -1) == WATER_CLASS_SEA && LOAD_TEMP(var_fence_spriteoffset_nw) == 0 && nearby_tile_height(0, 0) == 0 ? 1 : 0;
+		xoffset:  0;
+		yoffset:  0;
+		zoffset:  LOAD_TEMP(var_fence_zoffset_nw) * 8;
+		xextent: 16;
+		yextent: 1;
+		zextent: 6;
+		recolour_mode: RECOLOUR_REMAP;
+		palette:       PALETTE_USE_DEFAULT;
+	}
+	building { // tree
+		sprite: LOAD_TEMP(var_tree_sprite);
+		xoffset: (tile_slope & bitmask(CORNER_N)) != 0 ? 0 : (tile_slope & bitmask(CORNER_S)) ? 4 : (tile_slope == SLOPE_E) ? 0 : 7;
+		yoffset: ((tile_slope == SLOPE_S) || (tile_slope == SLOPE_E)) ? 8 : 4;
+		xextent: 8;
+		yextent: 8;
+		zextent: 80;
+		palette: PALETTE_USE_DEFAULT;
+		recolour_mode: RECOLOUR_REMAP;
+		hide_sprite: view != 1;
+	}
+	building { // SW fence
+		sprite: 1302 + LOAD_TEMP(var_fence_spriteoffset_sw);
+		hide_sprite: nearby_tile_object_type( 1,  0) == company_land || nearby_tile_water_class(1, 0) == WATER_CLASS_SEA && LOAD_TEMP(var_fence_spriteoffset_sw) == 0 && nearby_tile_height(0, 0) == 0 ? 1 : 0;
+		xoffset: 16;
+		yoffset:  0;
+		zoffset:  LOAD_TEMP(var_fence_zoffset_sw) * 8;
+		xextent: 0;
+		yextent: 16;
+		zextent: 6;
+		recolour_mode: RECOLOUR_REMAP;
+		palette:       PALETTE_USE_DEFAULT;
+	}
+	building { // SE fence
+		sprite: 1301 + LOAD_TEMP(var_fence_spriteoffset_se);
+		hide_sprite: nearby_tile_object_type( 0,  1) == company_land || nearby_tile_water_class(0, 1) == WATER_CLASS_SEA && LOAD_TEMP(var_fence_spriteoffset_se) == 0 && nearby_tile_height(0, 0) == 0 ? 1 : 0;
+		xoffset: 0;
+		yoffset: 16;
+		zoffset:  LOAD_TEMP(var_fence_zoffset_se) * 8;
+		xextent: 16;
+		yextent: 0;
+		zextent: 6;
+		recolour_mode: RECOLOUR_REMAP;
+		palette:       PALETTE_USE_DEFAULT;
+	}
+}
+
+// A pseudo-switch which sets the temporary parameters for the sprite layout
+switch (FEAT_OBJECTS, SELF, company_land_fences_switch, [
+
+			// Store the offset needed for fence sprites for / borders
+			// NE fence: 0: normal, 4: shallow slope , 6: large slope
+			STORE_TEMP( (tile_slope == 4 || tile_slope == 5 || tile_slope == 6 ||
+			             tile_slope == 7 || tile_slope == 23 || tile_slope == 30)*4 +
+						(tile_slope == 8 || tile_slope == 9 || tile_slope == 10 ||
+			             tile_slope == 11 || tile_slope == 27 || tile_slope == 29)*6
+						, var_fence_spriteoffset_ne),
+			// NW fence: 0: normal, 4: shallow slope , 6: large slope
+			STORE_TEMP( (tile_slope == 1 || tile_slope == 3 || tile_slope == 5 ||
+			             tile_slope == 7 || tile_slope == 23 || tile_slope == 27)*4 +
+						(tile_slope == 8 || tile_slope == 10 || tile_slope == 12 ||
+			             tile_slope == 14 || tile_slope == 30 || tile_slope == 29)*6
+						, var_fence_spriteoffset_nw),
+			// SE fence: 0: normal, 4: shallow slope , 6: large slope
+			STORE_TEMP( (tile_slope == 2 || tile_slope == 3 || tile_slope == 10 ||
+			             tile_slope == 11 || tile_slope == 23 || tile_slope == 27)*4 +
+						(tile_slope == 4 || tile_slope == 5 || tile_slope == 12 ||
+			             tile_slope == 13 || tile_slope == 30 || tile_slope == 29)*6
+						, var_fence_spriteoffset_se),
+			// SW fence: 0: normal, 4: shallow slope , 6: large slope
+			STORE_TEMP( (tile_slope == 2 || tile_slope == 6 || tile_slope == 10 ||
+			             tile_slope == 14 || tile_slope == 23 || tile_slope == 30)*4 +
+						(tile_slope == 1 || tile_slope == 5 || tile_slope == 9 ||
+			             tile_slope == 13 || tile_slope == 27 || tile_slope == 29)*6
+						, var_fence_spriteoffset_sw),
+
+			// NE fence: y offsets
+			STORE_TEMP( (tile_slope == 13 || tile_slope == 14 || tile_slope == 30 ||
+			             tile_slope == 29 || tile_slope == 12), var_fence_zoffset_ne),
+			// NW fence: y offsets
+			STORE_TEMP( (tile_slope == 13 || tile_slope == 11 || tile_slope == 29 ||
+			             tile_slope == 27 || tile_slope == 9), var_fence_zoffset_nw),
+			// SE fence: y offsets
+			STORE_TEMP( (tile_slope == 6 || tile_slope == 14 || tile_slope == 30 ||
+			             tile_slope == 23 || tile_slope == 7), var_fence_zoffset_se),
+			// SW fence: y offsets
+			STORE_TEMP( (tile_slope == 3 || tile_slope == 11 || tile_slope == 27 ||
+			             tile_slope == 23 || tile_slope == 7), var_fence_zoffset_sw),
+
+			1
+			]) {
+	company_land_layout;
+}
+
+
+switch (FEAT_OBJECTS, SELF, company_land_arctic_decide_snow, [
+			DECIDE_GROUND_ARCTIC,
+			DECIDE_SHORE,
+			STORE_TEMP( (LOAD_TEMP(var_groundsprite) >= 4531) &&
+			( (openttd_version  >= version_openttd(1, 4, 0, 25230)) &&
+				( (LOAD_TEMP(var_groundsprite) < base_sprite_shores) || (LOAD_TEMP(var_groundsprite) > base_sprite_shores + 19) )
+			) ? 1768 : 1712, var_tree_sprite),
+		]) {
+	company_land_fences_switch;
+}
+switch (FEAT_OBJECTS, SELF, company_land_tropic_decide_ground, [
+			DECIDE_GROUND_TROPICAL,
+			DECIDE_SHORE,
+			STORE_TEMP( (LOAD_TEMP(var_groundsprite) == GROUNDSPRITE_DESERT) ? 1915: 1887, var_tree_sprite),
+		]) {
+	company_land_fences_switch;
+}
+switch (FEAT_OBJECTS, SELF, company_land_normal_decide_ground, [
+			DECIDE_GROUND_NORMAL,
+			DECIDE_SHORE,
+			STORE_TEMP( 1712, var_tree_sprite)]
+		) {
+	company_land_fences_switch;
+}
+switch (FEAT_OBJECTS, SELF, company_land_decide_climate,
+		[
+			STORE_TEMP(0, var_groundsprite), // + slope_to_sprite_offset(nearby_tile_slope(0,0)), 1),
+			climate
+		]) {
+	CLIMATE_ARCTIC: company_land_arctic_decide_snow;
+	CLIMATE_TROPIC: company_land_tropic_decide_ground;
+	company_land_normal_decide_ground;
+}
+
+
+
+// Pseudo switch for the purchase list branch: we want to display the flat ground tile
+spritelayout company_land_purchase_layout {
+	ground {
+		sprite: GROUNDSPRITE_NORMAL;
+		recolour_mode: RECOLOUR_REMAP;
+		palette: PALETTE_USE_DEFAULT;
+	}
+	building { // NE fence
+		sprite: 1302;
+		xoffset:  0;
+		yoffset:  0;
+		xextent: 1;
+		yextent: 16;
+		zextent: 6;
+		recolour_mode: RECOLOUR_REMAP;
+		palette:       PALETTE_USE_DEFAULT;
+	}
+	building { // NW fence
+		sprite: 1301;
+		xoffset:  0;
+		yoffset:  0;
+		xextent: 16;
+		yextent: 1;
+		zextent: 6;
+		recolour_mode: RECOLOUR_REMAP;
+		palette:       PALETTE_USE_DEFAULT;
+	}
+    building { // tree
+		sprite: 1712;
+		xoffset: 8;
+		yoffset: 4;
+		xextent: 4;
+		yextent: 4;
+		zextent: 6;
+		palette: PALETTE_USE_DEFAULT;
+		recolour_mode: RECOLOUR_REMAP;
+		hide_sprite: view != 1;
+    }
+	building { // SW fence
+		sprite: 1302;
+		xoffset: 16;
+		yoffset:  0;
+		xextent: 0;
+		yextent: 16;
+		zextent: 6;
+		recolour_mode: RECOLOUR_REMAP;
+		palette:       PALETTE_USE_DEFAULT;
+	}
+	building { // SE fence
+		sprite: 1301;
+		xoffset: 0;
+		yoffset: 16;
+		xextent: 16;
+		yextent: 0;
+		zextent: 6;
+		recolour_mode: RECOLOUR_REMAP;
+		palette:       PALETTE_USE_DEFAULT;
+	}
+}
+
+item(FEAT_OBJECTS, company_land) {
+	property {
+		class:                  "INFR";
+		classname:              string(STR_NAME_OBJCLASS_INFRASTRUCTURE);
+		name:                   string(STR_NAME_COMPANY_LAND);
+		climates_available:     ALL_CLIMATES;
+		size:                   [1, 1];
+		build_cost_multiplier:  1;
+		remove_cost_multiplier: 1;
+		introduction_date:      date(1,1,1);
+		end_of_life_date:       0xFFFFFFFF;
+		object_flags:           bitmask(OBJ_FLAG_ANYTHING_REMOVE, OBJ_FLAG_REMOVE_IS_INCOME, OBJ_FLAG_NO_FOUNDATIONS, OBJ_FLAG_ALLOW_BRIDGE, 13);
+		height:                 0; // ground tile
+		num_views:              2;
+	}
+	graphics {
+		purchase:            company_land_purchase_layout;
+		tile_check:          return CB_RESULT_LOCATION_ALLOW;
+		additional_text:     return string(STR_NAME_COMPANY_LAND);
+		company_land_decide_climate;
+	}
+}
+
+#undef var_groundsprite
+
+#undef var_fence_spriteoffset_ne
+#undef var_fence_spriteoffset_nw
+#undef var_fence_spriteoffset_sw
+#undef var_fence_spriteoffset_se
+
+#undef var_fence_zoffset_ne
+#undef var_fence_zoffset_nw
+#undef var_fence_zoffset_sw
+#undef var_fence_zoffset_se
+
+#undef var_tree_sprite
+

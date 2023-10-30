@@ -1,0 +1,69 @@
+##grflangid 0x27
+##plural 0
+##gender m ma f
+##case fp fs mp ms
+STR_GRF_NAME                                                    :Paesaggi OpenGFX+ {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}Paesaggi OpenGFX+{BLACK} Modifica il paesaggo in stile OpenGFX.{}Programmazione: {SILVER}planetmaker{}{BLACK}Grafica: {SILVER}Zephyris e altri{}{BLACK}Licenza: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Sono state disattivate le recinzioni in {RED}{STRING}{WHITE}. Perciò, la terra recintata non mostrerà recinzioni.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Le recinzioni in {RED}{STRING}{WHITE} sono state cambiate. Perciò la terra recintata mostrerà tipi di recinzioni differenti.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Il clima alpino funziona solo col clima artico. Si userà il clima predefinito.
+
+STR_PARAM_GRID                                                  :Mostra linee della griglia
+STR_PARAM_GRID_DESC                                             :Questa opzione modifica gli sprite del terreno in modo da far quasi scomparire la griglia.
+STR_PARAM_TRANSMITTER                                           :Sostituire l'antenna con una roccia
+STR_PARAM_TRANSMITTER_DESC                                      :Sostituisce l'antenna trasmettitrice con una roccia (consigliata per gli scenari ambientati in tempi in cui le antenne trasmettitrici non erano ancora state inventate)
+STR_PARAM_PROVIDE_TERRAIN                                       :Cambia sprite del terreno
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Sostituisce tutte le caselle del terreno, indipendentemente dalle impostazioni della griglia. Se disattivato, l'unica cosa usata di questo set saranno gli oggetti.
+STR_PARAM_PROVIDE_FIELDS                                        :Cambia sprite dei campi
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Sostituisce le caselle dei campi arati delle fattorie, indipendentemente dalle impostazioni della griglia. Se disattivato, le caselle dei campi non verranno sostituite. Questo parametro non ha effetto se il parametro 'cambia sprite del terreno' è disabilitato.
+
+STR_PARAM_LANDSCAPE                                             :Tipo di paesaggio
+STR_PARAM_LANDSCAPE_DESC                                        :Selezionare il tipo di paesaggio (caselle del terreno)
+STR_PARAM_LANDSCAPE_NORMAL                                      :normale (a seconda del clima)
+STR_PARAM_LANDSCAPE_ALPINE                                      :alpino (erba del clima temperato, tutto il resto del clima artico)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :temperato (non implementato)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :artico (non implementato)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :tropicale (non implementato)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :toyland (non implementato)
+
+STR_PARAM_ROAD_TUNNELS                                          :Tunnel stradali
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Selezionare il tipo di tunnel stradali da usare
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :cemento grigio
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :cemento grigio (tunnel largo)
+STR_PARAM_ROAD_TUNNELS_OLD                                      :cemento marrone
+
+STR_PARAM_FOUNDATIONS                                           :Tipo di fondazioni
+STR_PARAM_FOUNDATIONS_DESC                                      :Selezionare le fondazioni da usare. Si possono scegliere quelle predefinite dal clima, o usare quelle di un altro clima. Le fondazioni predefinite sono:{} pietra (temperato), parete di legno (artico), cemento (tropicale) e cemento verniciato (toyland).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :normale (a seconda del clima)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :temperato (pietra)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :artico (parete in legno)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :tropicale (cemento)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :toyland
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :pietra grigia
+STR_PARAM_FOUNDATIONS_BRICKS                                    :mattoni
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :pietra grigia con muschio
+
+STR_PARAM_SNOW_JANUARY                                          :Altezza delle nevi a metà gennaio
+STR_PARAM_SNOW_JANUARY_DESC                                     :Altezza, in caselle, della neve a metà gennaio. Le caselle al di sopra dell'altezza selezionata saranno innevate. Per le versioni di OpenTTD precedenti alla 1.5.0 o r27010, l'altezza massima è 15.
+STR_PARAM_SNOW_JULY                                             :Altezza delle nevi a metà luglio
+STR_PARAM_SNOW_JULY_DESC                                        :Altezza, in caselle, della neve a metà luglio. Le caselle al di sopra dell'altezza selezionata saranno innevate. Per le versioni di OpenTTD precedenti alla 1.5.0 o r27010, l'altezza massima è 15.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (neve dappertutto tranne che sulle coste)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (neve quasi ovunque)
+STR_PARAM_SNOW_NOWHERE                                          :255 (niente neve)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastrutture
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Elementi del paesaggio
+
+STR_NAME_WIND_TURBINE                                           :Pala eolica
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :La pala eolica è troppo vicina
+STR_NAME_COMPANY_LAND                                           :Terra recintata
+STR_NAME_ANTENNA                                                :Antenna di comunicazione
+STR_NAME_LIGHTHOUSE                                             :Faro
+
+STR_NAME_ROCKY_LAND                                             :Terra rocciosa

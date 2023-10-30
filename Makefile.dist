@@ -1,0 +1,16 @@
+################################################################
+# Definitions needed for tar releases
+# This part is automatically generated
+################################################################
+REPO_REVISION := 7140
+NEWGRF_VERSION := 7140
+REPO_HASH := 178d7491052b
+REPO_VERSION_STRING := v7140 (178d7491052b)
+REPO_TITLE := OpenGFX+ Landscape v7140 (178d7491052b)
+REPO_DATE := 
+REPO_BRANCH := 
+REPO_MODIFIED := 
+REPO_TAGS    := 
+HG := :
+GIT := :
+PYTHON := :

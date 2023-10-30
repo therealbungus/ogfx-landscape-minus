@@ -1,0 +1,171 @@
+/*
+ * This file is part of OpenGFX+ Landscape.
+ * OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+ * OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+// define the newgrf
+grf {
+	grfid: "OG+4";
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESCRIPTION);
+	url:  string(STR_GRF_URL);
+	version: REPO_REVISION;
+	min_compatible_version: 1;
+	param (0) {
+		param_grid {
+			type:    bool;
+			name:    string(STR_PARAM_GRID);
+			desc:    string(STR_PARAM_GRID_DESC);
+			def_value: 0;
+			bit:       0;
+		}
+		transmitter2rock {
+			type:    bool;
+			name:    string(STR_PARAM_TRANSMITTER);
+			desc:    string(STR_PARAM_TRANSMITTER_DESC);
+			def_value: 0;
+			bit:       1;
+		}
+		param_provide_terrain {
+			type:      bool;
+			name:      string(STR_PARAM_PROVIDE_TERRAIN);
+			desc:      string(STR_PARAM_PROVIDE_TERRAIN_DESC);
+			def_value: 1;
+			bit:       2;
+		}
+		param_provide_fields {
+			type:      bool;
+			name:      string(STR_PARAM_PROVIDE_FIELDS);
+			desc:      string(STR_PARAM_PROVIDE_FIELDS_DESC);
+			def_value: 1;
+			bit:       3;
+		}
+	}
+	param (1) {
+		param_landscape {
+			type:   int;
+			name:   string(STR_PARAM_LANDSCAPE);
+			desc:   string(STR_PARAM_LANDSCAPE_DESC);
+			def_value: 0;
+			min_value: 0;
+			max_value: 1;
+			names: {
+				0: string(STR_PARAM_LANDSCAPE_NORMAL);
+				1: string(STR_PARAM_LANDSCAPE_ALPINE);
+//				2: string(STR_PARAM_LANDSCAPE_TEMPERATE);
+//				3: string(STR_PARAM_LANDSCAPE_ARCTIC);
+//				4: string(STR_PARAM_LANDSCAPE_TROPICAL);
+//				5: string(STR_PARAM_LANDSCAPE_TOYLAND);
+			};
+		}
+	}
+	param (5) {
+		param_road_tunnels {
+			type:   int;
+			name:   string(STR_PARAM_ROAD_TUNNELS);
+			desc:   string(STR_PARAM_ROAD_TUNNELS_DESC);
+			def_value: 0;
+			min_value: 0;
+			max_value: 1;
+			names: {
+				0: string(STR_PARAM_ROAD_TUNNELS_DEFAULT);
+				1: string(STR_PARAM_ROAD_TUNNELS_WIDE);
+//				2: string(STR_PARAM_ROAD_TUNNELS_OLD); // Not yet in use
+			};
+		}
+	}
+	param (4) {
+		param_foundations {
+			type:   int;
+			name:   string(STR_PARAM_FOUNDATIONS);
+			desc:   string(STR_PARAM_FOUNDATIONS_DESC);
+			def_value: 4;
+			min_value: 0;
+			max_value: 7;
+			names: {
+				0: string(STR_PARAM_FOUNDATIONS_TEMPERATE);
+				1: string(STR_PARAM_FOUNDATIONS_ARCTIC);
+				2: string(STR_PARAM_FOUNDATIONS_TROPICAL);
+				3: string(STR_PARAM_FOUNDATIONS_TOYLAND);
+				4: string(STR_PARAM_FOUNDATIONS_NORMAL);
+				5: string(STR_PARAM_FOUNDATIONS_STONE_GRAY);
+				6: string(STR_PARAM_FOUNDATIONS_BRICKS);
+				7: string(STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY);
+			};
+		}
+	}
+	param (2) {
+		param_snow_january {
+			type:   int;
+			name:   string(STR_PARAM_SNOW_JANUARY);
+			desc:   string(STR_PARAM_SNOW_JANUARY_DESC);
+			def_value: 4;
+			min_value: 0;
+			max_value: 255;
+			names: {
+				0: string(STR_PARAM_SNOW_TOO_LOW1);
+				1: string(STR_PARAM_SNOW_EVERYWHERE);
+				255: string(STR_PARAM_SNOW_NOWHERE);
+			};
+		}
+	}
+	param (3) {
+		param_snow_july {
+			type:   int;
+			name:   string(STR_PARAM_SNOW_JULY);
+			desc:   string(STR_PARAM_SNOW_JULY_DESC);
+			def_value: 15;
+			min_value: 0;
+			max_value: 255;
+			names: {
+				0: string(STR_PARAM_SNOW_TOO_LOW1);
+				1: string(STR_PARAM_SNOW_EVERYWHERE);
+				255: string(STR_PARAM_SNOW_NOWHERE);
+			};
+		}
+	}
+}
+
+/* Internal parameters
+ * all defined here in order to avoid double usage
+ */
+#define landscape_param         param[10]
+
+#define snowline_2xamplitude    param[11]
+#define snowline_offset         param[12]
+
+if (ttd_platform != PLATFORM_OPENTTD) {
+	error(FATAL, REQUIRES_OPENTTD, string(STR_OPENTTD_VERSION));
+}
+
+if (openttd_version  < version_openttd(1, 2, 0, 22723)) {
+	error(FATAL, REQUIRES_OPENTTD, string(STR_OPENTTD_VERSION));
+}
+allow_advanced_rivers = (openttd_version > version_openttd(1, 4, 0, 25230));
+
+#define CLIMATE_ALPINE -1
+landscape_param = param_landscape - 2;
+if (param_landscape == 0) { landscape_param = climate; }
+if (landscape_param == CLIMATE_ALPINE && climate != CLIMATE_ARCTIC) {
+	landscape_param = climate;
+	error(WARNING, string(STR_ERR_ALPINE_IN_ARCTIC));
+}
+
+#define FOUNDATION_DEFAULT          4
+#define FOUNDATION_STONE_GRAY       5
+#define FOUNDATION_BRICKS           6
+#define FOUNDATION_MOSSY_STONE_GRAY 7
+foundation_param = param_foundations;
+if ((param_foundations == FOUNDATION_DEFAULT) && (param_provide_terrain)) { foundation_param = climate; }
+
+#define ROAD_TUNNELS_GRAY      0
+#define ROAD_TUNNELS_WIDE_GRAY 1
+#define ROAD_TUNNELS_BROWN     2
+
+/* Adjust the base costs for NewObjects, they're too low for our taste */
+basecost {
+	PR_BUILD_UNMOVABLE: 4;
+	PR_CLEAR_UNMOVABLE: 5;
+}

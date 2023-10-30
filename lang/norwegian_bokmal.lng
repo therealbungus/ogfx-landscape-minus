@@ -1,0 +1,69 @@
+##grflangid 0x2f
+##plural 0
+##gender masculine feminine neuter
+##case small
+STR_GRF_NAME                                                    :OpenGFX+ Landskap {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landskap{BLACK} Endrer landskapet i OpenGFX stil.{}Programmering: {SILVER}planetmaker{}{BLACK}Graffik: {SILVER}Zephyris og andre{}{BLACK}Lisens: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Du har slått av standardgjerdene i {RED}{STRING}{WHITE}. Så inngjerdet land vil ikke vise gjerder.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Du har endret standargjerdene i {RED}{STRING}{WHITE}. Så inngjerdet land vil ha andre gjerder.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Alpint klima virker kun i arktis. Bruker standardklima.
+
+STR_PARAM_GRID                                                  :Vis grid-linjer
+STR_PARAM_GRID_DESC                                             :Denne instillingen vil tillate utbytting av alle bakke-sprtitesene sånn at landskapet er (stor sett) uten grid-linjer.
+STR_PARAM_TRANSMITTER                                           :Bytt ut radiosenderen med en stein
+STR_PARAM_TRANSMITTER_DESC                                      :Slå på for å bytte ut radiosenderen med en stein (nyttig for tidlige spill uten komunikasjonstårn)
+STR_PARAM_PROVIDE_TERRAIN                                       :Tilfør sprites (grafikk) for terreng
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Bytt ut alle bakke-brikkene, uansett grid-instilling. Om avslått så er det bare objekter fra dette settet som blir brukt.
+STR_PARAM_PROVIDE_FIELDS                                        :Bytt ut gårdsbrikker
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Bytter ut alle gårdsbrikker, uansett grid-instilling. Om avslått, så vil gårdsbrikkene ikke bli byttet. Dette parameteret blir ignorert, om 'Tilfør sprites for terreng' parameteret er avslått.
+
+STR_PARAM_LANDSCAPE                                             :Landskapstype
+STR_PARAM_LANDSCAPE_DESC                                        :Velg landskapstypen (markbrikker)
+STR_PARAM_LANDSCAPE_NORMAL                                      :vanlig (i forhold til klima)
+STR_PARAM_LANDSCAPE_ALPINE                                      :alpint (gress fra temperert i arktisk klima)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :temperert (ikke ferdig enda)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :arktis (ikke ferdig enda)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :tropisk (ikke ferdig enda)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :lekeland (ikke ferdig enda)
+
+STR_PARAM_ROAD_TUNNELS                                          :Veitunneler
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Vel hvilke veitunneler som skal brukes
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :grå sement
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :vid grå sement
+STR_PARAM_ROAD_TUNNELS_OLD                                      :brunaktig sement
+
+STR_PARAM_FOUNDATIONS                                           :Velg fundamenttype
+STR_PARAM_FOUNDATIONS_DESC                                      :Velg hvilket fundament som skal brukes. Du kan velge default for klimaet, eller bare bruke fundamenter fra ett annet klima. Defaults er:{}stein (temperert), trevegg (arktis), sement (tropisk) og malt sement (lekeland).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :vanlig (i forhold til klima)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :temperert (stein)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :arktis (trevegg)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :tropisk (sement)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :lekeland
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :grå stein
+STR_PARAM_FOUNDATIONS_BRICKS                                    :murstein
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :mosegrodd grå stein
+
+STR_PARAM_SNOW_JANUARY                                          :Snølinje midt i januar
+STR_PARAM_SNOW_JANUARY_DESC                                     :Snølinje midt i januar (som brikkehøyde). Brikker over denne høyden vil ha snø. For OpenTTD versjoner tidligere enn 1.5.0 eller r27010 kan ingen brikker være høyere enn 15.
+STR_PARAM_SNOW_JULY                                             :Snølinje midt i juli
+STR_PARAM_SNOW_JULY_DESC                                        :Snølinje midt i juli (som brikkehøyde). Brikker over denne høyden vil ha snø. For OpenTTD versjoner tidligere enn 1.5.0 eller r27010 kan ingen brikker være høyere enn 15.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (overalt. (Kysten vil aldri få snø)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (nesten overalt)
+STR_PARAM_SNOW_NOWHERE                                          :255 (ingensteds)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastruktur
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Landskapselementer
+
+STR_NAME_WIND_TURBINE                                           :Vindmølle
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Vindmølle for nærme
+STR_NAME_COMPANY_LAND                                           :Land med gjerder
+STR_NAME_ANTENNA                                                :Komunikasjonstårn
+STR_NAME_LIGHTHOUSE                                             :Fyrtårn
+
+STR_NAME_ROCKY_LAND                                             :Steinete land

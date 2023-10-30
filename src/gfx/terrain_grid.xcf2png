@@ -1,0 +1,66 @@
+#
+# This file is part of OpenGFX+ Landscape.
+# OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+# OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+#
+
+# Gridded ground sprites
+src/gfx/grass_grid_temperate.gimp.png     gfx-source/terrain.xcf        White BlueForShore GroundTemperate GridTemperate
+src/gfx/grass_grid_arctic.gimp.png        gfx-source/terrain.xcf        White BlueForShore GroundArctic    GridArctic
+src/gfx/grass_grid_tropical.gimp.png      gfx-source/terrain.xcf        White BlueForShore GroundTropical  GridTropical
+src/gfx/grass_grid_toyland.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundToyland   GridToyland
+src/gfx/desert_transition_grid.gimp.png   gfx-source/terrain.xcf        White BlueForShore GroundTropical  GroundDesertTransition GridDesert
+src/gfx/desert_grid.gimp.png              gfx-source/terrain.xcf        White BlueForShore GroundDesert    GridDesert
+src/gfx/snow14_grid_arctic.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundArctic    GridArctic     SnowLv1 GridSnowLv1
+src/gfx/snow24_grid_arctic.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundArctic    GridArctic     SnowLv2 GridSnowLv2
+src/gfx/snow34_grid_arctic.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundArctic    GridArctic     SnowLv3 GridSnowLv3
+src/gfx/snow14_grid_alpine.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundTemperate GridTemperate  SnowLv1 GridSnowLv1
+src/gfx/snow24_grid_alpine.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundTemperate GridTemperate  SnowLv2 GridSnowLv2
+src/gfx/snow34_grid_alpine.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundTemperate GridTemperate  SnowLv3 GridSnowLv3
+src/gfx/snow_grid.gimp.png                gfx-source/terrain.xcf        White BlueForShore GroundSnow      GridSnow
+src/gfx/bare03_grid.gimp.png              gfx-source/terrain.xcf        White BlueForShore                 GroundBare03    GridBare
+src/gfx/bare13_grid_temperate.gimp.png    gfx-source/terrain.xcf        White BlueForShore GroundTemperate GroundBare13    GridBare
+src/gfx/bare23_grid_temperate.gimp.png    gfx-source/terrain.xcf        White BlueForShore GroundTemperate GroundBare23    GridBare
+src/gfx/bare13_grid_arctic.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundArctic    GroundBare13    GridBare
+src/gfx/bare23_grid_arctic.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundArctic    GroundBare23    GridBare
+src/gfx/bare13_grid_tropical.gimp.png     gfx-source/terrain.xcf        White BlueForShore GroundTropical  GroundBare13    GridBare
+src/gfx/bare23_grid_tropical.gimp.png     gfx-source/terrain.xcf        White BlueForShore GroundTropical  GroundBare23    GridBare
+src/gfx/rocks_grid_temperate.gimp.png     gfx-source/terrain.xcf        White BlueForShore GroundTemperate GridTemperate Rocks
+src/gfx/rocks_grid_arctic.gimp.png        gfx-source/terrain.xcf        White BlueForShore GroundArctic    GridArctic    Rocks
+src/gfx/rocks_grid_tropical.gimp.png      gfx-source/terrain.xcf        White BlueForShore GroundTropical  GridTropical  Rocks
+src/gfx/rocks_grid_toyland.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundToyland   GridToyland   RocksToyland
+src/gfx/rough_grid_temperate.gimp.png     gfx-source/terrain.xcf        White BlueForShore RoughTemperate  GridTemperate
+src/gfx/rough_grid_arctic.gimp.png        gfx-source/terrain.xcf        White BlueForShore RoughArctic     GridArctic
+src/gfx/rough_grid_tropical.gimp.png      gfx-source/terrain.xcf        White BlueForShore RoughTropical   GridTropical
+src/gfx/rough_grid_toyland.gimp.png       gfx-source/terrain.xcf        White BlueForShore RoughToyland    GridToyland
+
+# Gridless ground sprites
+src/gfx/grass_nogrid_temperate.gimp.png     gfx-source/terrain.xcf        White BlueForShore GroundTemperate
+src/gfx/grass_nogrid_arctic.gimp.png        gfx-source/terrain.xcf        White BlueForShore GroundArctic
+src/gfx/grass_nogrid_tropical.gimp.png      gfx-source/terrain.xcf        White BlueForShore GroundTropical
+src/gfx/grass_nogrid_toyland.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundToyland
+src/gfx/desert_transition_nogrid.gimp.png   gfx-source/terrain.xcf        White BlueForShore GroundTropical  GroundDesertTransition
+src/gfx/desert_nogrid.gimp.png              gfx-source/terrain.xcf        White BlueForShore GroundDesert
+src/gfx/bare03_nogrid.gimp.png              gfx-source/terrain.xcf        White BlueForShore                 GroundBare03
+src/gfx/bare13_nogrid_temperate.gimp.png    gfx-source/terrain.xcf        White BlueForShore GroundTemperate GroundBare13
+src/gfx/bare23_nogrid_temperate.gimp.png    gfx-source/terrain.xcf        White BlueForShore GroundTemperate GroundBare23
+src/gfx/bare13_nogrid_arctic.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundArctic    GroundBare13
+src/gfx/bare23_nogrid_arctic.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundArctic    GroundBare23
+src/gfx/bare13_nogrid_tropical.gimp.png     gfx-source/terrain.xcf        White BlueForShore GroundTropical  GroundBare13
+src/gfx/bare23_nogrid_tropical.gimp.png     gfx-source/terrain.xcf        White BlueForShore GroundTropical  GroundBare23
+src/gfx/snow14_nogrid_arctic.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundArctic    SnowLv1
+src/gfx/snow24_nogrid_arctic.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundArctic    SnowLv2
+src/gfx/snow34_nogrid_arctic.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundArctic    SnowLv3
+src/gfx/snow14_nogrid_alpine.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundTemperate SnowLv1
+src/gfx/snow24_nogrid_alpine.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundTemperate SnowLv2
+src/gfx/snow34_nogrid_alpine.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundTemperate SnowLv3
+src/gfx/snow_nogrid.gimp.png                gfx-source/terrain.xcf        White BlueForShore GroundSnow
+src/gfx/rocks_nogrid_temperate.gimp.png     gfx-source/terrain.xcf        White BlueForShore GroundTemperate  Rocks
+src/gfx/rocks_nogrid_arctic.gimp.png        gfx-source/terrain.xcf        White BlueForShore GroundArctic     Rocks
+src/gfx/rocks_nogrid_tropical.gimp.png      gfx-source/terrain.xcf        White BlueForShore GroundTropical   Rocks
+src/gfx/rocks_nogrid_toyland.gimp.png       gfx-source/terrain.xcf        White BlueForShore GroundToyland    RocksToyland
+src/gfx/rough_nogrid_temperate.gimp.png     gfx-source/terrain.xcf        White BlueForShore RoughTemperate
+src/gfx/rough_nogrid_arctic.gimp.png        gfx-source/terrain.xcf        White BlueForShore RoughArctic
+src/gfx/rough_nogrid_tropical.gimp.png      gfx-source/terrain.xcf        White BlueForShore RoughTropical
+src/gfx/rough_nogrid_toyland.gimp.png       gfx-source/terrain.xcf        White BlueForShore RoughToyland

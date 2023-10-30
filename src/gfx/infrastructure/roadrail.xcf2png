@@ -1,0 +1,214 @@
+#
+# This file is part of OpenGFX+ Landscape.
+# OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+# OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+#
+
+#Roads
+src/gfx/infrastructure/road_grid_temperate.gimp.png          gfx-source/roadrail.xcf     Background BlueBorder GroundTemperate RoadTemperate GridTemperate
+src/gfx/infrastructure/road_nogrid_temperate.gimp.png        gfx-source/roadrail.xcf     Background BlueBorder GroundTemperate RoadTemperate
+src/gfx/infrastructure/road_grid_arctic.gimp.png             gfx-source/roadrail.xcf     Background BlueBorder GroundArctic    RoadTemperate GridArctic
+src/gfx/infrastructure/road_nogrid_arctic.gimp.png           gfx-source/roadrail.xcf     Background BlueBorder GroundArctic    RoadTemperate
+src/gfx/infrastructure/road_grid_snow.gimp.png               gfx-source/roadrail.xcf     Background BlueBorder GroundSnow      RoadTemperate GridSnow
+src/gfx/infrastructure/road_nogrid_snow.gimp.png             gfx-source/roadrail.xcf     Background BlueBorder GroundSnow      RoadTemperate
+src/gfx/infrastructure/road_grid_tropical.gimp.png           gfx-source/roadrail.xcf     Background BlueBorder GroundTropical  RoadTropical  GridTropical
+src/gfx/infrastructure/road_nogrid_tropical.gimp.png         gfx-source/roadrail.xcf     Background BlueBorder GroundTropical  RoadTropical
+src/gfx/infrastructure/road_grid_desert.gimp.png             gfx-source/roadrail.xcf     Background BlueBorder GroundDesert    RoadTropical  GridDesert
+src/gfx/infrastructure/road_nogrid_desert.gimp.png           gfx-source/roadrail.xcf     Background BlueBorder GroundDesert    RoadTropical
+src/gfx/infrastructure/road_grid_town_temperate.gimp.png     gfx-source/roadrail.xcf     Background BlueBorder GroundTown      RoadTemperate GridTown
+src/gfx/infrastructure/road_nogrid_town_temperate.gimp.png   gfx-source/roadrail.xcf     Background BlueBorder GroundTown      RoadTemperate
+src/gfx/infrastructure/road_grid_town_tropical.gimp.png      gfx-source/roadrail.xcf     Background BlueBorder GroundTown      RoadTropical  GridTown
+src/gfx/infrastructure/road_nogrid_town_tropical.gimp.png    gfx-source/roadrail.xcf     Background BlueBorder GroundTown      RoadTropical
+src/gfx/infrastructure/road_grid_toyland.gimp.png            gfx-source/roadrail.xcf     Background BlueBorder GroundToyland   RoadTropical  GridToyland
+src/gfx/infrastructure/road_nogrid_toyland.gimp.png          gfx-source/roadrail.xcf     Background BlueBorder GroundToyland   RoadTropical
+
+# Rail
+src/gfx/infrastructure/rail_grid_temperate.gimp.png       gfx-source/roadrail.xcf     Background BlueBorder GroundTemperate RailBalast RailSleepers RailTracks GridTemperate
+src/gfx/infrastructure/rail_nogrid_temperate.gimp.png     gfx-source/roadrail.xcf     Background BlueBorder GroundTemperate RailBalast RailSleepers RailTracks
+src/gfx/infrastructure/rail_grid_arctic.gimp.png          gfx-source/roadrail.xcf     Background BlueBorder GroundArctic    RailBalast RailSleepers RailTracks GridArctic
+src/gfx/infrastructure/rail_nogrid_arctic.gimp.png        gfx-source/roadrail.xcf     Background BlueBorder GroundArctic    RailBalast RailSleepers RailTracks
+src/gfx/infrastructure/rail_grid_snow.gimp.png            gfx-source/roadrail.xcf     Background BlueBorder GroundSnow      RailBalast RailSleepers RailTracks GridSnow
+src/gfx/infrastructure/rail_nogrid_snow.gimp.png          gfx-source/roadrail.xcf     Background BlueBorder GroundSnow      RailBalast RailSleepers RailTracks
+src/gfx/infrastructure/rail_grid_tropical.gimp.png        gfx-source/roadrail.xcf     Background BlueBorder GroundTropical  RailBalast RailSleepers RailTracks GridTropical
+src/gfx/infrastructure/rail_nogrid_tropical.gimp.png      gfx-source/roadrail.xcf     Background BlueBorder GroundTropical  RailBalast RailSleepers RailTracks
+src/gfx/infrastructure/rail_grid_desert.gimp.png          gfx-source/roadrail.xcf     Background BlueBorder GroundDesert    RailBalast RailSleepers RailTracks GridDesert
+src/gfx/infrastructure/rail_nogrid_desert.gimp.png        gfx-source/roadrail.xcf     Background BlueBorder GroundDesert    RailBalast RailSleepers RailTracks
+
+src/gfx/infrastructure/levelcrossing_rail_open_grid_temperate.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate RailBalast RailSleepers RailTracks LightsOff RoadTemperate GridTemperate
+src/gfx/infrastructure/levelcrossing_rail_open_nogrid_temperate.gimp.png  gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate RailBalast RailSleepers RailTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_rail_open_grid_arctic.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    RailBalast RailSleepers RailTracks LightsOff RoadTemperate GridArctic
+src/gfx/infrastructure/levelcrossing_rail_open_nogrid_arctic.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    RailBalast RailSleepers RailTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_rail_open_grid_snow.gimp.png         gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      RailBalast RailSleepers RailTracks LightsOff RoadTemperate GridSnow
+src/gfx/infrastructure/levelcrossing_rail_open_nogrid_snow.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      RailBalast RailSleepers RailTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_rail_open_grid_tropical.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  RailBalast RailSleepers RailTracks LightsOff RoadTropical  GridTropical
+src/gfx/infrastructure/levelcrossing_rail_open_nogrid_tropical.gimp.png   gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  RailBalast RailSleepers RailTracks LightsOff RoadTropical
+src/gfx/infrastructure/levelcrossing_rail_open_grid_desert.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    RailBalast RailSleepers RailTracks LightsOff RoadTropical  GridDesert
+src/gfx/infrastructure/levelcrossing_rail_open_nogrid_desert.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    RailBalast RailSleepers RailTracks LightsOff RoadTropical
+src/gfx/infrastructure/levelcrossing_rail_open_grid_toyland.gimp.png      gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   RailBalast RailSleepers RailTracks LightsOff RoadTropical  GridToyland
+src/gfx/infrastructure/levelcrossing_rail_open_nogrid_toyland.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   RailBalast RailSleepers RailTracks LightsOff RoadTropical
+src/gfx/infrastructure/levelcrossing_rail_open_grid_town_temperate.gimp.png         gfx-source/roadrail.xcf  Background BlueBorder GroundTown      RailBalast RailSleepers RailTracks LightsOff RoadTemperate GridTown
+src/gfx/infrastructure/levelcrossing_rail_open_nogrid_town_temperate.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundTown      RailBalast RailSleepers RailTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_rail_open_grid_town_tropical.gimp.png          gfx-source/roadrail.xcf  Background BlueBorder GroundTown      RailBalast RailSleepers RailTracks LightsOff RoadTropical  GridTown
+src/gfx/infrastructure/levelcrossing_rail_open_nogrid_town_tropical.gimp.png        gfx-source/roadrail.xcf  Background BlueBorder GroundTown      RailBalast RailSleepers RailTracks LightsOff RoadTropical
+
+src/gfx/infrastructure/levelcrossing_rail_closed_grid_temperate.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate RailBalast RailSleepers RailTracks LightsOn RoadTemperate GridTemperate
+src/gfx/infrastructure/levelcrossing_rail_closed_nogrid_temperate.gimp.png  gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate RailBalast RailSleepers RailTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_rail_closed_grid_arctic.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    RailBalast RailSleepers RailTracks LightsOn RoadTemperate GridArctic
+src/gfx/infrastructure/levelcrossing_rail_closed_nogrid_arctic.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    RailBalast RailSleepers RailTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_rail_closed_grid_snow.gimp.png         gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      RailBalast RailSleepers RailTracks LightsOn RoadTemperate GridSnow
+src/gfx/infrastructure/levelcrossing_rail_closed_nogrid_snow.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      RailBalast RailSleepers RailTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_rail_closed_grid_tropical.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  RailBalast RailSleepers RailTracks LightsOn RoadTropical  GridTropical
+src/gfx/infrastructure/levelcrossing_rail_closed_nogrid_tropical.gimp.png   gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  RailBalast RailSleepers RailTracks LightsOn RoadTropical
+src/gfx/infrastructure/levelcrossing_rail_closed_grid_desert.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    RailBalast RailSleepers RailTracks LightsOn RoadTropical  GridDesert
+src/gfx/infrastructure/levelcrossing_rail_closed_nogrid_desert.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    RailBalast RailSleepers RailTracks LightsOn RoadTropical
+src/gfx/infrastructure/levelcrossing_rail_closed_grid_toyland.gimp.png      gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   RailBalast RailSleepers RailTracks LightsOn RoadTropical  GridToyland
+src/gfx/infrastructure/levelcrossing_rail_closed_nogrid_toyland.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   RailBalast RailSleepers RailTracks LightsOn RoadTropical
+src/gfx/infrastructure/levelcrossing_rail_closed_grid_town_temperate.gimp.png         gfx-source/roadrail.xcf  Background BlueBorder GroundTown      RailBalast RailSleepers RailTracks LightsOn RoadTemperate GridTown
+src/gfx/infrastructure/levelcrossing_rail_closed_nogrid_town_temperate.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundTown      RailBalast RailSleepers RailTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_rail_closed_grid_town_tropical.gimp.png          gfx-source/roadrail.xcf  Background BlueBorder GroundTown      RailBalast RailSleepers RailTracks LightsOn RoadTropical  GridTown
+src/gfx/infrastructure/levelcrossing_rail_closed_nogrid_town_tropical.gimp.png        gfx-source/roadrail.xcf  Background BlueBorder GroundTown      RailBalast RailSleepers RailTracks LightsOn RoadTropical
+
+src/gfx/infrastructure/tunnel_rail_grid_temperate.gimp.png                            gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate RailTunnel_Temperate GridTemperate
+src/gfx/infrastructure/tunnel_rail_grid_arctic.gimp.png                               gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    RailTunnel_Arctic    GridArctic
+src/gfx/infrastructure/tunnel_rail_grid_snow.gimp.png                                 gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      RailTunnel_Snow      GridSnow
+src/gfx/infrastructure/tunnel_rail_grid_tropical.gimp.png                             gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  RailTunnel_Tropical  GridTropical
+src/gfx/infrastructure/tunnel_rail_grid_desert.gimp.png                               gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    RailTunnel_Desert    GridDesert
+src/gfx/infrastructure/tunnel_rail_grid_toyland.gimp.png                              gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   RailTunnel_Toyland   GridToyland
+src/gfx/infrastructure/tunnel_rail_nogrid_temperate.gimp.png                          gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate RailTunnel_Temperate
+src/gfx/infrastructure/tunnel_rail_nogrid_arctic.gimp.png                             gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    RailTunnel_Arctic
+src/gfx/infrastructure/tunnel_rail_nogrid_snow.gimp.png                               gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      RailTunnel_Snow
+src/gfx/infrastructure/tunnel_rail_nogrid_tropical.gimp.png                           gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  RailTunnel_Tropical
+src/gfx/infrastructure/tunnel_rail_nogrid_desert.gimp.png                             gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    RailTunnel_Desert
+src/gfx/infrastructure/tunnel_rail_nogrid_toyland.gimp.png                            gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   RailTunnel_Toyland
+
+# Monorail
+src/gfx/infrastructure/monorail_grid_temperate.gimp.png       gfx-source/roadrail.xcf     Background BlueBorder GroundTemperate MonorailBalast MonorailSleepers MonorailTracks GridTemperate
+src/gfx/infrastructure/monorail_nogrid_temperate.gimp.png     gfx-source/roadrail.xcf     Background BlueBorder GroundTemperate MonorailBalast MonorailSleepers MonorailTracks
+src/gfx/infrastructure/monorail_grid_arctic.gimp.png          gfx-source/roadrail.xcf     Background BlueBorder GroundArctic    MonorailBalast MonorailSleepers MonorailTracks GridArctic
+src/gfx/infrastructure/monorail_nogrid_arctic.gimp.png        gfx-source/roadrail.xcf     Background BlueBorder GroundArctic    MonorailBalast MonorailSleepers MonorailTracks
+src/gfx/infrastructure/monorail_grid_snow.gimp.png            gfx-source/roadrail.xcf     Background BlueBorder GroundSnow      MonorailBalast MonorailSleepers MonorailTracks GridSnow
+src/gfx/infrastructure/monorail_nogrid_snow.gimp.png          gfx-source/roadrail.xcf     Background BlueBorder GroundSnow      MonorailBalast MonorailSleepers MonorailTracks
+src/gfx/infrastructure/monorail_grid_tropical.gimp.png        gfx-source/roadrail.xcf     Background BlueBorder GroundTropical  MonorailBalast MonorailSleepers MonorailTracks GridTropical
+src/gfx/infrastructure/monorail_nogrid_tropical.gimp.png      gfx-source/roadrail.xcf     Background BlueBorder GroundTropical  MonorailBalast MonorailSleepers MonorailTracks
+src/gfx/infrastructure/monorail_grid_desert.gimp.png          gfx-source/roadrail.xcf     Background BlueBorder GroundDesert    MonorailBalast MonorailSleepers MonorailTracks GridDesert
+src/gfx/infrastructure/monorail_nogrid_desert.gimp.png        gfx-source/roadrail.xcf     Background BlueBorder GroundDesert    MonorailBalast MonorailSleepers MonorailTracks
+
+src/gfx/infrastructure/levelcrossing_monorail_open_grid_temperate.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTemperate GridTemperate
+src/gfx/infrastructure/levelcrossing_monorail_open_nogrid_temperate.gimp.png  gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_monorail_open_grid_arctic.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTemperate GridArctic
+src/gfx/infrastructure/levelcrossing_monorail_open_nogrid_arctic.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_monorail_open_grid_snow.gimp.png         gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTemperate GridSnow
+src/gfx/infrastructure/levelcrossing_monorail_open_nogrid_snow.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_monorail_open_grid_tropical.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTropical  GridTropical
+src/gfx/infrastructure/levelcrossing_monorail_open_nogrid_tropical.gimp.png   gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTropical
+src/gfx/infrastructure/levelcrossing_monorail_open_grid_desert.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTropical  GridDesert
+src/gfx/infrastructure/levelcrossing_monorail_open_nogrid_desert.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTropical
+src/gfx/infrastructure/levelcrossing_monorail_open_grid_toyland.gimp.png      gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTropical  GridToyland
+src/gfx/infrastructure/levelcrossing_monorail_open_nogrid_toyland.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTropical
+src/gfx/infrastructure/levelcrossing_monorail_open_grid_town_temperate.gimp.png         gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTemperate GridTown
+src/gfx/infrastructure/levelcrossing_monorail_open_nogrid_town_temperate.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_monorail_open_grid_town_tropical.gimp.png          gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTropical  GridTown
+src/gfx/infrastructure/levelcrossing_monorail_open_nogrid_town_tropical.gimp.png        gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MonorailBalast MonorailSleepers MonorailTracks LightsOff RoadTropical
+
+src/gfx/infrastructure/levelcrossing_monorail_closed_grid_temperate.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTemperate GridTemperate
+src/gfx/infrastructure/levelcrossing_monorail_closed_nogrid_temperate.gimp.png  gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_monorail_closed_grid_arctic.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTemperate GridArctic
+src/gfx/infrastructure/levelcrossing_monorail_closed_nogrid_arctic.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_monorail_closed_grid_snow.gimp.png         gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTemperate GridSnow
+src/gfx/infrastructure/levelcrossing_monorail_closed_nogrid_snow.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_monorail_closed_grid_tropical.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTropical  GridTropical
+src/gfx/infrastructure/levelcrossing_monorail_closed_nogrid_tropical.gimp.png   gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTropical
+src/gfx/infrastructure/levelcrossing_monorail_closed_grid_desert.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTropical  GridDesert
+src/gfx/infrastructure/levelcrossing_monorail_closed_nogrid_desert.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTropical
+src/gfx/infrastructure/levelcrossing_monorail_closed_grid_toyland.gimp.png      gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTropical  GridToyland
+src/gfx/infrastructure/levelcrossing_monorail_closed_nogrid_toyland.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTropical
+src/gfx/infrastructure/levelcrossing_monorail_closed_grid_town_temperate.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTemperate GridTown
+src/gfx/infrastructure/levelcrossing_monorail_closed_nogrid_town_temperate.gimp.png   gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_monorail_closed_grid_town_tropical.gimp.png      gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTropical  GridTown
+src/gfx/infrastructure/levelcrossing_monorail_closed_nogrid_town_tropical.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MonorailBalast MonorailSleepers MonorailTracks LightsOn RoadTropical
+
+src/gfx/infrastructure/tunnel_monorail_grid_temperate.gimp.png                        gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MonorailTunnel GridTemperate
+src/gfx/infrastructure/tunnel_monorail_grid_arctic.gimp.png                           gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MonorailTunnel GridArctic
+src/gfx/infrastructure/tunnel_monorail_grid_snow.gimp.png                             gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MonorailTunnel GridSnow
+src/gfx/infrastructure/tunnel_monorail_grid_tropical.gimp.png                         gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MonorailTunnel GridTropical
+src/gfx/infrastructure/tunnel_monorail_grid_desert.gimp.png                           gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MonorailTunnel GridDesert
+src/gfx/infrastructure/tunnel_monorail_grid_toyland.gimp.png                          gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MonorailTunnel GridToyland
+src/gfx/infrastructure/tunnel_monorail_nogrid_temperate.gimp.png                      gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MonorailTunnel
+src/gfx/infrastructure/tunnel_monorail_nogrid_arctic.gimp.png                         gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MonorailTunnel
+src/gfx/infrastructure/tunnel_monorail_nogrid_snow.gimp.png                           gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MonorailTunnel
+src/gfx/infrastructure/tunnel_monorail_nogrid_tropical.gimp.png                       gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MonorailTunnel
+src/gfx/infrastructure/tunnel_monorail_nogrid_desert.gimp.png                         gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MonorailTunnel
+src/gfx/infrastructure/tunnel_monorail_nogrid_toyland.gimp.png                        gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MonorailTunnel
+
+# Maglev
+src/gfx/infrastructure/maglev_grid_temperate.gimp.png       gfx-source/roadrail.xcf     Background BlueBorder GroundTemperate MaglevBalast MaglevSleepers MaglevTracks GridTemperate
+src/gfx/infrastructure/maglev_nogrid_temperate.gimp.png     gfx-source/roadrail.xcf     Background BlueBorder GroundTemperate MaglevBalast MaglevSleepers MaglevTracks
+src/gfx/infrastructure/maglev_grid_arctic.gimp.png          gfx-source/roadrail.xcf     Background BlueBorder GroundArctic    MaglevBalast MaglevSleepers MaglevTracks GridArctic
+src/gfx/infrastructure/maglev_nogrid_arctic.gimp.png        gfx-source/roadrail.xcf     Background BlueBorder GroundArctic    MaglevBalast MaglevSleepers MaglevTracks
+src/gfx/infrastructure/maglev_grid_snow.gimp.png            gfx-source/roadrail.xcf     Background BlueBorder GroundSnow      MaglevBalast MaglevSleepers MaglevTracks GridSnow
+src/gfx/infrastructure/maglev_nogrid_snow.gimp.png          gfx-source/roadrail.xcf     Background BlueBorder GroundSnow      MaglevBalast MaglevSleepers MaglevTracks
+src/gfx/infrastructure/maglev_grid_tropical.gimp.png        gfx-source/roadrail.xcf     Background BlueBorder GroundTropical  MaglevBalast MaglevSleepers MaglevTracks GridTropical
+src/gfx/infrastructure/maglev_nogrid_tropical.gimp.png      gfx-source/roadrail.xcf     Background BlueBorder GroundTropical  MaglevBalast MaglevSleepers MaglevTracks
+src/gfx/infrastructure/maglev_grid_desert.gimp.png          gfx-source/roadrail.xcf     Background BlueBorder GroundDesert    MaglevBalast MaglevSleepers MaglevTracks GridDesert
+src/gfx/infrastructure/maglev_nogrid_desert.gimp.png        gfx-source/roadrail.xcf     Background BlueBorder GroundDesert    MaglevBalast MaglevSleepers MaglevTracks
+
+src/gfx/infrastructure/levelcrossing_maglev_open_grid_temperate.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTemperate GridTemperate
+src/gfx/infrastructure/levelcrossing_maglev_open_nogrid_temperate.gimp.png  gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_maglev_open_grid_arctic.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTemperate GridArctic
+src/gfx/infrastructure/levelcrossing_maglev_open_nogrid_arctic.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_maglev_open_grid_snow.gimp.png         gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTemperate GridSnow
+src/gfx/infrastructure/levelcrossing_maglev_open_nogrid_snow.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_maglev_open_grid_tropical.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTropical  GridTropical
+src/gfx/infrastructure/levelcrossing_maglev_open_nogrid_tropical.gimp.png   gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTropical
+src/gfx/infrastructure/levelcrossing_maglev_open_grid_desert.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTropical  GridDesert
+src/gfx/infrastructure/levelcrossing_maglev_open_nogrid_desert.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTropical
+src/gfx/infrastructure/levelcrossing_maglev_open_grid_toyland.gimp.png      gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTropical  GridToyland
+src/gfx/infrastructure/levelcrossing_maglev_open_nogrid_toyland.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTropical
+src/gfx/infrastructure/levelcrossing_maglev_open_grid_town_temperate.gimp.png         gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTemperate GridTown
+src/gfx/infrastructure/levelcrossing_maglev_open_nogrid_town_temperate.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTemperate
+src/gfx/infrastructure/levelcrossing_maglev_open_grid_town_tropical.gimp.png          gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTropical  GridTown
+src/gfx/infrastructure/levelcrossing_maglev_open_nogrid_town_tropical.gimp.png        gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MaglevBalast MaglevSleepers MaglevTracks LightsOff RoadTropical
+
+src/gfx/infrastructure/levelcrossing_maglev_closed_grid_temperate.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTemperate GridTemperate
+src/gfx/infrastructure/levelcrossing_maglev_closed_nogrid_temperate.gimp.png  gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_maglev_closed_grid_arctic.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTemperate GridArctic
+src/gfx/infrastructure/levelcrossing_maglev_closed_nogrid_arctic.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_maglev_closed_grid_snow.gimp.png         gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTemperate GridSnow
+src/gfx/infrastructure/levelcrossing_maglev_closed_nogrid_snow.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_maglev_closed_grid_tropical.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTropical  GridTropical
+src/gfx/infrastructure/levelcrossing_maglev_closed_nogrid_tropical.gimp.png   gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTropical
+src/gfx/infrastructure/levelcrossing_maglev_closed_grid_desert.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTropical  GridDesert
+src/gfx/infrastructure/levelcrossing_maglev_closed_nogrid_desert.gimp.png     gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTropical
+src/gfx/infrastructure/levelcrossing_maglev_closed_grid_toyland.gimp.png      gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTropical  GridToyland
+src/gfx/infrastructure/levelcrossing_maglev_closed_nogrid_toyland.gimp.png    gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTropical
+src/gfx/infrastructure/levelcrossing_maglev_closed_grid_town_temperate.gimp.png         gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTemperate GridTown
+src/gfx/infrastructure/levelcrossing_maglev_closed_nogrid_town_temperate.gimp.png       gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTemperate
+src/gfx/infrastructure/levelcrossing_maglev_closed_grid_town_tropical.gimp.png          gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTropical  GridTown
+src/gfx/infrastructure/levelcrossing_maglev_closed_nogrid_town_tropical.gimp.png        gfx-source/roadrail.xcf  Background BlueBorder GroundTown      MaglevBalast MaglevSleepers MaglevTracks LightsOn RoadTropical
+
+src/gfx/infrastructure/tunnel_maglev_grid_temperate.gimp.png                        gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MaglevTunnel GridTemperate
+src/gfx/infrastructure/tunnel_maglev_grid_arctic.gimp.png                           gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MaglevTunnel GridArctic
+src/gfx/infrastructure/tunnel_maglev_grid_snow.gimp.png                             gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MaglevTunnel GridSnow
+src/gfx/infrastructure/tunnel_maglev_grid_tropical.gimp.png                         gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MaglevTunnel GridTropical
+src/gfx/infrastructure/tunnel_maglev_grid_desert.gimp.png                           gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MaglevTunnel GridDesert
+src/gfx/infrastructure/tunnel_maglev_grid_toyland.gimp.png                          gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MaglevTunnel GridToyland
+src/gfx/infrastructure/tunnel_maglev_nogrid_temperate.gimp.png                      gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate MaglevTunnel
+src/gfx/infrastructure/tunnel_maglev_nogrid_arctic.gimp.png                         gfx-source/roadrail.xcf  Background BlueBorder GroundArctic    MaglevTunnel
+src/gfx/infrastructure/tunnel_maglev_nogrid_snow.gimp.png                           gfx-source/roadrail.xcf  Background BlueBorder GroundSnow      MaglevTunnel
+src/gfx/infrastructure/tunnel_maglev_nogrid_tropical.gimp.png                       gfx-source/roadrail.xcf  Background BlueBorder GroundTropical  MaglevTunnel
+src/gfx/infrastructure/tunnel_maglev_nogrid_desert.gimp.png                         gfx-source/roadrail.xcf  Background BlueBorder GroundDesert    MaglevTunnel
+src/gfx/infrastructure/tunnel_maglev_nogrid_toyland.gimp.png                        gfx-source/roadrail.xcf  Background BlueBorder GroundToyland   MaglevTunnel
+
+src/gfx/infrastructure/railtype_tunnel_nogrid_temperate.gimp.png                    gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate RailtypeTunnel_Temperate
+src/gfx/infrastructure/railtype_tunnel_grid_temperate.gimp.png                      gfx-source/roadrail.xcf  Background BlueBorder GroundTemperate RailtypeTunnel_Temperate GridTemperate
+src/gfx/infrastructure/railtype_tunnel_nogrid_arctic.gimp.png                       gfx-source/roadrail.xcf  Background BlueBorder GroundArctic RailtypeTunnel_Arctic
+src/gfx/infrastructure/railtype_tunnel_grid_arctic.gimp.png                         gfx-source/roadrail.xcf  Background BlueBorder GroundArctic RailtypeTunnel_Arctic GridArctic
+src/gfx/infrastructure/railtype_tunnel_nogrid_snow.gimp.png                         gfx-source/roadrail.xcf  Background BlueBorder GroundSnow RailtypeTunnel_Snow
+src/gfx/infrastructure/railtype_tunnel_grid_snow.gimp.png                           gfx-source/roadrail.xcf  Background BlueBorder GroundSnow RailtypeTunnel_Snow GridSnow
+src/gfx/infrastructure/railtype_tunnel_nogrid_tropical.gimp.png                     gfx-source/roadrail.xcf  Background BlueBorder GroundTropical RailtypeTunnel_Tropical
+src/gfx/infrastructure/railtype_tunnel_grid_tropical.gimp.png                       gfx-source/roadrail.xcf  Background BlueBorder GroundTropical RailtypeTunnel_Tropical GridTropical
+src/gfx/infrastructure/railtype_tunnel_nogrid_desert.gimp.png                       gfx-source/roadrail.xcf  Background BlueBorder GroundDesert RailtypeTunnel_Desert
+src/gfx/infrastructure/railtype_tunnel_grid_desert.gimp.png                         gfx-source/roadrail.xcf  Background BlueBorder GroundDesert RailtypeTunnel_Desert GridDesert
+src/gfx/infrastructure/railtype_tunnel_nogrid_toyland.gimp.png                      gfx-source/roadrail.xcf  Background BlueBorder GroundToyland RailtypeTunnel_Toyland
+src/gfx/infrastructure/railtype_tunnel_grid_toyland.gimp.png                        gfx-source/roadrail.xcf  Background BlueBorder GroundToyland RailtypeTunnel_Toyland GridToyland

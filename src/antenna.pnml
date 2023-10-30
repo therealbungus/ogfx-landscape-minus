@@ -1,0 +1,83 @@
+/*
+ * This file is part of OpenGFX+ Landscape.
+ * OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+ * OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#define var_groundsprite 1
+
+// Spriteset of OpenGFX antenna
+spriteset (antenna_opengfx, "src/gfx/airports.png") { [  98,  472,  63,  90, -30, -66] }
+
+spritelayout antenna_purchase_layout {
+	ground {
+		// normal ground sprite - always draw
+		sprite: GROUNDSPRITE_NORMAL;
+	}
+	building {
+		sprite: antenna_opengfx;
+	}
+}
+
+spritelayout antenna_layout {
+	ground {
+		// normal ground sprite - always draw
+		sprite: LOAD_TEMP(var_groundsprite);
+	}
+	building {
+		sprite: antenna_opengfx;
+	}
+}
+
+
+switch (FEAT_OBJECTS, SELF, antenna_arctic_decide_snow, [
+			DECIDE_GROUND_ARCTIC
+		]) {
+	antenna_layout;
+}
+switch (FEAT_OBJECTS, SELF, antenna_tropic_decide_ground, [
+			DECIDE_GROUND_TROPICAL
+		]) {
+	antenna_layout;
+}
+switch (FEAT_OBJECTS, SELF, antenna_other_decide_ground, [
+			DECIDE_GROUND_NORMAL
+		]) {
+	antenna_layout;
+}
+
+switch (FEAT_OBJECTS, SELF, antenna_decide_climate,
+		[
+			STORE_TEMP(GROUNDSPRITE_NORMAL, var_groundsprite), // + slope_to_sprite_offset(nearby_tile_slope(0,0)), 1),
+			climate
+		]) {
+	CLIMATE_ARCTIC: antenna_arctic_decide_snow;
+	CLIMATE_TROPIC: antenna_tropic_decide_ground;
+	antenna_other_decide_ground;
+}
+
+
+item(FEAT_OBJECTS, antenna) {
+	property {
+		class:                  "INFR";
+		classname:              string(STR_NAME_OBJCLASS_INFRASTRUCTURE);
+		name:                   string(STR_NAME_ANTENNA);
+		climates_available:     ALL_CLIMATES;
+		size:                   [1, 1];
+		build_cost_multiplier:  10;
+		remove_cost_multiplier: 60;
+		introduction_date:      date(1950,1,1);
+		end_of_life_date:       0xFFFFFFFF;
+		object_flags:           0;
+		height:                 12; // * 8 = 96px
+		num_views:              1;
+	}
+	graphics {
+		purchase:            antenna_purchase_layout;
+		additional_text:     return string(STR_NAME_ANTENNA);
+		antenna_decide_climate;
+	}
+}
+
+#undef var_groundsprite

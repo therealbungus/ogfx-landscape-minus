@@ -1,0 +1,148 @@
+Changelog OpenGFX+ Landscape
+============================
+
+Version 1.1.2
+=============
+- Feature: Italian Translation
+- Update: Translations for Latin, Russian, and Korean
+- Fix: Height of antenna and lighthouse was much too high
+
+
+
+Version 1.1.1
+=============
+- Feature: New translations into Latin and French
+- Feature: Translation updates for English (US), Scotish Gaelic, and Spanish
+- Fix: No proper ground tile for antenna object in temperate and toyland climate (issue #2311)
+
+
+
+Version 1.1.0
+=============
+- Feature: Place around 50 rocky tiles per 256² map
+- Feature: Allow to place up to 16 wind powerplants upon map creation per 256² map
+- Feature: Brick foundations
+- Feature: Add foundations with mossy gray stone (issue #6516)
+- Feature: Add English (US) and Korean translations
+- Feature: Updates for Catalan, Dutch, Finnish, German, Hungarian, Korean, Croatian,
+    Norwegian bokmal, Russian, Scotish Gaelic and Spanish translations
+- Feature: Support different max heightlevels with snowline algorithm
+- Change: [Makefile] New versioning scheme
+- Fix: Transition states from bare ground to grass/snow/desert had been lost (issue #7202)
+- Fix: Some left over water in arctic steep slope and bad tile borders for some snow transitions
+
+
+
+Version 1.0.1
+=============
+- Fix: Basesprites for railtype tunnels were not replaced (issue #5741)
+- Feature: Catalan (juanjo), Croatian (Voyager1), Hungarian (zaza), Indonesian (UseYourIllusion, Yoursnotmine), Scotish Gaelic (GunChleoc) and Spanish (SilverSurferZzZ)
+
+
+
+Version 1.0.0
+=============
+- Feature: Optional gridded versions of landscape tiles
+- Feature: Parameter which allows to disable replacing field tiles
+- Feature: Parameter which allows to skip all terrain modifications (for those who only want the objects)
+- Feature: Parameter to allow selection of foundations (issue #3317)
+- Feature: Parameter to allow selection of road tunnel sprites
+- Feature: Snow-aware buoy
+- Feature: Rocky tiles as landscape objects
+- Feature: Communication tower as NewObject
+- Feature: Light house as NewObject (issue #2311)
+- Feature: New road tunnels (issue #5555, issue #3250) (V453000)
+- Feature: Ingame link to project website
+- Feature: [wind turbine] Swell around off-shore wind turbines (issue #3306)
+- Feature: [wind turbine] Allow to build wind turbines without foundations and improve their ground awareness
+- Feature: [company land] Draw shore sprites when built on shores (OpenTTD 1.4.0, r25230+)
+- Feature: [rivers] More curvature for rivers
+- Feature: [rivers] New river sprites, now also for alpine climate
+- Feature: [rivers] Canals for all climates
+- Feature: [rivers] Different water for rivers and canals
+- Feature: Dutch translation
+- Feature: [Makefile] Translation status reports (Alberth)
+- Feature: [Makefile] Add compression xz and allow source bundles in different compression formats, depreciated target bundel_src is aliased to bundle_gsrc (still the same)
+- Change: Double negatives are bad. Invert gridline parameter
+- Change: New sprite for desert transition
+- Change: Don't draw fences for fenced land when bordering a flat sea tile
+- Change: Alpine setting will only be effective in arctic climate (issue #3049)
+- Change: Rework readme so that it is better readable ingame
+- Change: Rail tunnel sprites, with and without grid, generated from source file to better match all grounds (issue #5741)
+- Change: [Makefile] Install the tar instead of the individual files in order to support ingame display of readme files
+- Change: [Makefile] Rework install paths and include a default for cygwin installs.
+- Change: [Makefile] Update to make-nml r47
+- Change: [Makefile] Install into the NewGRF dir
+- Fix: Revise snowline height parameters (issue #3877)
+- Fix: Gridless roads in toyland climate
+- Fix: Gridless sprites for monorail. (issue #5180)
+- Fix: Sprites for town roads and level crossings
+- Fix: Don't warn anymore that alpine climate doesn't work with the grid option
+- Fix: Use fitting water when the coast tiles are re-defined
+- Fix: [company_land] Don't have trees grow on water
+- Fix: [company land] Cacti don't grow at the sea shore
+- Fix: [company land] Still draw fences around company land when bordering a coast tiles
+- Fix: [wind turbine] Don't show dirt around wind turbines when built on sea (issue #3295)
+- Fix: [wind turbine] Give proper error message if wind turbines are built on adjacent tiles (issue #3277)
+- Fix: [wind turbine] Wind turbine animation had a duplicate sprite making it stop occasionally (issue #4853)
+- Fix: [Makefile] Update version file when using 'make install'
+
+
+
+Version 0.2.3
+=============
+- Feature: Add a view to fenced land which grows a tree on the tile
+- Change: Add the existing gridless sprites for roads and rails to alpine climate (issue #3047)
+- Add: Russian translation (akasoft)
+- Add: German translation
+- Add: Some compatibility check for other newgrfs
+- Fix: Typo in template name (issue #3050)
+- Fix: OpenTTD version check was broken
+
+
+
+Version 0.2.2
+=============
+- Feature: Add fenced, plain land tiles for all terrains and slopes (formerly known as company land)
+- Feature: Make the 'company land' visible in transparent mode
+- Feature: No-grid versions of roads
+- Feature: Gridless version of rail tracks
+- Feature: Maglev tracks without grid lines
+- Change: Build foundations under wind turbines thus that they can be build on slopes
+- Change: Improve base of wind turbine
+- Change: Update the shore sprites to OpenGFX' new version thereof
+- Change: Nicer purchase list preview for fenced land and better bounding boxes for fences
+- Doc: Update information about minimum required NML version and some credits
+- Add: Allow company land also on steep slopes and document the slope values in the grpahics file
+
+
+
+Version 0.2.1
+=============
+- Fix: GRF description gave outdated link
+- Fix #2407: Alpine ground sprites had (a lot) animated colours
+
+
+
+Version 0.2.0
+=============
+- Feature: Variable and configurable sinoidal snowline
+- Feature: Alpine landscape as an alternative to arctic landscape
+- Fix: Naming the object class is of advantage, too
+- Fix #2314: Increase building costs for wind turbine
+
+
+
+Version 0.1.1
+=============
+-Fix: Wind turbine placement rules
+-Fix: Name the object class
+
+
+
+Version 0.1.0
+=============
+- Feature: Wind powerplant as NewObject
+- Feature: Allow to replace the telecomunication tower by a rock
+- Feature: Allow to disable gridlines via parameter (default=no grids)
+  This does NOT yet work for roads and rail tracks

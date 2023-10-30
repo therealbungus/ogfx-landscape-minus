@@ -1,0 +1,66 @@
+##grflangid 0x01
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} Modifies landscape in OpenGFX style.{}Programming: {SILVER}planetmaker{}{BLACK}Graphics: {SILVER}Zephyris and others{}{BLACK}License: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}You disabled the default fences in the {RED}{STRING}{WHITE}. Thus fenced land won't show fences.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}You changed the default fences in {RED}{STRING}{WHITE}. Thus fenced land will show different fences.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Alpine Climate only works in arctic climate. Using default climate.
+
+STR_PARAM_GRID                                                  :Show gridlines
+STR_PARAM_GRID_DESC                                             :This setting allows to replace all ground sprites such that the landscape is painted (mostly) without grid lines.
+STR_PARAM_TRANSMITTER                                           :Replace the transmitter tower by a rock
+STR_PARAM_TRANSMITTER_DESC                                      :Enable to replace the transmitter tower by a rock (useful for early scenarios without telecomunication towers)
+STR_PARAM_PROVIDE_TERRAIN                                       :Provide groundsprites
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Replace all ground tiles, irrespective of grid setting. If disabled, only the objects within this set will be provided.
+STR_PARAM_PROVIDE_FIELDS                                        :Provide field sprites
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Replace all farm field tiles, irrespective of grid setting. If disabled, farm field tiles will not be replaced. This parameter is ignored, if the 'provide groundsprites' parameter is disabled.
+
+STR_PARAM_LANDSCAPE                                             :Landscape type
+STR_PARAM_LANDSCAPE_DESC                                        :Select the landscape (ground tile) type
+STR_PARAM_LANDSCAPE_NORMAL                                      :normal (according to climate)
+STR_PARAM_LANDSCAPE_ALPINE                                      :alpine (temperate grass in arctic climate)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :temperate (not implemented)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :arctic (not implemented)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :tropical (not implemented)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :toyland (not implemented)
+
+STR_PARAM_ROAD_TUNNELS                                          :Road tunnels
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Select the type of road tunnels to use
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :gray concrete
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :wide gray concrete
+STR_PARAM_ROAD_TUNNELS_OLD                                      :brownish concrete
+
+STR_PARAM_FOUNDATIONS                                           :Type of foundation
+STR_PARAM_FOUNDATIONS_DESC                                      :Select the foundations to use. You can choose the default ones by the climate or explicitly use the foundations from another climate. Defaults are:{}rock (temperate), wooden wall (arctic), concrete (tropical) and painted concrete (toyland).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :normal (according to climate)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :temperate (rock)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :arctic (wooden wall)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :tropical (concrete)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :toyland
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :gray stone
+STR_PARAM_FOUNDATIONS_BRICKS                                    :bricks
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :mossy gray stone
+
+STR_PARAM_SNOW_JANUARY                                          :Snow line in mid January
+STR_PARAM_SNOW_JANUARY_DESC                                     :Snow line in mid January (given as tile height). Tiles above this level will be snowy. For OpenTTD versions earlier than 1.5.0 or r27010 no tile can be higher than 15.
+STR_PARAM_SNOW_JULY                                             :Snow line in mid July
+STR_PARAM_SNOW_JULY_DESC                                        :Snow line in mid July (given as tile height). Tiles above this level will be snowy. For OpenTTD versions earlier than 1.5.0 or r27010 no tile can be higher than 15.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (everywhere, coasts will never be snowy)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (nearly everywhere)
+STR_PARAM_SNOW_NOWHERE                                          :255 (nowhere)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastructure
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Landscape elements
+
+STR_NAME_WIND_TURBINE                                           :Wind turbine
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Wind turbine is too close by
+STR_NAME_COMPANY_LAND                                           :Fenced land
+STR_NAME_ANTENNA                                                :Communication tower
+STR_NAME_LIGHTHOUSE                                             :Light house
+
+STR_NAME_ROCKY_LAND                                             :Rocky land

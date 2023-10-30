@@ -1,0 +1,57 @@
+/*
+ * This file is part of OpenGFX+ Landscape.
+ * OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+ * OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#define var_groundsprite 1
+#define var_tree_sprite 10
+
+/*
+ * General procedure to obtain the ground tile:
+ *
+ * For normal ground tiles:
+ * (previous spriteID) + (previous spriteID != 0) * (test for condition) * (spriteID for condition)
+ *
+ * Afterwards test for shore and overwrite previous spriteID (OpenTTD 1.4.0.r25230)
+ */
+
+#define DECIDE_GROUND_ARCTIC \
+			STORE_TEMP( (nearby_tile_height(0, 0) < (snowline_height - 1)) * GROUNDSPRITE_NORMAL, var_groundsprite), \
+			STORE_TEMP( LOAD_TEMP(var_groundsprite) + (LOAD_TEMP(var_groundsprite) == 0) * 4493 * (nearby_tile_height(0, 0) <  (snowline_height + 0)), var_groundsprite), \
+			STORE_TEMP( LOAD_TEMP(var_groundsprite) + (LOAD_TEMP(var_groundsprite) == 0) * 4512 * (nearby_tile_height(0, 0) <  (snowline_height + 1)), var_groundsprite), \
+			STORE_TEMP( LOAD_TEMP(var_groundsprite) + (LOAD_TEMP(var_groundsprite) == 0) * 4531 * (nearby_tile_height(0, 0) <  (snowline_height + 2)), var_groundsprite), \
+			STORE_TEMP( LOAD_TEMP(var_groundsprite) + (LOAD_TEMP(var_groundsprite) == 0) * 4550 * (nearby_tile_height(0, 0) >= (snowline_height + 2)), var_groundsprite)
+
+#define DECIDE_GROUND_TROPICAL \
+			STORE_TEMP( (nearby_tile_terrain_type(0,0) == TILETYPE_DESERT) * GROUNDSPRITE_DESERT, var_groundsprite), \
+			STORE_TEMP( LOAD_TEMP(var_groundsprite) + (LOAD_TEMP(var_groundsprite) == 0) * 4512 * (nearby_tile_terrain_type( 1, 0) == TILETYPE_DESERT), var_groundsprite), \
+			STORE_TEMP( LOAD_TEMP(var_groundsprite) + (LOAD_TEMP(var_groundsprite) == 0) * 4512 * (nearby_tile_terrain_type(-1, 0) == TILETYPE_DESERT), var_groundsprite), \
+			STORE_TEMP( LOAD_TEMP(var_groundsprite) + (LOAD_TEMP(var_groundsprite) == 0) * 4512 * (nearby_tile_terrain_type( 0, 1) == TILETYPE_DESERT), var_groundsprite), \
+			STORE_TEMP( LOAD_TEMP(var_groundsprite) + (LOAD_TEMP(var_groundsprite) == 0) * 4512 * (nearby_tile_terrain_type( 0,-1) == TILETYPE_DESERT), var_groundsprite), \
+			STORE_TEMP( LOAD_TEMP(var_groundsprite) + (LOAD_TEMP(var_groundsprite) == 0) * GROUNDSPRITE_NORMAL, var_groundsprite)
+
+#define DECIDE_GROUND_NORMAL \
+			STORE_TEMP( GROUNDSPRITE_NORMAL, var_groundsprite)
+
+/* For steep slopes we decide to use the normal ground as the slope_to_sprite_offset fails for shore sprites with steep slopes */
+#define DECIDE_SHORE \
+STORE_TEMP( ((nearby_tile_height(0, 0) == 0) && (nearby_tile_slope(0, 0) !=  SLOPE_FLAT) && ((tile_slope & bitmask(IS_STEEP_SLOPE)) == 0) \
+			&& (openttd_version  >= version_openttd(1, 4, 0, 25230)) && \
+			((nearby_tile_water_class(-1, 0) == WATER_CLASS_SEA) || (nearby_tile_water_class(1, 0) == WATER_CLASS_SEA) || \
+			 (nearby_tile_water_class(0, -1) == WATER_CLASS_SEA) || (nearby_tile_water_class(0, 1) == WATER_CLASS_SEA))) ? base_sprite_shores : LOAD_TEMP(var_groundsprite), var_groundsprite)
+
+/*
+ * Decide on a nice tree to display. This must be run after a groundsprite
+ * ID has been chosen and stored in var_groundsprite
+ */
+
+#define DECIDE_TREE_NORMAL \
+			STORE_TEMP( 1712, var_tree_sprite)
+
+#define DECIDE_TREE_ARCTIC \
+			STORE_TEMP( (LOAD_TEMP(var_groundsprite) >= 4531) ? 1768 : 1712, var_tree_sprite)
+
+#define DECIDE_TREE_TROPICAL \
+			STORE_TEMP( (LOAD_TEMP(var_groundsprite) == GROUNDSPRITE_DESERT) ? 1915: 1887, var_tree_sprite)

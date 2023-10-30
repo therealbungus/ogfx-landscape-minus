@@ -1,0 +1,69 @@
+##grflangid 0x66
+##plural 0
+##gender m f n mp fp np
+##case abl acc dat gen
+STR_GRF_NAME                                                    :OpenGFX+ Terra {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Terra{BLACK} Mutat terram in formam OpenGFX.{}Programmatio: {SILVER}planetifex{}{BLACK}Graphica: {SILVER}Zephyris et al.{}{BLACK}Licentia: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Saepes solitae neglectae sunt a te in {RED}{STRING}{WHITE}. Ergo terra circumsepta non habebit saepes.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Mutavisti saepes solitas in {RED}{STRING}{WHITE}. Ergo terra circumsepta monstrabitur cum saepibus aliis.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Terra Alpina modo spectat ad terram arcticam. Terra erit solita.
+
+STR_PARAM_GRID                                                  :Monstrare cancellos tegularum
+STR_PARAM_GRID_DESC                                             :Haec commutat omnes spiritus terrestres ut terra monstretur (paene omnino) sine cancellis
+STR_PARAM_TRANSMITTER                                           :Mutare emissorium in saxum
+STR_PARAM_TRANSMITTER_DESC                                      :Haec mutat emissorium in saxum (utilis est scaenariis antiquis sine turribus telecommunicationis)
+STR_PARAM_PROVIDE_TERRAIN                                       :Parare spiritus terrestres
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Mutare omnes tegulas terrarum, neglegens electionem cancelli. Hac neglecta, modo ornamenta huius NewGRF parabuntur.
+STR_PARAM_PROVIDE_FIELDS                                        :Parare spiritus agrorum
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Haec mutat omnes tegulas agrorum, neglegens electionem cancelli, Si haec neglecta est, tegulae agrorum non mutabuntur. Haec neglecta est si electio "parare spiritus terrestres" etiam neglecta est.
+
+STR_PARAM_LANDSCAPE                                             :Genus terrae
+STR_PARAM_LANDSCAPE_DESC                                        :Eligere genus terrae (tegulae)
+STR_PARAM_LANDSCAPE_NORMAL                                      :solita (terram sequens)
+STR_PARAM_LANDSCAPE_ALPINE                                      :terra alpina (herba temperata in terra arctica)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :terra temperata (N/A)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :terra arctica (N/A)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :terra tropica (N/A)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :terra ludicrorum (N/A)
+
+STR_PARAM_ROAD_TUNNELS                                          :Cuniculi viarii
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Eligere cuniculos viarios adhibendos
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :cuniculi concreti cani
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :cuniculi lati concreti cani
+STR_PARAM_ROAD_TUNNELS_OLD                                      :cuniculi concreti aquili
+
+STR_PARAM_FOUNDATIONS                                           :Genus fundamentorum
+STR_PARAM_FOUNDATIONS_DESC                                      :Elige fundamenta adhibenda. Potes eligere fundamenta solita (per terram) sive fundamenta praecipua. Solita sunt:{}saxea (temperata), lignea (arctica), concreta (tropica) et concreta picta (e terra ludicrorum).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :fundamenta solita (sequentia terram)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :fundamenta temperata (saxea)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :fundamenta arctica (lignea)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :fundamenta tropica (concreta)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :fundamenta terrae ludicrorum
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :fundamenta lapidea cana
+STR_PARAM_FOUNDATIONS_BRICKS                                    :fundamenta testacea
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :fundamenta lapidea cana muscosa
+
+STR_PARAM_SNOW_JANUARY                                          :Linea nivis mense Ianuario
+STR_PARAM_SNOW_JANUARY_DESC                                     :Linea nivis mense Ianuario (altitudine tegulae). Tegulae superae niveae erunt. In editionibus OpenTTD minoribus quam 1.5.0 vel r27010, nulla tegula potest altitudine 15 superior esse.
+STR_PARAM_SNOW_JULY                                             :Linea nivis mense Iulio
+STR_PARAM_SNOW_JULY_DESC                                        :Linea nivis mense Iulio (altitudine tegulae). Tegulae superae niveae erunt. In editionibus OpenTTD minoribus quam 1.5.0 vel r27010, nulla tegula potest altitudine 15 superior esse.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (ubique, sed littora numquam nivea sunt)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (paene ubique)
+STR_PARAM_SNOW_NOWHERE                                          :255 (nullibi)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastructura
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Elementa terrae
+
+STR_NAME_WIND_TURBINE                                           :Ventimolina
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Nimis prope aliam ventimolinam est
+STR_NAME_COMPANY_LAND                                           :Terra circumsepta
+STR_NAME_ANTENNA                                                :Emissorium
+STR_NAME_LIGHTHOUSE                                             :Pharus
+
+STR_NAME_ROCKY_LAND                                             :Terra saxosa

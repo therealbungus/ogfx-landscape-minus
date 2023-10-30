@@ -1,0 +1,25 @@
+// Waterfeatures
+
+/* Always replace the sea water.
+ * It's only needed when we re-define the terrain */
+if (param_provide_terrain) {
+	if (!param_grid) {
+		replace(4061, "src/gfx/water/seashore_nogrid_temperate.gimp.png") { tmpl_level_ground(1, 1) }
+	} else {
+		replace(4061, "src/gfx/water/seashore_grid_temperate.gimp.png") { tmpl_level_ground(1, 1) }
+	}
+}
+
+/* Snowy bouy above the snowline (direct copy from OpenGFX, only
+ * available for OpenTTD > r22973 */
+spriteset(buoy_normal, "src/gfx/buoy_map.png") {	[   0,    0,  20,  20,   0,   0] }
+spriteset(buoy_snow, "src/gfx/buoy_map.png")   { [   0,   32,  24,  22,   0,   0] }
+switch( FEAT_CANALS, SELF, buoy_terrain_switch, terrain_type) {
+	TILETYPE_SNOW: buoy_snow;
+	buoy_normal;
+}
+if (openttd_version > version_openttd(1, 2, 0, 22973)) {
+	item( FEAT_CANALS, buoy, WF_BUOY) {
+		graphics { default: buoy_terrain_switch; }
+	}
+}

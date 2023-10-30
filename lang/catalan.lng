@@ -1,0 +1,68 @@
+##grflangid 0x22
+##plural 0
+##gender Masculin Femenin
+STR_GRF_NAME                                                    :OpenGFX+ Paisatges {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Paisatges{BLACK} Modifica el paisatge seguint l'estil d'OpenGFX.{}Programació: {SILVER}planetmaker{}{BLACK}Gràfics: {SILVER}Zephyris i altres{}{BLACK}Llicència: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Has desactivat les tanques per defecte en {RED}{STRING}{WHITE}. Per això el terreny tancat no mostrarà tanques.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Has canviat les tanques per defecte en {RED}{STRING}{WHITE}. Per això el terreny tancat emprarà tanques diferents.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :El clima alpí només funciona en el clima subàrtic. S'emprarà el clima per defecte.
+
+STR_PARAM_GRID                                                  :Mostra les línies de la graella
+STR_PARAM_GRID_DESC                                             :Aquesta opció permet substituir tots els sprites de caselles de sòl tal que el paisatge es mostra generalment sense línies de graella.
+STR_PARAM_TRANSMITTER                                           :Substitueix la torre repetidora per una roca
+STR_PARAM_TRANSMITTER_DESC                                      :Activa per remplaçar la torre de telecomunicacions per una roca (útil per a escenaris anteriors al 1850 sense torres de telecomunicacions)
+STR_PARAM_PROVIDE_TERRAIN                                       :Proporcionar sprites per a caselles de sòl
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Reemplaça totes les caselles de sòl, independentment de l'opció de la graella. Si es desactiva, només es proveiran els objectes de l'arxiu
+STR_PARAM_PROVIDE_FIELDS                                        :Proporcionar sprites per a camps de conreu
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Substitueix totes les caselles de camps de conreu, independentment de l'opció de graella. Si es desactiva, les caselles de conreu no seran substituïdes. Aquest paràmetre és ignorat si el paràmetre "Proveir sprites per al sòl" està desactivat.
+
+STR_PARAM_LANDSCAPE                                             :Tipus de paisatge
+STR_PARAM_LANDSCAPE_DESC                                        :Tria el tipus de paisatge (casella de sòl)
+STR_PARAM_LANDSCAPE_NORMAL                                      :normal (d'acord amb el clima)
+STR_PARAM_LANDSCAPE_ALPINE                                      :alpí (herba del paisatge temperat en el clima subàrtic)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :temperat (no implementat)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :subàrtic (no implementat)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :subtropical (no implementat)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :paisatge de joguines (no implementat)
+
+STR_PARAM_ROAD_TUNNELS                                          :Túnels de carreteres
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Selecciona el tipus de túnels de carretera a usar
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :formigó gris
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :ample i de formigó gris
+STR_PARAM_ROAD_TUNNELS_OLD                                      :formigó marronós
+
+STR_PARAM_FOUNDATIONS                                           :Tipus de fonament
+STR_PARAM_FOUNDATIONS_DESC                                      :Selecciona els fonaments a emprar. Pots escollir els disponibles per defecte per a cada clima. O explícitament usar els fonaments d'un altre clima. Per defecte són:{}roca (temperat), paret de fusta (subàrtic), formigó (subtropical) i formigó pintat (toyland).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :normals (d'acord amb el clima)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :temperat (roca)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :subàrtic (mur de fusta)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :subtropical (formigó)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :paisatge de joguines
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :pedra gris
+STR_PARAM_FOUNDATIONS_BRICKS                                    :maons
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :roca grisa molsosa
+
+STR_PARAM_SNOW_JANUARY                                          :Estatge de la neu a mitjans de gener
+STR_PARAM_SNOW_JANUARY_DESC                                     :Estatge de la neu a mitjans de gener (donat com a alçada de casella). Per damunt d'aquest nivell, les caselles estaran nevades. Per a versions d'OpenTTD anteriors a 1.5.0 o r27010, cap casella pot tenir una alçada major a 15.
+STR_PARAM_SNOW_JULY                                             :Estatge de la neu a mitjans de juliol
+STR_PARAM_SNOW_JULY_DESC                                        :Estatge de la neu a mitjans de juliol (donat com a alçada de casella). Per damunt d'aquest nivell, les caselles estaran nevades. Per a versions d'OpenTTD anteriors a 1.5.0 o r27010, cap casella pot tenir una alçada major a 15.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (pertot arreu, les costes mai estaran nevades)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (quasi pertot)
+STR_PARAM_SNOW_NOWHERE                                          :255 (enlloc)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infraestructura
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Elements del paisatge
+
+STR_NAME_WIND_TURBINE                                           :Aerogenerador
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :L'aerogenerador està massa prop per
+STR_NAME_COMPANY_LAND                                           :Terreny amb tanques
+STR_NAME_ANTENNA                                                :Torre de comunicacions
+STR_NAME_LIGHTHOUSE                                             :Far
+
+STR_NAME_ROCKY_LAND                                             :Terreny rocós

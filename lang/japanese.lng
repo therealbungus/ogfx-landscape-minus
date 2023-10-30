@@ -1,0 +1,67 @@
+##grflangid 0x39
+##plural 1
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} OpenGFX スタイルで風景を修正します。{}プログラミング: {SILVER}planetmaker{}{BLACK}グラフィック: {SILVER}Zephyris and others{}{BLACK}ライセンス: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}あなたは{RED}{STRING}{WHITE}でデフォルトのフェンスを無効化しています。従って囲われている土地はフェンスを表示しません。{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}あなたは{RED}{STRING}{WHITE}でデフォルトのフェンスを変更しています。従って囲われている土地のフェンスは異なるものになります。{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :高山気候は北極気候でのみ機能します。デフォルトの気候を使用してください。
+
+STR_PARAM_GRID                                                  :グリッド線の表示
+STR_PARAM_GRID_DESC                                             :この設定は(ほとんど)グリッド線無しで風景を描いたようなものに地面のスプライトをすべて置き換えることができます。
+STR_PARAM_TRANSMITTER                                           :電波塔を岩に置き換える
+STR_PARAM_TRANSMITTER_DESC                                      :有効にすると電波塔を岩に置き換えます (電波塔がない年代が早いシナリオで便利です)
+STR_PARAM_PROVIDE_TERRAIN                                       :地面のスプライトの供給
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :グリッドの設定にかかわらず、すべての地面のタイルを置き換えます。もし無効化した場合、オブジェクトの範囲のみこのセットは提供します。
+STR_PARAM_PROVIDE_FIELDS                                        :フィールドスプライトの提供
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :グリッド設定にかかわらず、全ての圃場のタイルを置き換えます。もし無効にした場合、圃場のタイルを置き換えません。'地面のスプライトの提供' のパラメータを無効化している場合、このパラメータは無視されます。
+
+STR_PARAM_LANDSCAPE                                             :風景タイプ
+STR_PARAM_LANDSCAPE_DESC                                        :風景 (地面のタイル) のタイプの選択
+STR_PARAM_LANDSCAPE_NORMAL                                      :ノーマル (気候に従う)
+STR_PARAM_LANDSCAPE_ALPINE                                      :高山 (北極気候での温暖な草)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :温暖 (未実装)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :北極 (未実装)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :トロピカル (未実装)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :おもちゃの国 (未実装)
+
+STR_PARAM_ROAD_TUNNELS                                          :道路のトンネル
+STR_PARAM_ROAD_TUNNELS_DESC                                     :使用する道路のトンネルのタイプの選択
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :灰色のコンクリート
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :幅広の灰色のコンクリート
+STR_PARAM_ROAD_TUNNELS_OLD                                      :茶色がかったコンクリート
+
+STR_PARAM_FOUNDATIONS                                           :基礎のタイプ
+STR_PARAM_FOUNDATIONS_DESC                                      :基礎に使うものを選択します。デフォルトの気候のものか他の気候のものを明示的に使うか選ぶことができます。デフォルトでは:{}岩 (温暖)、木の壁 (北極)、コンクリート (トロピカル) そして  ペイントしたコンクリート (おもちゃの国) です。
+STR_PARAM_FOUNDATIONS_NORMAL                                    :ノーマル (気候に従う)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :温暖 (岩)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :北極 (木の壁)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :トロピカル (コンクリート)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :おもちゃの国
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :灰色の石
+STR_PARAM_FOUNDATIONS_BRICKS                                    :レンガ
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :苔に覆われた灰色の石
+
+STR_PARAM_SNOW_JANUARY                                          :1月の中頃の雪線
+STR_PARAM_SNOW_JANUARY_DESC                                     :7月の中頃の雪線(表示されるタイルの高度)。このレベルよりも高いタイルが雪に覆われます。1.5.0 or r27010 以前のOpenTTDのバージョンでは15より高くすることはできません。
+STR_PARAM_SNOW_JULY                                             :7月の中頃の雪線
+STR_PARAM_SNOW_JULY_DESC                                        :1月の中頃の雪線(表示されるタイルの高度)。このレベルよりも高いタイルが雪に覆われます。1.5.0 or r27010 以前のOpenTTDのバージョンでは15より高くすることはできません。
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (至る所に、海岸は決して雪に覆われることはありません)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (ほとんど至る所に)
+STR_PARAM_SNOW_NOWHERE                                          :255 (どこにもない)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :インフラ
+STR_NAME_OBJCLASS_LANDSCAPE                                     :風景要素
+
+STR_NAME_WIND_TURBINE                                           :風力タービン
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :他の風力タービンに近すぎます
+STR_NAME_COMPANY_LAND                                           :囲われている土地
+STR_NAME_ANTENNA                                                :通信塔
+STR_NAME_LIGHTHOUSE                                             :灯台
+
+STR_NAME_ROCKY_LAND                                             :岩の多い土地

@@ -1,0 +1,24 @@
+/*
+ * This file is part of OpenGFX+ Landscape.
+ * OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+ * OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#define GRFID_CANADION_STATION_SET   "\43\41\54\63"
+#define GRFID_SWEDISH_RAILS          "\53\45\52\30"
+
+if (grf_future_status(GRFID_CANADION_STATION_SET)) {
+	if (param[GRFID_CANADION_STATION_SET, 0] == 0) {
+		error(ERROR, string(STR_ERR_NO_FENCES), "Canadian Station Set");
+	}
+	if (param[GRFID_CANADION_STATION_SET, 0] != 0) {
+		error(NOTICE, string(STR_WARNING_OTHER_FENCES), "Canadian Station Set");
+	}
+}
+
+if (grf_future_status(GRFID_SWEDISH_RAILS)) {
+	if (param[GRFID_SWEDISH_RAILS, 2] > 4) {
+		error(NOTICE, string(STR_WARNING_OTHER_FENCES), "Swedish Rails");
+	}
+}

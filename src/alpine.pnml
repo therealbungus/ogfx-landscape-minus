@@ -1,0 +1,391 @@
+/*
+ * This file is part of OpenGFX+ Landscape.
+ * OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+ * OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* Copy alignment straight from OpenGFX
+ * thus they fail to be true templates,
+ * but it keeps the declarations nicer */
+template tmpl_goldmine() {
+	[82, 12, 64, 31, -31, 0]
+	[162, 12, 64, 31, -31, 0]
+	[242, 12, 64, 31, -31, 0]
+	[322, 12, 64, 31, -31, 0]
+	[402, 12, 64, 31, -31, 0]
+	[482, 12, 64, 31, -31, 0]
+	[562, 12, 64, 31, -31, 0]
+	[642, 12, 64, 31, -31, 0]
+	[722, 12, 64, 31, -31, 0]
+	[2, 60, 64, 31, -31, 0]
+	[82, 60, 64, 31, -31, 0]
+	[642, 124, 64, 31, -31, 0]
+	[242, 60, 64, 31, -31, 0]
+	[322, 60, 64, 31, -31, 0]
+	[402, 60, 64, 31, -31, 0]
+	[482, 60, 64, 31, -31, 0]
+	[562, 60, 64, 42, -31, -11]
+	[642, 60, 64, 31, -31, 0]
+	[722, 60, 64, 31, -31, 0]
+	[2, 124, 64, 44, -31, -13]
+	[82, 124, 64, 31, -31, 0]
+	[162, 124, 64, 31, -31, 0]
+	[242, 124, 64, 31, -31, 0]
+	[322, 124, 64, 31, -31, 0]
+	[402, 124, 64, 31, -31, 0]
+	[2, 60, 64, 31, -31, 0]
+	[82, 60, 64, 31, -31, 0]
+	[642, 124, 64, 31, -31, 0]
+	[722, 124, 64, 31, -31, 0]
+	[2, 188, 64, 31, -31, 0]
+	[82, 188, 64, 31, -31, 0]
+	[162, 188, 64, 31, -31, 0]
+	[242, 188, 64, 52, -31, -21]
+	[322, 188, 64, 32, -31, -1]
+	[402, 188, 64, 32, -31, -1]
+	[482, 188, 64, 43, -31, -12]
+	[562, 188, 64, 31, -31, 0]
+	[642, 188, 64, 31, -31, 0]
+	[722, 188, 64, 31, -31, 0]
+	[2, 252, 64, 31, -31, 0]
+	[82, 252, 64, 31, -31, 0]
+	[162, 252, 64, 31, -31, 0]
+	[242, 252, 64, 31, -31, 0]
+	[322, 252, 64, 31, -31, 0]
+	[402, 252, 64, 31, -31, 0]
+	[482, 252, 64, 31, -31, 0]
+	[562, 252, 64, 31, -31, 0]
+	[642, 252, 64, 31, -31, 0]
+}
+
+template tmpl_temperate_rail_grid() {
+	[82, 40, 64, 31, -31, 0]
+	[162, 40, 64, 31, -31, 0]
+	[242, 40, 64, 31, -31, 0]
+	[322, 40, 64, 31, -31, 0]
+	[402, 40, 64, 31, -31, 0]
+	[482, 40, 64, 31, -31, 0]
+	[562, 40, 64, 31, -31, 0]
+	[642, 40, 64, 31, -31, 0]
+	[722, 40, 64, 31, -31, 0]
+	[2, 88, 64, 31, -31, 0]
+	[82, 88, 64, 31, -31, 0]
+	[162, 88, 64, 31, -31, 0]
+	[242, 88, 64, 39, -31, -8]
+	[322, 88, 64, 31, -31, 0]
+	[402, 88, 64, 31, -31, 0]
+	[482, 88, 64, 23, -31, 0]
+	[562, 88, 64, 31, -31, -8]
+	[642, 88, 64, 23, -31, 0]
+	[722, 88, 64, 31, -31, -8]
+	[2, 152, 64, 39, -31, -8]
+	[82, 152, 64, 39, -31, -8]
+	[162, 152, 64, 23, -31, 0]
+	[242, 152, 64, 23, -31, 0]
+	[322, 152, 64, 39, -31, -8]
+	[402, 152, 64, 31, -31, 0]
+	[482, 152, 64, 31, -31, 0]
+}
+
+template tmpl_temperate_road_grid() {
+	[434, 2568, 64, 31, -31, 0]
+	[514, 2568, 64, 31, -31, 0]
+	[594, 2568, 64, 31, -31, 0]
+	[674, 2568, 64, 31, -31, 0]
+	[2, 2632, 64, 31, -31, 0]
+	[82, 2632, 64, 31, -31, 0]
+	[162, 2632, 64, 31, -31, 0]
+	[242, 2632, 64, 31, -31, 0]
+	[322, 2632, 64, 31, -31, 0]
+	[402, 2632, 64, 31, -31, 0]
+	[482, 2632, 64, 31, -31, 0]
+	[562, 2632, 64, 39, -31, -8]
+	[642, 2632, 64, 23, -31, 0]
+	[722, 2632, 64, 23, -31, 0]
+	[2, 2696, 64, 39, -31, -8]
+	[82, 2696, 64, 31, -31, 0]
+	[162, 2696, 64, 31, -31, 0]
+	[242, 2696, 64, 31, -31, 0]
+	[322, 2696, 64, 31, -31, 0]
+}
+
+template tmpl_temperate_levelcrossing_grid() {
+	[434, 3208, 64, 31, -31, 0]
+	[514, 3208, 64, 31, -31, 0]
+	[594, 3208, 64, 31, -31, 0]
+	[674, 3208, 64, 31, -31, 0]
+}
+
+template tmpl_temperate_levelcrossing_mono_grid() {
+	[194, 3368, 64, 31, -31, 0]
+	[274, 3368, 64, 31, -31, 0]
+	[354, 3368, 64, 31, -31, 0]
+	[434, 3368, 64, 31, -31, 0]
+}
+
+template tmpl_temperate_levelcrossing_maglev_grid() {
+	[18, 3464, 64, 31, -31, 0]
+	[98, 3464, 64, 31, -31, 0]
+	[178, 3464, 64, 31, -31, 0]
+	[258, 3464, 64, 31, -31, 0]
+}
+
+template tmpl_rail_tunnels_grid() {
+	[466, 3608, 64, 39, -31, -8]
+	[546, 3608, 64, 39, -31, -38]
+	[626, 3608, 64, 23, -31, 0]
+	[706, 3608, 64, 23, -31, -30]
+	[2, 3672, 64, 23, -31, 0]
+	[82, 3672, 64, 23, -31, -30]
+	[162, 3672, 64, 39, -31, -8]
+	[242, 3672, 64, 39, -31, -38]
+	[322, 3672, 64, 39, -31, -8]
+	[402, 3672, 64, 39, -31, -38]
+	[482, 3672, 64, 23, -31, 0]
+	[562, 3672, 64, 23, -31, -30]
+	[642, 3672, 64, 23, -31, 0]
+	[722, 3672, 64, 23, -31, -30]
+	[2, 3736, 64, 39, -31, -8]
+	[82, 3736, 64, 39, -31, -38]
+	[162, 3736, 64, 39, -31, -8]
+	[242, 3736, 64, 39, -31, -38]
+	[322, 3736, 64, 23, -31, 0]
+	[402, 3736, 64, 23, -31, -30]
+	[482, 3736, 64, 23, -31, 0]
+	[562, 3736, 64, 23, -31, -30]
+	[642, 3736, 64, 39, -31, -8]
+	[722, 3736, 64, 39, -31, -38]
+}
+
+template tmpl_temperate_road_tunnels_grid() {
+	[113, 27, 64, 39, -31, -8]
+	[193, 27, 64, 39, -31, -38]
+	[653, 27, 64, 23, -31, 0]
+	[733, 27, 64, 23, -31, -30]
+	[337, 27, 64, 23, -31, 0]
+	[417, 27, 64, 23, -31, -30]
+	[877, 27, 64, 39, -31, -8]
+	[957, 27, 64, 39, -31, -38]
+}
+
+template tmpl_temperate_rough_grid() {
+	[642, 10, 64, 31, -31, 0]
+	[722, 10, 64, 31, -31, 0]
+	[2, 74, 64, 23, -31, 0]
+	[82, 74, 64, 23, -31, 0]
+	[162, 74, 64, 31, -31, 0]
+	[242, 74, 64, 31, -31, 0]
+	[322, 74, 64, 23, -31, 0]
+	[402, 74, 64, 23, -31, 0]
+	[482, 74, 64, 39, -31, -8]
+	[562, 74, 64, 39, -31, -8]
+	[642, 74, 64, 31, -31, -8]
+	[722, 74, 64, 31, -31, -8]
+	[2, 138, 64, 39, -31, -8]
+	[82, 138, 64, 39, -31, -8]
+	[162, 138, 64, 31, -31, -8]
+	[242, 138, 64, 47, -31, -16]
+	[322, 138, 64, 15, -31, 0]
+	[402, 138, 64, 31, -31, -8]
+	[482, 138, 64, 31, -31, -8]
+	[562, 138, 64, 31, -31, 0]
+	[642, 138, 64, 31, -31, 0]
+	[722, 138, 64, 31, -31, 0]
+	[2, 202, 64, 31, -31, 0]
+}
+
+template tmpl_temperate_rock_grid() {
+	[82, 202, 64, 31, -31, 0]
+	[162, 202, 64, 31, -31, 0]
+	[242, 202, 64, 23, -31, 0]
+	[322, 202, 64, 23, -31, 0]
+	[402, 202, 64, 31, -31, 0]
+	[482, 202, 64, 31, -31, 0]
+	[562, 202, 64, 23, -31, 0]
+	[642, 202, 64, 23, -31, 0]
+	[722, 202, 64, 39, -31, -8]
+	[2, 266, 64, 39, -31, -8]
+	[82, 266, 64, 31, -31, -8]
+	[162, 266, 64, 31, -31, -8]
+	[242, 266, 64, 39, -31, -8]
+	[322, 266, 64, 39, -31, -8]
+	[402, 266, 64, 31, -31, -8]
+	[482, 266, 64, 47, -31, -16]
+	[562, 266, 64, 15, -31, 0]
+	[642, 266, 64, 31, -31, -8]
+	[722, 266, 64, 31, -31, -8]
+}
+
+
+// Alpine sprites
+
+if (param_provide_terrain && (landscape_param == CLIMATE_ALPINE)) {
+	if (!param_grid) {
+
+		// Normal land:
+		replace (3981, "src/gfx/grass_nogrid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }
+
+		// bulldozed (bare) land and regeneration stages:
+		replace (3924, "src/gfx/bare03_nogrid.gimp.png") { tmpl_groundsprites(1, 1) }
+		replace (3943, "src/gfx/bare13_nogrid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }
+		replace (3962, "src/gfx/bare23_nogrid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }
+
+		// rough terrain
+		replace (4000, "src/gfx/rough_nogrid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }
+		replace (4019, "src/gfx/rough_nogrid_temperate.gimp.png") { tmpl_additional_rough(1, 1) }
+
+		// rocky terrain
+		replace (4023, "src/gfx/rocks_nogrid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }
+		replace (4042, "src/gfx/rocks_nogrid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }	//TODO replace with separate sprites
+
+		// different snow densities:
+		replace (4493, "src/gfx/snow14_nogrid_alpine.gimp.png") { tmpl_groundsprites(1,  1) }
+		replace (4512, "src/gfx/snow24_nogrid_alpine.gimp.png") { tmpl_groundsprites(1,  1) }
+		replace (4531, "src/gfx/snow34_nogrid_alpine.gimp.png") { tmpl_groundsprites(1,  1) }
+		replace (4550, "src/gfx/snow_nogrid.gimp.png")          { tmpl_groundsprites(1,  1) }
+
+		// shore sprites
+		replace (4062, "src/gfx/water/seashore_nogrid_temperate.gimp.png") { tmpl_8shore_tiles(1,    1) }
+		replacenew (COAST_TILES, "src/gfx/water/seashore_nogrid_temperate.gimp.png") { tmpl_16shore_tiles(1,    1) }
+
+		// roads
+		replace (1313, "src/gfx/infrastructure/road_nogrid_town_temperate.gimp.png") { tmpl_infrastructure_road() }
+		replace (1332, "src/gfx/infrastructure/road_nogrid_temperate.gimp.png") { tmpl_infrastructure_road() }
+		replace (1351, "src/gfx/infrastructure/road_nogrid_snow.gimp.png")   { tmpl_infrastructure_road() }
+
+		replace (2389, "src/gfx/infrastructure_road_tunnel_new_nogrid.png") { tmpl_road_tunnels( 27) }
+		replace (2421, "src/gfx/infrastructure_road_tunnel_new_nogrid.png") { tmpl_road_tunnels(249) }
+		if (param_road_tunnels == ROAD_TUNNELS_WIDE_GRAY) {
+			replace (2389, "src/gfx/infrastructure_road_tunnel_wide_nogrid.png") { tmpl_road_tunnels( 27) }
+			replace (2421, "src/gfx/infrastructure_road_tunnel_wide_nogrid.png") { tmpl_road_tunnels(249) }
+		}
+
+		// rail tracks
+		replace (1011, "src/gfx/infrastructure/rail_nogrid_temperate.gimp.png") { tmpl_infrastructure_tracks() }
+		replace (1037, "src/gfx/infrastructure/rail_nogrid_snow.gimp.png")   { tmpl_infrastructure_tracks() }
+		replace (1093, "src/gfx/infrastructure/monorail_nogrid_temperate.gimp.png") { tmpl_infrastructure_tracks() }
+		replace (1119, "src/gfx/infrastructure/monorail_nogrid_snow.gimp.png")   { tmpl_infrastructure_tracks() }
+		replace (1175, "src/gfx/infrastructure/maglev_nogrid_temperate.gimp.png") { tmpl_infrastructure_tracks() }
+		replace (1201, "src/gfx/infrastructure/maglev_nogrid_snow.gimp.png")   { tmpl_infrastructure_tracks() }
+
+		replace (1370, "src/gfx/infrastructure/levelcrossing_rail_open_nogrid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1372, "src/gfx/infrastructure/levelcrossing_rail_closed_nogrid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1374, "src/gfx/infrastructure/levelcrossing_rail_open_nogrid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1376, "src/gfx/infrastructure/levelcrossing_rail_closed_nogrid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1378, "src/gfx/infrastructure/levelcrossing_rail_open_nogrid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1380, "src/gfx/infrastructure/levelcrossing_rail_closed_nogrid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+
+		replace (1382, "src/gfx/infrastructure/levelcrossing_monorail_open_nogrid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1384, "src/gfx/infrastructure/levelcrossing_monorail_closed_nogrid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1386, "src/gfx/infrastructure/levelcrossing_monorail_open_nogrid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1388, "src/gfx/infrastructure/levelcrossing_monorail_closed_nogrid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1390, "src/gfx/infrastructure/levelcrossing_monorail_open_nogrid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1392, "src/gfx/infrastructure/levelcrossing_monorail_closed_nogrid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+
+		replace (1394, "src/gfx/infrastructure/levelcrossing_maglev_open_nogrid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1396, "src/gfx/infrastructure/levelcrossing_maglev_closed_nogrid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1398, "src/gfx/infrastructure/levelcrossing_maglev_open_nogrid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1400, "src/gfx/infrastructure/levelcrossing_maglev_closed_nogrid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1402, "src/gfx/infrastructure/levelcrossing_maglev_open_nogrid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1404, "src/gfx/infrastructure/levelcrossing_maglev_closed_nogrid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+
+		replace (2365, "src/gfx/infrastructure/tunnel_rail_nogrid_temperate.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replace (2373, "src/gfx/infrastructure/tunnel_monorail_nogrid_temperate.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replace (2381, "src/gfx/infrastructure/tunnel_maglev_nogrid_temperate.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replace (2397, "src/gfx/infrastructure/tunnel_rail_nogrid_snow.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replace (2405, "src/gfx/infrastructure/tunnel_monorail_nogrid_snow.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replace (2413, "src/gfx/infrastructure/tunnel_maglev_nogrid_snow.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replacenew (RAILTYPE_TUNNELS, "src/gfx/infrastructure/railtype_tunnel_nogrid_temperate.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replacenew (RAILTYPE_TUNNELS, "src/gfx/infrastructure/railtype_tunnel_nogrid_snow.gimp.png", 8) { tmpl_infrastructure_railtunnels() }
+
+		// oil wells
+		replace (2173, "src/gfx/oilderrik_grid.png") { tmpl_level_ground(7, 9) }
+
+		// gold mine
+		replace (2215, "src/gfx/goldmine_temperate_grid.png") { tmpl_goldmine() }
+
+	} /* NoGrid */ else { /* Grid */
+
+		// Normal land:
+		replace (3981, "src/gfx/grass_grid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }
+
+		// bulldozed (bare) land and regeneration stages:
+		replace (3924, "src/gfx/bare03_grid.gimp.png") { tmpl_groundsprites(1, 1) }
+		replace (3943, "src/gfx/bare13_grid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }
+		replace (3962, "src/gfx/bare23_grid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }
+
+		// rough terrain
+		replace (4000, "src/gfx/rough_grid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }
+		replace (4019, "src/gfx/rough_grid_temperate.gimp.png") { tmpl_additional_rough(1, 1) }
+
+		// rocky terrain
+		replace (4023, "src/gfx/rocks_grid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }
+		replace (4042, "src/gfx/rocks_grid_temperate.gimp.png") { tmpl_groundsprites(1, 1) }	//TODO replace with separate sprites
+
+		// different snow densities:
+		replace (4493, "src/gfx/snow14_grid_alpine.gimp.png") { tmpl_groundsprites(1,  1) }
+		replace (4512, "src/gfx/snow24_grid_alpine.gimp.png") { tmpl_groundsprites(1,  1) }
+		replace (4531, "src/gfx/snow34_grid_alpine.gimp.png") { tmpl_groundsprites(1,  1) }
+		replace (4550, "src/gfx/snow_grid.gimp.png") { tmpl_groundsprites(1,  1) }
+
+		// shore sprites
+		replace (4062, "src/gfx/water/seashore_grid_temperate.gimp.png") { tmpl_8shore_tiles(1,    1) }
+		replacenew (COAST_TILES, "src/gfx/water/seashore_grid_temperate.gimp.png") { tmpl_16shore_tiles(1,    1) }
+
+		// road sprites
+		replace (1332, "src/gfx/infrastructure/road_grid_temperate.gimp.png") { tmpl_infrastructure_road() }
+		replace (1351, "src/gfx/infrastructure/road_grid_snow.gimp.png")   { tmpl_infrastructure_road() }
+		replace (1313, "src/gfx/infrastructure/road_grid_town_temperate.gimp.png") { tmpl_infrastructure_road() }
+
+		replace (2389, "src/gfx/infrastructure_road_tunnel_grid.png") { tmpl_temperate_road_tunnels_grid() }
+		if (param_road_tunnels == ROAD_TUNNELS_WIDE_GRAY) {
+			replace (2389, "src/gfx/infrastructure_road_tunnel_wide_grid.png") { tmpl_road_tunnels(101) }
+			replace (2421, "src/gfx/infrastructure_road_tunnel_wide_grid.png") { tmpl_road_tunnels(249) }
+		}
+
+		// rail tracks
+		replace (1011, "src/gfx/infrastructure/rail_grid_temperate.gimp.png") { tmpl_infrastructure_tracks() }
+		replace (1037, "src/gfx/infrastructure/rail_grid_snow.gimp.png")   { tmpl_infrastructure_tracks() }
+		replace (1093, "src/gfx/infrastructure/monorail_grid_temperate.gimp.png") { tmpl_infrastructure_tracks() }
+		replace (1119, "src/gfx/infrastructure/monorail_grid_snow.gimp.png")   { tmpl_infrastructure_tracks() }
+		replace (1175, "src/gfx/infrastructure/maglev_grid_temperate.gimp.png") { tmpl_infrastructure_tracks() }
+		replace (1201, "src/gfx/infrastructure/maglev_grid_snow.gimp.png")   { tmpl_infrastructure_tracks() }
+
+		replace (1370, "src/gfx/infrastructure/levelcrossing_rail_open_grid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1372, "src/gfx/infrastructure/levelcrossing_rail_closed_grid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1374, "src/gfx/infrastructure/levelcrossing_rail_open_grid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1376, "src/gfx/infrastructure/levelcrossing_rail_closed_grid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1378, "src/gfx/infrastructure/levelcrossing_rail_open_grid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1380, "src/gfx/infrastructure/levelcrossing_rail_closed_grid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+
+		replace (1382, "src/gfx/infrastructure/levelcrossing_monorail_open_grid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1384, "src/gfx/infrastructure/levelcrossing_monorail_closed_grid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1386, "src/gfx/infrastructure/levelcrossing_monorail_open_grid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1388, "src/gfx/infrastructure/levelcrossing_monorail_closed_grid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1390, "src/gfx/infrastructure/levelcrossing_monorail_open_grid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1392, "src/gfx/infrastructure/levelcrossing_monorail_closed_grid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+
+		replace (1394, "src/gfx/infrastructure/levelcrossing_maglev_open_grid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1396, "src/gfx/infrastructure/levelcrossing_maglev_closed_grid_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1398, "src/gfx/infrastructure/levelcrossing_maglev_open_grid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1400, "src/gfx/infrastructure/levelcrossing_maglev_closed_grid_town_temperate.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1402, "src/gfx/infrastructure/levelcrossing_maglev_open_grid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+		replace (1404, "src/gfx/infrastructure/levelcrossing_maglev_closed_grid_snow.gimp.png") { tmpl_infrastructure_levelcrossing() }
+
+		replace (2365, "src/gfx/infrastructure/tunnel_rail_grid_temperate.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replace (2373, "src/gfx/infrastructure/tunnel_monorail_grid_temperate.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replace (2381, "src/gfx/infrastructure/tunnel_maglev_grid_temperate.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replace (2397, "src/gfx/infrastructure/tunnel_rail_grid_snow.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replace (2405, "src/gfx/infrastructure/tunnel_monorail_grid_snow.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replace (2413, "src/gfx/infrastructure/tunnel_maglev_grid_snow.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replacenew (RAILTYPE_TUNNELS, "src/gfx/infrastructure/railtype_tunnel_grid_temperate.gimp.png") { tmpl_infrastructure_railtunnels() }
+		replacenew (RAILTYPE_TUNNELS, "src/gfx/infrastructure/railtype_tunnel_grid_snow.gimp.png", 8) { tmpl_infrastructure_railtunnels() }
+
+		// oil wells
+		replace (2173, "src/gfx/oilderrik_grid.png") { tmpl_level_ground(7, 9) }
+
+		// gold mine
+		replace (2215, "src/gfx/goldmine_temperate_grid.png") { tmpl_goldmine() }
+	} /* End Grid */
+}

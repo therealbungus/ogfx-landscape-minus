@@ -1,0 +1,18 @@
+#
+# This file is part of OpenGFX+ Landscape.
+# OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+# OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+#
+
+# Gridded shore sprites
+src/gfx/water/seashore_grid_temperate.gimp.png       gfx-source/terrain.xcf      White BlueForShore GroundTemperate GridTemperate SeaWater Coast
+src/gfx/water/seashore_grid_arctic.gimp.png          gfx-source/terrain.xcf      White BlueForShore GroundArctic    GridArctic    SeaWater Coast
+src/gfx/water/seashore_grid_tropical.gimp.png        gfx-source/terrain.xcf      White BlueForShore GroundTropical  GridTropical  SeaWater Coast
+src/gfx/water/seashore_grid_toyland.gimp.png         gfx-source/terrain.xcf      White BlueForShore GroundToyland   GridToyland   SeaWater Coast
+
+# Gridless shore sprites
+src/gfx/water/seashore_nogrid_temperate.gimp.png     gfx-source/terrain.xcf      White BlueForShore GroundTemperate SeaWater Coast
+src/gfx/water/seashore_nogrid_arctic.gimp.png        gfx-source/terrain.xcf      White BlueForShore GroundArctic    SeaWater Coast
+src/gfx/water/seashore_nogrid_tropical.gimp.png      gfx-source/terrain.xcf      White BlueForShore GroundTropical  SeaWater Coast
+src/gfx/water/seashore_nogrid_toyland.gimp.png       gfx-source/terrain.xcf      White BlueForShore GroundToyland   SeaWater Coast

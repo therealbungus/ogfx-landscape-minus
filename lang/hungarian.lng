@@ -1,0 +1,68 @@
+##grflangid 0x24
+##plural 2
+##case ba t
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} OpenGFX stílusú táj.{}Programozta: {SILVER}planetmaker{}{BLACK}Grafika: {SILVER}Zephyris and others{}{BLACK}License: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Kikapcsolat az alap kerítéseket {RED}{STRING}{WHITE}. Tehát a beépített területek mellett nem lesz fogsz látni kerítést.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Megváltoztattad az alap kerítés beállítást {RED}{STRING}{WHITE}. Tehát a beépített területek mellett kerítést fogsz látni.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Az alpesi klíma csak a sarkvidéki éghajlaton működik. Így ebben a játékmenetben az alapértelmezett éghajlat kerül használatra.
+
+STR_PARAM_GRID                                                  :Rács mutatása
+STR_PARAM_GRID_DESC                                             :Ez az opció lehetővé teszi a talaj lecserelését rácsmentes változatra
+STR_PARAM_TRANSMITTER                                           :Rádiótorony kősziklára cserélése
+STR_PARAM_TRANSMITTER_DESC                                      :Antennatorony kősziklára cserélése. (Praktikus a régebbi években, amikor még nem voltak antennatornyok.)
+STR_PARAM_PROVIDE_TERRAIN                                       :Új talajzat engedélyezése
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Az összes talaj lecserélése, függetlenül a rácsozás beállításától. Kikapcsolt állapotban, csak az ebben a csomagban lévő tárgyak jelennek meg.
+STR_PARAM_PROVIDE_FIELDS                                        :Új mezőgazdasági talajzat engedélyezése
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Az összes mezőgazdasági talaj(termőföldek) lecserélése, függetlenül a rácsozás beállításától. Kikapcsolt állapotban nem cserélődnek le. Ha a 'Új talajzat engedélyezése' kikapcsolt állapotban van, ez a paraméter nincs figyelembe véve.
+
+STR_PARAM_LANDSCAPE                                             :Táj típusa
+STR_PARAM_LANDSCAPE_DESC                                        :Tájtípus választása (földfelszín)
+STR_PARAM_LANDSCAPE_NORMAL                                      :normál (tájtípustól függ)
+STR_PARAM_LANDSCAPE_ALPINE                                      :alpesi (mérsékelt egövi fű a sarkvidéki éghajlaton)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :mérsékelt (még nincs kész)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :Szubarktikus (még nincs kész)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :trópusi (még nincs kész)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :Játékvilág (még nincs kész)
+
+STR_PARAM_ROAD_TUNNELS                                          :Közúti alagutak
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Válassz típust a közúti alagutak közül
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :szürke beton
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :széles szürke beton
+STR_PARAM_ROAD_TUNNELS_OLD                                      :barnás beton
+
+STR_PARAM_FOUNDATIONS                                           :Alaptípus
+STR_PARAM_FOUNDATIONS_DESC                                      :Az épületek alapzatának kiválasztása. Választhatod az adott éghajlathoz alapértelmeztten tartozó vagy akár egy másik éghajlathoz tartozót. Az alapértelmezettek:{}szikla (mérsékelt), fa (sakvidéki), beton (trópusi) and színes beton (játékvilág).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :normál (tájtípustól függ)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :mérsékelt (szikla)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :sarkvidéki (fából készült falak)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :trópusi (beton)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :játékvilág
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :szürke kő
+STR_PARAM_FOUNDATIONS_BRICKS                                    :tégla
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :mohás szürke kő
+
+STR_PARAM_SNOW_JANUARY                                          :Hóhatár január közepén
+STR_PARAM_SNOW_JANUARY_DESC                                     :Hóhatár január közepén (magasság mezőben megadva). Az ennél magasabban fekvő mezők havasak lesznek. Az 1.5.0-nál, ill. r27010-nél régebbi verziójú OpenTTD esetén 15 a maximális magasság.
+STR_PARAM_SNOW_JULY                                             :Hóhatár július közepén
+STR_PARAM_SNOW_JULY_DESC                                        :Hóhatár július közepén (magasság mezőben megadva). Az ennél magasabban fekvő mezők havasak lesznek. Az 1.5.0-nál, ill. r27010-nél régebbi verziójú OpenTTD esetén 15 a maximális magasság.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (mindenhol, a tengerpart sosem lesz havas)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (majdnem mindenhol)
+STR_PARAM_SNOW_NOWHERE                                          :255 (sehol)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastruktúra
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Tájelemek
+
+STR_NAME_WIND_TURBINE                                           :Szélturbina
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :A szélturbina túl közel van
+STR_NAME_COMPANY_LAND                                           :Beépített terület
+STR_NAME_ANTENNA                                                :Antennatorony
+STR_NAME_LIGHTHOUSE                                             :Világítótorony
+
+STR_NAME_ROCKY_LAND                                             :Sziklás talaj

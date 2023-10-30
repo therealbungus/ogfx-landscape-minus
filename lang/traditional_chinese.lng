@@ -1,0 +1,67 @@
+##grflangid 0x0c
+##plural 1
+STR_GRF_NAME                                                    :OpenGFX+ 地形套件 {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ 地形套件{BLACK} 提供 OpenGFX 風格的地形圖案。{}編程：{SILVER}planetmaker{}{BLACK}圖形：{SILVER}Zephyris 等{}{BLACK}認證：{SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}：{}{WHITE}您在{RED}{STRING}{WHITE}停用了預設圍欄功能。因此，有圍欄土地的圍欄不會被顯示。{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}：{}{WHITE}您在{RED}{STRING}{WHITE}更改了預設圍欄圖形。因此，有圍欄土地的圍欄會與本套件所設定的不同。{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :阿爾卑斯風格僅適用於寒帶場景。現在使用預設場景風格。
+
+STR_PARAM_GRID                                                  :顯示地塊格線
+STR_PARAM_GRID_DESC                                             :使用此選項決定是否改用沒有格線的圖形集刻畫地形
+STR_PARAM_TRANSMITTER                                           :以岩石地取代發射塔
+STR_PARAM_TRANSMITTER_DESC                                      :使用此選項決定是否在遊戲中以岩石地取代發射塔（此選項對開始年份較早、沒有通訊塔的場景有用）
+STR_PARAM_PROVIDE_TERRAIN                                       :提供地形圖案
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :如啟用此選項，則無論「顯示地塊格線」的值如何，系統都會使用本套件提供的地形圖案。否則，系統只會使用本套件的建築物圖形。
+STR_PARAM_PROVIDE_FIELDS                                        :提供田地圖形
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :使用此選項指示系統是否使用本套件提供的田地圖形。如啟用此選項，「顯示地塊格線」的值會被忽略。如果「提供地形圖案」的值為「停用」，則系統會忽視此選項的值。
+
+STR_PARAM_LANDSCAPE                                             :地形種類
+STR_PARAM_LANDSCAPE_DESC                                        :使用此選項選擇遊戲中使用哪一場景的地塊圖形
+STR_PARAM_LANDSCAPE_NORMAL                                      :正常 (依遊戲場景而定)
+STR_PARAM_LANDSCAPE_ALPINE                                      :阿爾卑斯風格 (在寒帶場景使用溫帶風格的草地圖形)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :溫帶 (暫未提供)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :寒帶 (暫未提供)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :熱帶 (暫未提供)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :玩具樂園 (暫未提供)
+
+STR_PARAM_ROAD_TUNNELS                                          :道路隧道
+STR_PARAM_ROAD_TUNNELS_DESC                                     :使用此選項選擇道路隧道的建築風格
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :灰色混凝土
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :寬闊型灰色混凝土
+STR_PARAM_ROAD_TUNNELS_OLD                                      :棕色混凝土
+
+STR_PARAM_FOUNDATIONS                                           :地基種類
+STR_PARAM_FOUNDATIONS_DESC                                      :選擇遊戲中斜坡建築地基的風格。您可以使用預設的風格，或者選擇使用另一場景的風格。{}預設的風格為：石質 (溫帶)、木牆 (寒帶)、混凝土 (熱帶) 及油漆混凝土 (玩具樂園)
+STR_PARAM_FOUNDATIONS_NORMAL                                    :正常 (依遊戲場景而定)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :溫帶 (石材)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :寒帶 (木牆)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :熱帶 (混凝土)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :玩具樂園
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :灰石
+STR_PARAM_FOUNDATIONS_BRICKS                                    :磚造
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :佈滿青苔的灰石
+
+STR_PARAM_SNOW_JANUARY                                          :一月中雪線高度
+STR_PARAM_SNOW_JANUARY_DESC                                     :使用此選項設定在一月中的雪線高度。所有高於此高度的區塊會成為雪地。{}注意：在正式版本 1.5.0 或每晚編譯版 r27010 之前的 OpenTTD 遊戲，沒有區塊高度能大於 15。
+STR_PARAM_SNOW_JULY                                             :七月中雪線高度
+STR_PARAM_SNOW_JULY_DESC                                        :使用此選項設定在七月中的雪線高度。所有高於此高度的區塊會成為雪地。{}注意：在正式版本 1.5.0 或每晚編譯版 r27010 之前的 OpenTTD 遊戲，沒有區塊高度能大於 15。
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (漫天雪地，然而海岸區塊永不積雪)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (幾乎漫天雪地)
+STR_PARAM_SNOW_NOWHERE                                          :255 (沒有雪)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :基建
+STR_NAME_OBJCLASS_LANDSCAPE                                     :地形元素
+
+STR_NAME_WIND_TURBINE                                           :風力發電機
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :風力發電機過於接近
+STR_NAME_COMPANY_LAND                                           :有圍欄土地
+STR_NAME_ANTENNA                                                :通訊塔
+STR_NAME_LIGHTHOUSE                                             :燈塔
+
+STR_NAME_ROCKY_LAND                                             :岩石地

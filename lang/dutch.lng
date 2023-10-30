@@ -1,0 +1,67 @@
+##grflangid 0x1f
+##plural 0
+STR_GRF_NAME                                                    :OpenGFX+ Landschap {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landschap{BLACK} Verandert het landschap naar OpenGFX-stijl.{}Programmering: {SILVER}planetmaker{}{BLACK}Grafisch: {SILVER}Zephyris en anderen{}{BLACK}Licentie: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Je hebt de standaardhekken in het {RED}{STRING}{WHITE} uitgezet. Omheind terrein krijgt dus geen hekken.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Je hebt de standaardhekken veranderd naar {RED}{STRING}{WHITE}. Daarom krijgt omheind terrein verschillende hekken.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Het hooggebergteklimaat werkt alleen in het subarctische landschap. Omgeschakeld naar het standaardlandschap.
+
+STR_PARAM_GRID                                                  :Rasterlijnen weergeven
+STR_PARAM_GRID_DESC                                             :Met deze instelling kunnen alle bodemelementen worden vervangen zodat het landschap (vrijwel) geen rasterlijnen meer heeft.
+STR_PARAM_TRANSMITTER                                           :Radiomasten vervangen door rotsen
+STR_PARAM_TRANSMITTER_DESC                                      :Schakel dit in om radiomasten te vervangen door rotsen (handig voor scenario's voor het telecommunicatietijdperk)
+STR_PARAM_PROVIDE_TERRAIN                                       :Terreintegels leveren
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Lever terreintegels, onafhankelijk van de rasterinstellingen. Als deze optie uitgeschakeld is, worden alleen de objecten binnen deze set geleverd.
+STR_PARAM_PROVIDE_FIELDS                                        :Boerderijvelden leveren
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Vervang alle boerderijvelden, onafhankelijk van de rasterinstelling. Als deze instelling is uitgeschakeld, worden boerderijvelden niet vervangen. Deze instelling wordt genegeerd als de optie 'Terreintegels leveren' is uitgeschakeld.
+
+STR_PARAM_LANDSCAPE                                             :Landschaptype
+STR_PARAM_LANDSCAPE_DESC                                        :Kies het type landschap (terrein)
+STR_PARAM_LANDSCAPE_NORMAL                                      :normaal (voor elk landschap)
+STR_PARAM_LANDSCAPE_ALPINE                                      :hooggebergteklimaat (gras van het gematigde landschap in het subarctische landschap)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :gematigd landschap (nog niet beschikbaar)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :subarctisch landschap (nog niet beschikbaar)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :subtropisch (nog niet beschikbaar)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :speelgoedlandschap (nog niet beschikbaar)
+
+STR_PARAM_ROAD_TUNNELS                                          :Wegtunnels
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Selecteer het type wegtunnels
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :grijs beton
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :Breed, grijs beton
+STR_PARAM_ROAD_TUNNELS_OLD                                      :Bruingekleurd beton
+
+STR_PARAM_FOUNDATIONS                                           :Type van fundering
+STR_PARAM_FOUNDATIONS_DESC                                      :Selecteer welke fundering gebruikt moet worden. Je kunt de standaardfundering van een landschap gebruiken, of funderingen uit een ander landschap kiezen. Standaardfunderingen zijn:{}rots (gematigd landschap), houten muur (subarctisch landschap), beton (subtropisch landschap) en geverfd beton (speelgoedlandschap).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :normaal (standaardfundering van het landschap)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :gematigd landschap (rots)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :subarctisch (houten muur)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :subtropisch (beton)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :speelgoedlandschap
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :grijs steen
+STR_PARAM_FOUNDATIONS_BRICKS                                    :bakstenen
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :grijs steen bedekt met mos
+
+STR_PARAM_SNOW_JANUARY                                          :Sneeuwhoogte half januari
+STR_PARAM_SNOW_JANUARY_DESC                                     :Sneeuwhoogte halverwege Januari (opgegeven als tegelhoogte). Tegels boven deze hoogte hebben sneeuw. Voor OpenTTD-versies voor 1.5.0 of r27010 zijn alle tegels lager dan 16.
+STR_PARAM_SNOW_JULY                                             :Sneeuwhoogte half juli
+STR_PARAM_SNOW_JULY_DESC                                        :Sneeuwhoogte halverwege Juli (opgegeven als tegelhoogte). Tegels boven deze hoogte hebben sneeuw. Voor OpenTTD-versies voor 1.5.0 of r27010 zijn alle tegels lager dan 16.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (overal, kust is nooit besneeuwd)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (bijna overal)
+STR_PARAM_SNOW_NOWHERE                                          :255 (nergens)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastructuur
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Landschapselementen
+
+STR_NAME_WIND_TURBINE                                           :Windturbine
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Windturbine is te dichtbij
+STR_NAME_COMPANY_LAND                                           :Omheind terein
+STR_NAME_ANTENNA                                                :Radiomast
+STR_NAME_LIGHTHOUSE                                             :Vuurtoren
+
+STR_NAME_ROCKY_LAND                                             :Rotsachtig land

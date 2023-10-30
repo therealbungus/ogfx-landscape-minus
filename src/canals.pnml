@@ -1,0 +1,453 @@
+// Waterfeatures
+
+/* ====================================================== *
+ * Canal water
+ * ====================================================== */
+
+spriteset(set_canal_water, "") {
+	tmpl_level_ground_file(1, 1, "src/gfx/water/river_water.gimp.png")
+	//sloped water for locks
+	tmpl_slope_to_se      ("src/gfx/water/river_water.gimp.png")
+	tmpl_slope_to_ne      ("src/gfx/water/river_water.gimp.png")
+	tmpl_slope_to_sw      ("src/gfx/water/river_water.gimp.png")
+	tmpl_slope_to_nw      ("src/gfx/water/river_water.gimp.png")
+}
+
+item(FEAT_CANALS, canalwater, WF_WATERCLIFFS) {
+	property { graphic_flags: 1; }
+	graphics { default: set_canal_water; }
+}
+
+
+/* ====================================================== *
+ * Canals                                                 *
+ * Canals with grids                                      *
+ * ====================================================== */
+
+template tmpl_canalsides(dike_ne, dike_nw, dike_se, dike_sw, corner_e, corner_s, corner_w, corner_n, smallcorners) {
+	tmpl_level_ground_file(1, 1, dike_ne)
+	tmpl_level_ground_file(1, 1, dike_nw)
+	tmpl_level_ground_file(1, 1, dike_se)
+	tmpl_level_ground_file(1, 1, dike_sw)
+	tmpl_level_ground_file(1, 1, corner_e)
+	tmpl_level_ground_file(1, 1, corner_s)
+	tmpl_level_ground_file(1, 1, corner_w)
+	tmpl_level_ground_file(1, 1, corner_n)
+	[57, 14,  8, 6,  25, 13, smallcorners]
+	[29, 28,  8, 4,  -3, 27, smallcorners]
+	[ 1, 14,  8, 6, -31, 13, smallcorners]
+	[27,  1, 12, 5,  -5,  0, smallcorners]
+}
+
+spriteset( set_canal_sides_grid_temperate, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_temperate_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_temperate_se.gimp.png",
+		"src/gfx/water/canaldike_grid_temperate_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_temperate_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_temperate_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_temperate_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_temperate_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_temperate_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_temperate_smallcorners.gimp.png"
+	)
+}
+
+spriteset( set_canal_sides_grid_snow, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_snow_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_snow_se.gimp.png",
+		"src/gfx/water/canaldike_grid_snow_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_snow_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_snow_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_snow_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_snow_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_snow_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_snow_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_grid_arctic, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_arctic_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_se.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_grid_arctic_snow14, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_arctic_snow14_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow14_se.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow14_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow14_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow14_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow14_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow14_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow14_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow14_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_grid_arctic_snow24, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_arctic_snow24_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow24_se.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow24_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow24_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow24_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow24_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow24_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow24_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow24_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_grid_arctic_snow34, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_arctic_snow34_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow34_se.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow34_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow34_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow34_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow34_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow34_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow34_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_arctic_snow34_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_grid_alpine_snow14, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_alpine_snow14_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow14_se.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow14_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow14_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow14_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow14_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow14_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow14_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow14_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_grid_alpine_snow24, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_alpine_snow24_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow24_se.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow24_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow24_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow24_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow24_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow24_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow24_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow24_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_grid_alpine_snow34, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_alpine_snow34_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow34_se.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow34_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow34_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow34_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow34_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow34_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow34_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_alpine_snow34_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_grid_desert, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_desert_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_desert_se.gimp.png",
+		"src/gfx/water/canaldike_grid_desert_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_desert_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_desert_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_desert_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_desert_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_desert_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_desert_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_grid_tropical, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_tropical_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_tropical_se.gimp.png",
+		"src/gfx/water/canaldike_grid_tropical_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_tropical_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_tropical_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_tropical_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_tropical_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_tropical_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_tropical_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_grid_toyland, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_grid_toyland_ne.gimp.png",
+		"src/gfx/water/canaldike_grid_toyland_se.gimp.png",
+		"src/gfx/water/canaldike_grid_toyland_sw.gimp.png",
+		"src/gfx/water/canaldike_grid_toyland_nw.gimp.png",
+		"src/gfx/water/canaldike_grid_toyland_cornerE.gimp.png",
+		"src/gfx/water/canaldike_grid_toyland_cornerS.gimp.png",
+		"src/gfx/water/canaldike_grid_toyland_cornerW.gimp.png",
+		"src/gfx/water/canaldike_grid_toyland_cornerN.gimp.png",
+		"src/gfx/water/canaldike_grid_toyland_smallcorners.gimp.png"
+	)
+}
+
+switch( FEAT_CANALS, SELF, switch_canal_sides_grid_arctic_terrain,
+	[
+	STORE_TEMP(                (tile_height > (snowline_height - 2)), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height - 1)), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height    )), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height + 1)), 0),
+	LOAD_TEMP(0)
+	] ) {
+	0: set_canal_sides_grid_arctic;
+	1: set_canal_sides_grid_arctic_snow14;
+	2: set_canal_sides_grid_arctic_snow24;
+	3: set_canal_sides_grid_arctic_snow34;
+	set_canal_sides_grid_snow;
+}
+switch( FEAT_CANALS, SELF, switch_canal_sides_grid_alpine_terrain,
+	[
+	STORE_TEMP(                (tile_height > (snowline_height - 2)), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height - 1)), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height    )), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height + 1)), 0),
+	LOAD_TEMP(0)
+	] ) {
+		0: set_canal_sides_grid_temperate;
+		1: set_canal_sides_grid_alpine_snow14;
+		2: set_canal_sides_grid_alpine_snow24;
+		3: set_canal_sides_grid_alpine_snow34;
+		set_canal_sides_grid_snow;
+}
+switch(FEAT_CANALS, SELF, switch_canal_sides_grid_tropical_terrain, terrain_type ) {
+	TILETYPE_DESERT: set_canal_sides_grid_desert;
+	set_canal_sides_grid_tropical;
+}
+switch(FEAT_CANALS, SELF, switch_canal_sides_grid_climate, landscape_param) {
+	CLIMATE_ARCTIC:   switch_canal_sides_grid_arctic_terrain;
+	CLIMATE_TROPICAL: switch_canal_sides_grid_tropical_terrain;
+	CLIMATE_TOYLAND:  set_canal_sides_grid_toyland;
+	CLIMATE_ALPINE:   switch_canal_sides_grid_alpine_terrain;
+	set_canal_sides_grid_temperate;
+}
+
+/* ====================================================== *
+ * Canals                                                 *
+ * Canals without grids                                   *
+ * ====================================================== */
+
+spriteset( set_canal_sides_nogrid_temperate, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_temperate_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_temperate_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_temperate_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_temperate_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_temperate_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_temperate_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_temperate_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_temperate_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_temperate_smallcorners.gimp.png"
+	)
+}
+
+spriteset( set_canal_sides_nogrid_snow, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_snow_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_snow_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_snow_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_snow_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_snow_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_snow_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_snow_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_snow_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_snow_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_nogrid_arctic, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_arctic_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_nogrid_arctic_snow14, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_arctic_snow14_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow14_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow14_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow14_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow14_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow14_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow14_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow14_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow14_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_nogrid_arctic_snow24, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_arctic_snow24_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow24_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow24_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow24_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow24_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow24_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow24_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow24_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow24_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_nogrid_arctic_snow34, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_arctic_snow34_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow34_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow34_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow34_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow34_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow34_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow34_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow34_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_arctic_snow34_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_nogrid_alpine_snow14, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_alpine_snow14_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow14_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow14_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow14_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow14_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow14_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow14_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow14_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow14_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_nogrid_alpine_snow24, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_alpine_snow24_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow24_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow24_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow24_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow24_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow24_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow24_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow24_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow24_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_nogrid_alpine_snow34, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_alpine_snow34_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow34_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow34_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow34_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow34_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow34_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow34_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow34_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_alpine_snow34_smallcorners.gimp.png"
+	)
+}
+
+spriteset( set_canal_sides_nogrid_desert, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_desert_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_desert_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_desert_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_desert_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_desert_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_desert_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_desert_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_desert_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_desert_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_nogrid_tropical, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_tropical_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_tropical_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_tropical_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_tropical_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_tropical_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_tropical_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_tropical_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_tropical_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_tropical_smallcorners.gimp.png"
+	)
+}
+spriteset( set_canal_sides_nogrid_toyland, "") {
+	tmpl_canalsides(
+		"src/gfx/water/canaldike_nogrid_toyland_ne.gimp.png",
+		"src/gfx/water/canaldike_nogrid_toyland_se.gimp.png",
+		"src/gfx/water/canaldike_nogrid_toyland_sw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_toyland_nw.gimp.png",
+		"src/gfx/water/canaldike_nogrid_toyland_cornerE.gimp.png",
+		"src/gfx/water/canaldike_nogrid_toyland_cornerS.gimp.png",
+		"src/gfx/water/canaldike_nogrid_toyland_cornerW.gimp.png",
+		"src/gfx/water/canaldike_nogrid_toyland_cornerN.gimp.png",
+		"src/gfx/water/canaldike_nogrid_toyland_smallcorners.gimp.png"
+	)
+}
+
+switch( FEAT_CANALS, SELF, switch_canal_sides_nogrid_arctic_terrain,
+	[
+	STORE_TEMP(                (tile_height > (snowline_height - 2)), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height - 1)), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height    )), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height + 1)), 0),
+	LOAD_TEMP(0)
+	] ) {
+	0: set_canal_sides_nogrid_arctic;
+	1: set_canal_sides_nogrid_arctic_snow14;
+	2: set_canal_sides_nogrid_arctic_snow24;
+	3: set_canal_sides_nogrid_arctic_snow34;
+	set_canal_sides_nogrid_snow;
+}
+switch( FEAT_CANALS, SELF, switch_canal_sides_nogrid_alpine_terrain,
+	[
+	STORE_TEMP(                (tile_height > (snowline_height - 2)), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height - 1)), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height    )), 0),
+	STORE_TEMP( LOAD_TEMP(0) + (tile_height > (snowline_height + 1)), 0),
+	LOAD_TEMP(0)
+	] ) {
+		0: set_canal_sides_nogrid_temperate;
+		1: set_canal_sides_nogrid_alpine_snow14;
+		2: set_canal_sides_nogrid_alpine_snow24;
+		3: set_canal_sides_nogrid_alpine_snow34;
+		set_canal_sides_nogrid_snow;
+}
+switch(FEAT_CANALS, SELF, switch_canal_sides_nogrid_tropical_terrain, terrain_type ) {
+	TILETYPE_DESERT: set_canal_sides_nogrid_desert;
+	set_canal_sides_nogrid_tropical;
+}
+switch(FEAT_CANALS, SELF, switch_canal_sides_nogrid_climate, landscape_param) {
+	CLIMATE_ARCTIC:   switch_canal_sides_nogrid_arctic_terrain;
+	CLIMATE_TROPICAL: switch_canal_sides_nogrid_tropical_terrain;
+	CLIMATE_TOYLAND:  set_canal_sides_nogrid_toyland;
+	CLIMATE_ALPINE:   switch_canal_sides_nogrid_alpine_terrain;
+	set_canal_sides_nogrid_temperate;
+}
+
+switch( FEAT_CANALS, SELF, switch_canal_sides_gridparam, param_grid) {
+	0: switch_canal_sides_nogrid_climate;
+	switch_canal_sides_grid_climate;
+}
+
+item(FEAT_CANALS, dikes, WF_DIKES) {
+	graphics {
+		default: switch_canal_sides_gridparam;
+	}
+}

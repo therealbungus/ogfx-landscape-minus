@@ -1,0 +1,67 @@
+##grflangid 0x23
+##plural 0
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} Modifizéiert Landschaften am OpenGFX Stil.{}Programméirung: {SILVER}planetmaker{}{BLACK}Grafik: {SILVER}Zephyris an anerer{}{BLACK}Lizenz: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Du hues den standard Zonk ausgeschalt an {RED}{STRING}{WHITE}. Land mat Zonk ronderem weist keen Zonk un.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Du hues den standard Zonk geännert an: {RED}{STRING}{WHITE}. Land mat Zonk ronderem weist keen Zonk un.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Alpint Klima geht nëmmen am arktesche Klima. Benotzen standard Klima.
+
+STR_PARAM_GRID                                                  :Gitternetz uweisen
+STR_PARAM_GRID_DESC                                             :Des Astellung erlabt all Buedemfelder auszetauschen sou dass d'Landschaft quasi ouni Gitternetzlinen auskënnt.
+STR_PARAM_TRANSMITTER                                           :Ersetzt d'Antenn duerch e Fiels
+STR_PARAM_TRANSMITTER_DESC                                      :Uschalten fir d'Antenn duerch Fielsen ze ersetzen (praktesch fir Zäitperioden wou et nach keng Antennen gouf)
+STR_PARAM_PROVIDE_TERRAIN                                       :Buedemfelder
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Tausch all Buedemfelder aus, egal wellech Gitterastellung gesat ass. Wann ausgeschalt, ginn just Objeten aus dësem Set benotzt.
+STR_PARAM_PROVIDE_FIELDS                                        :Felder-Sprites
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Tausch all Akerfelder aus, egal wellech Gitterastellung benotzt gëtt. Wann ausgeschalt, ginn Akerfelder net ausgetosch. Dëse Parameter gëtt ignoréiert, wann de 'Buedemfelder' Parameter ausgeschalt ass.
+
+STR_PARAM_LANDSCAPE                                             :Landschaftstyp
+STR_PARAM_LANDSCAPE_DESC                                        :Wiel den Landschaftstyp fir Buedemfelder
+STR_PARAM_LANDSCAPE_NORMAL                                      :normal (laut Klima)
+STR_PARAM_LANDSCAPE_ALPINE                                      :alpin (normalt Gras am arktesche Klima)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :geméissegt (net implëmentéiert)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :arktesch (net implëmentéiert)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :tropesch (net implëmentéiert)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :Spillsaacheland (nach net implëmentéiert)
+
+STR_PARAM_ROAD_TUNNELS                                          :Stroossentunnelen
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Wiel den Typ vu Stroossentunnelen den soll benotzt ginn
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :groe Beton
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :breede groe Beton
+STR_PARAM_ROAD_TUNNELS_OLD                                      :bronge Beton
+
+STR_PARAM_FOUNDATIONS                                           :Typ vu Fundament
+STR_PARAM_FOUNDATIONS_DESC                                      :Wiel Fundamenter déi solle benotzt gin. Et kënnen déi normal vun all Klima gewielt ginn oder explizit Fundamenter vun aneren Klima. Standard sinn:{}Steng (geméissegt), holze Mauer (arktesch), beton (tropesch) and bemolte Beton (Spillsaacheland).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :normal (laut Klima)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :geméissegt (Fiels)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :arktesch (holze Mauer)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :tropesch (Beton)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :Spillsaacheland
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :groe Steen
+STR_PARAM_FOUNDATIONS_BRICKS                                    :Zillen
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :groe Steen mat Moos
+
+STR_PARAM_SNOW_JANUARY                                          :Schnéilinn mëtt Januar
+STR_PARAM_SNOW_JANUARY_DESC                                     :Schnéilinn mëtt Januar (als Felderhéicht). Felder iwwert dësem Niveau hunn Schnéi. Fir OpenTTD Versiounen ënnert 1.5.0 oder r27010 kënnen d'Felder maximal 15 héich sinn.
+STR_PARAM_SNOW_JULY                                             :Schnéilinn mëtt Juli
+STR_PARAM_SNOW_JULY_DESC                                        :Schnéilinn mëtt Juli (als Felderhéicht). Felder iwwert dësem Niveau hunn Schnéi. Fir OpenTTD Versiounen ënnert 1.5.0 oder r27010 kënnen d'Felder maximal 15 héich sinn.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (iwwerall, Küste sinn nie zougeschneit)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (baal iwwerall)
+STR_PARAM_SNOW_NOWHERE                                          :255 (néirens)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastruktur
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Landschaftselementer
+
+STR_NAME_WIND_TURBINE                                           :Wandturbin
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Wandturbin ass ze no un
+STR_NAME_COMPANY_LAND                                           :Land mat Zonk
+STR_NAME_ANTENNA                                                :Antenn
+STR_NAME_LIGHTHOUSE                                             :Liichttuerm
+
+STR_NAME_ROCKY_LAND                                             :Fielsegt Land

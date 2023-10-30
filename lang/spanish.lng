@@ -1,0 +1,68 @@
+##grflangid 0x04
+##plural 0
+##gender m f
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} Modifica el paisaje al estilo de OpenGFX.{}Programación: {SILVER}planetmaker{}{BLACK}Gráficos: {SILVER}Zephyris y otros{}{BLACK}Licencia: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Has desactivado las vallas por defecto en {RED}{STRING}{WHITE}. Así, la tierra cercada no mostrará valla alguna.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Has cambiado la vallas por defecto en {RED}{STRING}{WHITE}. Así, el terreno cercado mostrará diferentes vallas.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :El clima alpino solo, y únicamente, funciona en el clima ártico.
+
+STR_PARAM_GRID                                                  :Mostrar líneas de cuadrícula
+STR_PARAM_GRID_DESC                                             :Este ajuste permite sustituir todos los sprites del terreno de tal forma que el paisaje se pinta (mayormente) sin líneas de cuadrícula.
+STR_PARAM_TRANSMITTER                                           :Reemplaza la torre de comunicaciones por una roca
+STR_PARAM_TRANSMITTER_DESC                                      :Habilitar el reemplazo de la torre de comunicaciones por una roca (útil para los escenarios de hace mucho tiempo cuando aún no existía tal tecnología)
+STR_PARAM_PROVIDE_TERRAIN                                       :Proporcionar los sprites del terreno
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Reemplaza toda la superficie del suelo, independientemente de la configuración de la cuadrícula. Si está desactivado, de este set únicamente tendrás acceso a sus objetos (generador eólico, faro, etc.).
+STR_PARAM_PROVIDE_FIELDS                                        :Proporcionar los sprites del campo
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Reemplaza todo el terreno de granjas y alrededores, independientemente de la configuración de la cuadrícula. Todo esto es ignorado si la opción 'proporcionar los sprites del terreno' está deshabilitada.
+
+STR_PARAM_LANDSCAPE                                             :Tipo de paisaje
+STR_PARAM_LANDSCAPE_DESC                                        :Selecciona el tipo de paisaje
+STR_PARAM_LANDSCAPE_NORMAL                                      :normal (conforme al clima)
+STR_PARAM_LANDSCAPE_ALPINE                                      :alpino (la hierba puede, y es capaz de, crecer en el frío clima ártico)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :templado (no implementado)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :ártico (no implementado)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :tropical (no implementado)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :juguetelandia (no implementado)
+
+STR_PARAM_ROAD_TUNNELS                                          :Túneles de carretera
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Selecciona el tipo de túneles de carretera a usar
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :hormigón gris
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :hormigón gris amplio
+STR_PARAM_ROAD_TUNNELS_OLD                                      :hormigón marrón oscuro
+
+STR_PARAM_FOUNDATIONS                                           :Tipo de cimientos
+STR_PARAM_FOUNDATIONS_DESC                                      :Selecciona el tipo de cimientos a usar. Puedes elegir entre el usado por defecto en el clima por ti seleccionado o, si lo prefieres, cualquier otro de los disponibles. Los valores predeterminados son:{}roca (templado), pared de madera (ártico), hormigón (tropical) y hormigón pintado (juguetelandia).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :normal (conforme al clima)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :templado (roca)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :ártico (muro de madera)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :tropical (hormigón)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :juguetelandia
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :piedra gris
+STR_PARAM_FOUNDATIONS_BRICKS                                    :ladrillos
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :piedra gris cubierta de musgo
+
+STR_PARAM_SNOW_JANUARY                                          :Línea de nieve a mediados de Enero
+STR_PARAM_SNOW_JANUARY_DESC                                     :Línea de nieve a mediados de Enero (dada como la altitud del terreno). Todo terreno por encima de dicha altitud, ipso facto, será terreno nevado. Para OpenTTD <1.5.0 y versiones anteriores a la r27010 la altura máxima del terreno es 15.
+STR_PARAM_SNOW_JULY                                             :Línea de nieve a mediados de Julio
+STR_PARAM_SNOW_JULY_DESC                                        :Línea de nieve a mediados de Julio (dada como la altitud del terreno). Todo terreno por encima de dicha altitud, ipso facto, será terreno nevado. Para OpenTTD <1.5.0 y versiones anteriores a la r27010 la altura máxima del terreno es 15.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (en todas partes; Sin embargo, la costa no tendrá nieve por no llegar a cuajar allí)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (casi en todas partes)
+STR_PARAM_SNOW_NOWHERE                                          :255 (en ningún sitio)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infraestructura
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Elementos del paisaje
+
+STR_NAME_WIND_TURBINE                                           :Generador eólico
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :El generador eólico está demasiado cerca
+STR_NAME_COMPANY_LAND                                           :Terreno vallado
+STR_NAME_ANTENNA                                                :Torre de comunicaciones
+STR_NAME_LIGHTHOUSE                                             :Faro
+
+STR_NAME_ROCKY_LAND                                             :Terreno rocoso

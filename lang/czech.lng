@@ -1,0 +1,27 @@
+##grflangid 0x15
+##plural 10
+##gender fp map f mnp m n np
+##case acc nom loc big voc ins dat small gen
+STR_GRF_DESCRIPTION                                             :{ORANGE} OpenGFX + Landscape {BLACK} Upravuje krajinu ve stylu OpenGFX.{} Programování: {SILVER} planetmaker{} {BLACK} Grafika: {SILVER} Zephyris a další{} {BLACK} Licence: {SILVER} GPL v2 +
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{} {WHITE} Výchozí ploty jste zakázali v {RED} {STRING} {WHITE}. Takto oplocený pozemek nebude ukazovat ploty.
+
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Vyměňte všechny obklady zemědělských polí bez ohledu na nastavení mřížky. Pokud jsou zakázány, nebudou obklady zemědělských polí nahrazeny. Tento parametr je ignorován, pokud je parametr 'poskytovat základy' zakázán.
+
+STR_PARAM_LANDSCAPE_DESC                                        :Vyberte typ krajiny (dlaždice)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :země hraček (není implementováno)
+
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Vyberte typ silničních tunelů, které chcete použít
+
+
+STR_PARAM_SNOW_JANUARY                                          :Sněhová linka v polovině ledna
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (všude, pobřeží nikdy nebude zasněženo)
+
+
+
+
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Větrná turbína je příliš blízko
+STR_NAME_COMPANY_LAND                                           :Oplocený pozemek
+

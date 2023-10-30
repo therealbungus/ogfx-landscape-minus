@@ -1,0 +1,367 @@
+/*
+ * This file is part of OpenGFX+ Landscape.
+ * OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+ * OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+template tmpl_level_ground_file(x, y, file) {
+    [ x, y, 64, 31, -31,  0, file ]
+}
+template tmpl_level_ground(x, y) {
+    [ x, y, 64, 31, -31,  0 ]
+}
+template tmpl_normal_slope(x, y, zoffset) {
+    [ x, y, 64, 31, -31,  zoffset ]
+}
+template tmpl_short_slope_file(x, y, file) { [ x, y, 64, 23, -31,   0, file] }
+template tmpl_short_slope(x, y)            { [ x, y, 64, 23, -31,   0 ]      }
+
+template tmpl_long_slope_file(x, y, file)  { [ x, y, 64, 39, -31,  -8, file] }
+template tmpl_long_slope(x, y)             { [ x, y, 64, 39, -31,  -8 ]      }
+
+template tmpl_steep_slope_file(x, y, file) { [ x, y, 64, 47, -31, -16, file] }
+template tmpl_steep_slope(x, y)            { [ x, y, 64, 47, -31, -16 ]      }
+
+template tmpl_flat_water(file)  { tmpl_level_ground_file(  1, 1, file) }
+template tmpl_slope_to_se(file) { tmpl_short_slope_file (479, 1, file) }
+template tmpl_slope_to_ne(file) { tmpl_long_slope_file  (959, 1, file) }
+template tmpl_slope_to_sw(file) { tmpl_short_slope_file (241, 1, file) }
+template tmpl_slope_to_nw(file) { tmpl_long_slope_file  (719, 1, file) }
+
+template tmpl_ground_0(x,y) { [ x, y, 64, 31, -31,  0 ] }
+template tmpl_ground_1(x,y) { [ x, y, 64, 31, -31,  0 ] }
+template tmpl_ground_2(x,y) { [ x, y, 64, 23, -31,  0 ] }
+template tmpl_ground_3(x,y) { [ x, y, 64, 23, -31,  0 ] }
+
+template tmpl_ground_4(x,y) { [ x, y, 64, 31, -31,  0 ] }
+template tmpl_ground_5(x,y) { [ x, y, 64, 31, -31,  0 ] }
+template tmpl_ground_6(x,y) { [ x, y, 64, 23, -31,  0 ] }
+template tmpl_ground_7(x,y) { [ x, y, 64, 23, -31,  0 ] }
+
+template tmpl_ground_8(x,y) { [ x, y, 64, 39, -31,  -8 ] }
+template tmpl_ground_9(x,y) { [ x, y, 64, 39, -31,  -8 ] }
+template tmpl_ground_10(x,y) { [ x, y, 64, 31, -31,  -8 ] }
+template tmpl_ground_11(x,y) { [ x, y, 64, 31, -31,  -8 ] }
+
+template tmpl_ground_12(x,y) { [ x, y, 64, 39, -31,  -8 ] }
+template tmpl_ground_13(x,y) { [ x, y, 64, 39, -31,  -8 ] }
+template tmpl_ground_14(x,y) { [ x, y, 64, 31, -31,  -8 ] }
+template tmpl_ground_15(x,y) { [ x, y, 64, 47, -31,  -16 ] }
+
+template tmpl_ground_16(x,y) { [ x, y, 64, 15, -31,  0 ] }
+template tmpl_ground_17(x,y) { [ x, y, 64, 31, -31,  -8 ] }
+template tmpl_ground_18(x,y) { [ x, y, 64, 31, -31,  -8 ] }
+
+
+template tmpl_groundsprites(x, y) {
+    [   0+x,   y, 64, 31, -31,  0 ]
+    [  80+x,   y, 64, 31, -31,  0 ]
+    [ 160+x,   y, 64, 23, -31,  0 ]
+    [ 240+x,   y, 64, 23, -31,  0 ]
+
+    [ 320+x,   y, 64, 31, -31,  0 ]
+    [ 398+x,   y, 64, 31, -31,  0 ]
+    [ 478+x,   y, 64, 23, -31,  0 ]
+    [ 558+x,   y, 64, 23, -31,  0 ]
+
+    [ 638+x,   y, 64, 39, -31, -8 ]
+    [ 718+x,   y, 64, 39, -31, -8 ]
+    [ 798+x,   y, 64, 31, -31, -8 ]
+    [ 878+x,   y, 64, 31, -31, -8 ]
+
+    [ 958+x,   y, 64, 39, -31, -8 ]
+    [1038+x,   y, 64, 39, -31, -8 ]
+    [1118+x,   y, 64, 31, -31, -8 ]
+    [1196+x,   y, 64, 47, -31,-16 ]
+
+    [1276+x,   y, 64, 15, -31,  0 ]
+    [1356+x,   y, 64, 31, -31, -8 ]
+    [1436+x,   y, 64, 31, -31, -8 ]
+}
+
+template tmpl_rough(x, y) {
+    tmpl_level_ground(    x, y)
+    tmpl_level_ground( 80+x, y)
+    tmpl_level_ground(160+x, y)
+    tmpl_level_ground(240+x, y)
+}
+
+template tmpl_additional_rough(x, y) {
+	tmpl_rough(1510+x, y)
+}
+
+
+template tmpl_16shore_tiles(x, y) {
+    [1276+x,   y, 64, 15, -31,  0 ]
+    [  80+x,   y, 64, 31, -31,  0 ]
+    [ 160+x,   y, 64, 23, -31,  0 ]
+    [ 240+x,   y, 64, 23, -31,  0 ]
+
+    [ 320+x,   y, 64, 31, -31,  0 ]
+    [1356+x,   y, 64, 31, -31, -8 ]
+    [ 478+x,   y, 64, 23, -31,  0 ]
+    [ 558+x,   y, 64, 23, -31,  0 ]
+
+    [ 638+x,   y, 64, 39, -31, -8 ]
+    [ 718+x,   y, 64, 39, -31, -8 ]
+    [1196+x,   y, 64, 47, -31,-16 ]
+    [ 878+x,   y, 64, 31, -31, -8 ]
+
+    [ 958+x,   y, 64, 39, -31, -8 ]
+    [1038+x,   y, 64, 39, -31, -8 ]
+    [1118+x,   y, 64, 31, -31, -8 ]
+    [1436+x,   y, 64, 31, -31, -8 ]
+}
+
+template tmpl_8shore_tiles(x, y) {
+    [ 320+x,   y, 64, 31, -31,  0 ]
+    [  80+x,   y, 64, 31, -31,  0 ]
+    [ 160+x,   y, 64, 23, -31,  0 ]
+    [ 638+x,   y, 64, 39, -31, -8 ]
+
+    [ 478+x,   y, 64, 23, -31,  0 ]
+    [ 958+x,   y, 64, 39, -31, -8 ]
+    [ 240+x,   y, 64, 23, -31,  0 ]
+    [ 718+x,   y, 64, 39, -31, -8 ]
+}
+
+template tmpl_infrastructure_road() {
+    /* Level road tiles */
+    tmpl_level_ground( 82, 40)
+    tmpl_level_ground(162, 40)
+    tmpl_level_ground(242, 40)
+    tmpl_level_ground(322, 40)
+    tmpl_level_ground(402, 40)
+    tmpl_level_ground(482, 40)
+    tmpl_level_ground(562, 40)
+    tmpl_level_ground(642, 40)
+    tmpl_level_ground(722, 40)
+    tmpl_level_ground(  2, 88)
+    tmpl_level_ground( 82, 88)
+
+    /* slopes */
+    tmpl_long_slope (  82, 152)
+    tmpl_short_slope( 162, 152)
+    tmpl_short_slope( 242, 152)
+    tmpl_long_slope ( 322, 152)
+
+    /* Half road tiles */
+    tmpl_level_ground(402, 152)
+    tmpl_level_ground(482, 152)
+    tmpl_level_ground(562, 152)
+    tmpl_level_ground(642, 152)
+}
+
+template tmpl_infrastructure_tracks() {
+    /* Level track tiles */
+    /* first two swapped to (easier) get level crossings */
+    tmpl_level_ground(162, 40)
+    tmpl_level_ground( 82, 40)
+    tmpl_level_ground(242, 40)
+    tmpl_level_ground(322, 40)
+    tmpl_level_ground(402, 40)
+    tmpl_level_ground(482, 40)
+    tmpl_level_ground(562, 40)
+    tmpl_level_ground(642, 40)
+    tmpl_level_ground(722, 40)
+    tmpl_level_ground(  2, 88)
+    tmpl_level_ground( 82, 88)
+    tmpl_level_ground(162, 88)
+
+    tmpl_long_slope  (242, 88)
+    tmpl_normal_slope(322, 88, 0)
+    tmpl_normal_slope(402, 88, 0)
+    tmpl_short_slope (482, 88)
+    tmpl_normal_slope(562, 88,-8)
+    tmpl_short_slope (642, 88)
+    tmpl_normal_slope(722, 88,-8)
+
+    tmpl_long_slope  (  2, 152)
+    tmpl_long_slope  ( 82, 152)
+    tmpl_short_slope (162, 152)
+    tmpl_short_slope (242, 152)
+    tmpl_long_slope  (322, 152)
+    tmpl_level_ground(402, 152)
+    tmpl_level_ground(482, 152)
+}
+
+template tmpl_infrastructure_levelcrossing() {
+	tmpl_level_ground( 82, 40)
+	tmpl_level_ground(162, 40)
+}
+
+template tmpl_infrastructure_railtunnels() {
+	tmpl_long_slope  (  2, 200)
+	[  82, 152, 64, 39, -31, -38 ]
+	tmpl_short_slope ( 82, 200)
+	[ 162, 152, 64, 23, -31, -30 ]
+	tmpl_short_slope (162, 200)
+	[ 242, 152, 64, 23, -31, -30 ]
+	tmpl_long_slope  (242, 200)
+	[ 322, 152, 64, 39, -31, -38 ]
+}
+
+template tmpl_rail_overlaytracks() {
+	[  66,    8,  40,  21, -19,   5]
+	[ 114,    8,  40,  21, -19,   5]
+	[ 162,    8,  40,   7, -19,   4]
+	[ 210,    8,  40,   7, -19,  20]
+	[ 258,    8,  12,  19,  11,   6]
+	[ 290,    8,  12,  19, -21,   6]
+}
+
+template tmpl_road_tunnels(y) {
+	[ 113,   y,  64,  39, -31,  -8]
+	[ 193,   y,  64,  39, -31, -38]
+	[ 653,   y,  64,  23, -31,   0]
+	[ 733,   y,  64,  23, -31, -30]
+	[ 337,   y,  64,  23, -31,   0]
+	[ 417,   y,  64,  23, -31, -30]
+	[ 877,   y,  64,  39, -31,  -8]
+	[ 957,   y,  64,  39, -31, -38]
+}
+
+/* used for monorail and maglev tracks */
+template tmpl_rail_tracks() {
+  [34, 13, 64, 31, -31, 0]
+  [114, 13, 64, 31, -31, 0]
+  [194, 13, 64, 31, -31, 0]
+  [274, 13, 64, 31, -31, 0]
+  [354, 13, 64, 31, -31, 0]
+  [434, 13, 64, 31, -31, 0]
+  [514, 13, 64, 31, -31, 0]
+  [594, 13, 64, 31, -31, 0]
+  [674, 13, 64, 31, -31, 0]
+  [2, 61, 64, 31, -31, 0]
+  [82, 61, 64, 31, -31, 0]
+  [162, 61, 64, 31, -31, 0]
+  [242, 61, 64, 39, -31, -8]
+  [322, 61, 64, 31, -31, 0]
+  [402, 61, 64, 31, -31, 0]
+  [482, 61, 64, 23, -31, 0]
+  [562, 61, 64, 31, -31, -8]
+  [642, 61, 64, 23, -31, 0]
+  [722, 61, 64, 31, -31, -8]
+  [2, 125, 64, 39, -31, -8]
+  [82, 125, 64, 39, -31, -8]
+  [162, 125, 64, 23, -31, 0]
+  [242, 125, 64, 23, -31, 0]
+  [322, 125, 64, 39, -31, -8]
+  [402, 125, 64, 31, -31, 0]
+  [482, 125, 64, 31, -31, 0]
+}
+
+template tmpl_foundation_base(y) {
+	[ 578, y    ,  64,  40, -31,  -9, NOCROP]
+	[ 658, y    ,  64,  32, -31,  -9, NOCROP]
+	[   2, y+ 64,  64,  32, -31,  -9, NOCROP]
+	[  82, y+ 64,  64,  40, -31,  -9, NOCROP]
+	[ 162, y+ 64,  64,  40, -31,  -9, NOCROP]
+	[ 242, y+ 64,  64,  32, -31,  -9, NOCROP]
+	[ 322, y+ 64,  64,  32, -31,  -9, NOCROP]
+	[ 402, y+ 64,  64,  40, -31,  -9, NOCROP]
+	[ 482, y+ 64,  64,  40, -31,  -9, NOCROP]
+	[ 562, y+ 64,  64,  32, -31,  -9, NOCROP]
+	[ 642, y+ 64,  64,  32, -31,  -9, NOCROP]
+	[ 722, y+ 64,  64,  40, -31,  -9, NOCROP]
+	[   2, y+128,  64,  40, -31,  -9, NOCROP]
+	[  82, y+128,  64,  32, -31,  -9, NOCROP]
+}
+
+template tmpl_foundation_halftile(y) {
+	[ 626, y+  0,  64,  40, -31,  -9, NOCROP]
+	[ 706, y+  0,  64,  40, -31,  -9, NOCROP]
+	[   2, y+ 64,  64,  32, -31,  -9, NOCROP]
+	[  82, y+ 64,  64,  32, -31,  -9, NOCROP]
+	[ 162, y+ 64,  64,  40, -31,  -9, NOCROP]
+	[ 242, y+ 64,  64,  40, -31,  -9, NOCROP]
+	[ 322, y+ 64,  64,  40, -31,  -9, NOCROP]
+	[ 402, y+ 64,  64,  40, -31,  -9, NOCROP]
+	[ 482, y+ 64,  64,  40, -31,  -9, NOCROP]
+	[ 562, y+ 64,  64,  32, -31,  -9, NOCROP]
+	[ 642, y+ 64,  64,  32, -31,  -9, NOCROP]
+	[ 722, y+ 64,  64,  40, -31,  -9, NOCROP]
+	[   2, y+128,  64,  40, -31,  -9, NOCROP]
+	[  82, y+128,  64,  32, -31,  -9, NOCROP]
+	[ 162, y+128,  64,  32, -31,  -9, NOCROP]
+	[ 242, y+128,  64,  40, -31,  -9, NOCROP]
+	[ 322, y+128,  64,  40, -31,  -9, NOCROP]
+	[ 402, y+128,  64,  32, -31,  -9, NOCROP]
+	[ 482, y+128,  64,  32, -31,  -9, NOCROP]
+	[ 562, y+128,  64,  40, -31,  -9, NOCROP]
+	[ 642, y+128,  64,  40, -31,  -9, NOCROP]
+	[ 722, y+128,  64,  32, -31,  -9, NOCROP]
+	[   2, y+192,  64,  40, -31,  -9, NOCROP]
+	[  82, y+192,  64,  40, -31,  -9, NOCROP]
+	[ 162, y+192,  64,  32, -31,  -9, NOCROP]
+	[ 242, y+192,  64,  32, -31,  -9, NOCROP]
+	[ 322, y+192,  64,  40, -31,  -9, NOCROP]
+	[ 402, y+192,  64,  40, -31,  -9, NOCROP]
+	[ 482, y+192,  64,  40, -31,  -9, NOCROP]
+	[ 562, y+192,  64,  40, -31,  -9, NOCROP]
+	[ 642, y+192,  64,  40, -31,  -9, NOCROP]
+	[ 722, y+192,  64,  32, -31,  -9, NOCROP]
+	[   2, y+256,  64,  32, -31,  -9, NOCROP]
+	[  82, y+256,  64,  40, -31,  -9, NOCROP]
+	[ 162, y+256,  64,  40, -31,  -9, NOCROP]
+	[ 242, y+256,  64,  32, -31,  -9, NOCROP]
+	[ 322, y+256,  64,  32, -31,  -9, NOCROP]
+	[ 402, y+256,  64,  40, -31,  -9, NOCROP]
+	[ 482, y+256,  64,  40, -31,  -9, NOCROP]
+	[ 562, y+256,  64,  32, -31,  -9, NOCROP]
+	[ 642, y+256,  64,  32, -31,  -9, NOCROP]
+	[ 722, y+256,  64,  40, -31,  -9, NOCROP]
+	[   2, y+320,  64,  40, -31,  -9, NOCROP]
+	[  82, y+320,  64,  32, -31,  -9, NOCROP]
+	[ 162, y+320,  64,  40, -31,  -9, NOCROP]
+	[ 242, y+320,  64,  40, -31,  -9, NOCROP]
+	[ 322, y+320,  64,  32, -31,  -9, NOCROP]
+	[ 402, y+320,  64,  32, -31,  -9, NOCROP]
+	[ 482, y+320,  64,  40, -31,  -9, NOCROP]
+	[ 562, y+320,  64,  40, -31,  -9, NOCROP]
+	[ 642, y+320,  64,  40, -31,  -9, NOCROP]
+	[ 722, y+320,  64,  40, -31,  -9, NOCROP]
+	[   2, y+384,  64,  40, -31,  -9, NOCROP]
+	[  82, y+384,  64,  32, -31,  -9, NOCROP]
+	[ 162, y+384,  64,  32, -31,  -9, NOCROP]
+	[ 242, y+384,  64,  40, -31,  -9, NOCROP]
+	[ 322, y+384,  64,  40, -31,  -9, NOCROP]
+	[ 402, y+384,  64,  32, -31,  -9, NOCROP]
+	[ 482, y+384,  64,  32, -31,  -9, NOCROP]
+	[ 562, y+384,  64,  40, -31,  -9, NOCROP]
+	[ 642, y+384,  64,  40, -31,  -9, NOCROP]
+	[ 722, y+384,  64,  32, -31,  -9, NOCROP]
+	[   2, y+448,  64,  32, -31,  -9, NOCROP]
+	[  82, y+448,  64,  40, -31,  -9, NOCROP]
+	[ 162, y+448,  64,  40, -31,  -9, NOCROP]
+	[ 242, y+448,  64,  32, -31,  -9, NOCROP]
+	[ 322, y+448,  64,  40, -31,  -9, NOCROP]
+	[ 402, y+448,  64,  40, -31,  -9, NOCROP]
+	[ 482, y+448,  64,  32, -31,  -9, NOCROP]
+	[ 562, y+448,  64,  32, -31,  -9, NOCROP]
+	[ 642, y+448,  64,  40, -31,  -9, NOCROP]
+	[ 722, y+448,  64,  40, -31,  -9, NOCROP]
+	[   2, y+512,  64,  40, -31,  -9, NOCROP]
+	[  82, y+512,  64,  40, -31,  -9, NOCROP]
+	[ 162, y+512,  64,  40, -15, -17, NOCROP]
+	[ 242, y+512,  64,  33, -31, -25, NOCROP]
+	[ 322, y+512,  64,  40, -47, -17, NOCROP]
+	[ 402, y+512,  64,  33, -31,  -9, NOCROP]
+	[ 482, y+512,  64,  40, -15, -17, NOCROP]
+	[ 562, y+512,  64,  33, -31, -25, NOCROP]
+	[ 642, y+512,  64,  40, -47, -17, NOCROP]
+	[ 722, y+512,  64,  33, -31,  -9, NOCROP]
+	[   2, y+576,  64,  40, -15, -17, NOCROP]
+	[  82, y+576,  64,  33, -31, -25, NOCROP]
+	[ 162, y+576,  64,  40, -47, -17, NOCROP]
+	[ 242, y+576,  64,  33, -31,  -9, NOCROP]
+	[ 322, y+576,  64,  40, -15, -17, NOCROP]
+	[ 402, y+576,  64,  33, -31, -25, NOCROP]
+	[ 482, y+576,  64,  40, -47, -17, NOCROP]
+	[ 562, y+576,  64,  33, -31,  -9, NOCROP]
+}
+
+template tmpl_wind_powerplant(x, y) {
+	[x+19, y, 53, 113, -26, -96]
+}

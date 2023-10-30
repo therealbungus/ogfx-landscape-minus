@@ -1,0 +1,19 @@
+/*
+ * This file is part of OpenGFX+ Landscape.
+ * OpenGFX+ Landscape is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+ * OpenGFX+ Landscape is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenGFX+ Landscape. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* If we provide NoGrid sprites, we provide new railtiles, thus we need to provide the overlay
+ * sprites as well in order to keep it consistent - independent of climate used
+ *
+ * Use a plain copy from OpenGFX for this
+ */
+
+if (param_provide_terrain) {
+	/* We need to replace the overlay track sprites only if we provide terrain */
+	replace (1005, "src/gfx/infrastructure/rail_grid_temperate.gimp.png") { tmpl_rail_overlaytracks() }
+	replace (1087, "src/gfx/infrastructure/monorail_grid_temperate.gimp.png") { tmpl_rail_overlaytracks() }
+	replace (1169, "src/gfx/infrastructure/maglev_grid_temperate.gimp.png") { tmpl_rail_overlaytracks() }
+}

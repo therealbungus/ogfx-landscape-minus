@@ -1,0 +1,69 @@
+##grflangid 0x07
+##plural 6
+##gender p n m f
+##case acc nom pre f abl m n dat p gen
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :Набор {ORANGE}Ландшафт OpenGFX+{BLACK} содержит альтернативные спрайты поверхности.{}Разработан в соответствии со стилем OpenGFX.{}Программирование: {SILVER}planetmaker{}{BLACK}Графика: {SILVER}Zephyris и другие{}{BLACK}Лицензия: {SILVER}GPL v2+{}{BLACK}Вебсайт: {SILVER}http://dev.openttdcoop.org/projects/ogfx-landscape
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}заборы по-умолчанию отключены в {RED}{STRING}{WHITE}. Поэтому заборы отображаться не будут.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}заборы изменены в {RED}{STRING}{WHITE}. Поэтому будут показываться изменённые заборы.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Альпийский климат доступен только в субарктическом климате. Используется климат по-умолчанию.
+
+STR_PARAM_GRID                                                  :Показывать границы клеток
+STR_PARAM_GRID_DESC                                             :Позволяет заменить графику ландшафта почти польностью убирая отображение границ клеток.
+STR_PARAM_TRANSMITTER                                           :Заменить ретранслятор на скалу
+STR_PARAM_TRANSMITTER_DESC                                      :Позволяет заменить ретранслятор на скалу (полезно для ранних сценариев без телекоммуникационных вышек)
+STR_PARAM_PROVIDE_TERRAIN                                       :Изменить графику ландшафта
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Заменить всю графику ландшафта вне зависимости от настроек отображения границ клеток. Если отключено, влияет только на объекты, представленные настоящим сетом.
+STR_PARAM_PROVIDE_FIELDS                                        :Включает графику полей
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Заменить графику полей для ферм вне зависимости от настроек отображения границ клеток. Если отключено графика полей заменена не будет. Этот параметр игнорируется, если изменение графики ландшафта отключено.
+
+STR_PARAM_LANDSCAPE                                             :Тип ландшафта
+STR_PARAM_LANDSCAPE_DESC                                        :Выбирает тип ландшафта (поверхности клеток)
+STR_PARAM_LANDSCAPE_NORMAL                                      :обычный (соответствует климату)
+STR_PARAM_LANDSCAPE_ALPINE                                      :альпийский (трава умеренного климата в субарктическом)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :умеренный (не реализовано)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :субарктический (не реализовано)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :субтропический (не реализовано)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :игрушечный (не реализовано)
+
+STR_PARAM_ROAD_TUNNELS                                          :Дорожные туннели
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Выбирает тип дорожных туннелей
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :серые цементные
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :широкие серые цементные
+STR_PARAM_ROAD_TUNNELS_OLD                                      :коричневые цементные
+
+STR_PARAM_FOUNDATIONS                                           :Тип оснований
+STR_PARAM_FOUNDATIONS_DESC                                      :Выбор графики оснований для использования. Можно выбрать определяемые климатом, или выбрать основания другого климата. По-умолчанию:{}камни (умеренный), деревянные стены (субарктический), цемент (субтропический) и раскрашенный цемент (игрушечный).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :обычный (соответствует климату)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :умеренный (камни)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :субарктический (деревянные стены)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :тропические (цементные)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :игрушечный
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :серый камень
+STR_PARAM_FOUNDATIONS_BRICKS                                    :кирпичи
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :серый камень покрытый мхом
+
+STR_PARAM_SNOW_JANUARY                                          :Снеговая линия в середине января
+STR_PARAM_SNOW_JANUARY_DESC                                     :Снеговая линия в середине января (задаётся высотой клетки). Местность выше этого уровня будет покрыта снегом. Для OpenTTD версии ниже чем 1.5.0 или r27010 максимальная высота - 15,
+STR_PARAM_SNOW_JULY                                             :Снеговая линия в середине июля
+STR_PARAM_SNOW_JULY_DESC                                        :Снеговая линия в середине июля (задаётся высотой клетки). Местность выше этого уровня будет покрыта снегом. Для OpenTTD версии ниже чем 1.5.0 или r27010 максимальная высота - 15,
+STR_PARAM_SNOW_TOO_LOW1                                         :1 (побережье не будет покрыто снегом)
+STR_PARAM_SNOW_EVERYWHERE                                       :2 (почти везде)
+STR_PARAM_SNOW_NOWHERE                                          :255 (нигде)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Инфраструктура
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Элементы ландшафта
+
+STR_NAME_WIND_TURBINE                                           :Ветрогенератор
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Ветрогенератор слишком близко
+STR_NAME_COMPANY_LAND                                           :Ограждённая территория
+STR_NAME_ANTENNA                                                :Ретранслятор
+STR_NAME_LIGHTHOUSE                                             :Маяк
+
+STR_NAME_ROCKY_LAND                                             :Камни

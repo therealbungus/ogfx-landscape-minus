@@ -1,0 +1,64 @@
+##grflangid 0x5a
+##plural 1
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape (Lanskap){BLACK} Gantikan lanskap jadi jenis OpenGFX.{}Pemrogram: {SILVER}planetmaker{}{BLACK}Grafik: {SILVER}Zephyris dan lain{}{BLACK}Lisensi: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Anda non-aktifkan pagar standar di {RED}{STRING}{WHITE}. Jadinya tanah dipagar tidak akan tampilkan pagar.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Anda gantikan pagar standar di {RED}{STRING}{WHITE}. Jadi tanah dipagar akan tampilkan pagar berbeda.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Iklim tanah tinggi cuma berjalan di iklim arktik. Pakai iklim standar.
+
+STR_PARAM_GRID                                                  :Tunjukan garis kotak
+STR_PARAM_GRID_DESC                                             :Pengaturan ini memungkinkan untuk gantikan semua 'sprite' tanah supaya lanskap dicat tanpa garis kotak.
+STR_PARAM_TRANSMITTER                                           :Gantikan menara pemancar sama batu
+STR_PARAM_TRANSMITTER_DESC                                      :Memungkinkan untuk gantikan menara pemancar sama batu (berguna untuk skenario awal tanpa menara telekomunikasi)
+STR_PARAM_PROVIDE_TERRAIN                                       :Menyediakan 'sprite' tanah
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Gantikan semua kotak tanah, apalah pengaturan kotak. Jika dinon-aktifkan, cuma benda dalam kumpulan ini akan dinyediakan.
+STR_PARAM_PROVIDE_FIELDS                                        :Menyediakan 'sprite' lapangan
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Gantikan semua kotak lapangan pertanian, apalah pengaturan kotak. Jika dinon-aktifkan, kotak lapangan pertanian tidak akan diganti. 'Parameter' ini dingabaikan, jika 'parameter' 'Menyediakan 'sprite' tanah' dinon-aktifkan.
+
+STR_PARAM_LANDSCAPE                                             :Jenis lanskap
+STR_PARAM_LANDSCAPE_DESC                                        :Pilih jenis lanskap (kotak tanah)
+STR_PARAM_LANDSCAPE_NORMAL                                      :normal (tergantung sama iklim)
+STR_PARAM_LANDSCAPE_ALPINE                                      :iklim tanah tinggi (rumput iklim sedang di iklim tanah tinggi)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :iklim sedang (belum dialatkan)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :arktik (belum dialatkan)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :tropis (belum dialatkan)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :taman bermain (belum dialatkan)
+
+STR_PARAM_ROAD_TUNNELS                                          :Terowongan jalan
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Pilih jenis terewongan jalan untuk dipakai
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :beton warna abu-abu
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :beton warna abu-abu lebar
+STR_PARAM_ROAD_TUNNELS_OLD                                      :beton berwarna kecoklatan
+
+STR_PARAM_FOUNDATIONS                                           :Jenis fondasi
+STR_PARAM_FOUNDATIONS_DESC                                      :Pilih fondasi untuk dipakai. Anda bisa pilih yang standar untuk iklim atau pilih fondasi dari iklim yang lain. Yang standar adalah:{}batu (iklim sedang), tembong kayu (arktik), beton (tropis) dan beton dicat (taman bermain).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :normal (tergantung sama iklim)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :iklim sedang (batu)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :arktik (tembok kayu)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :tropis (beton)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :taman bermain
+
+STR_PARAM_SNOW_JANUARY                                          :Garis salju di tengah Januari
+STR_PARAM_SNOW_JANUARY_DESC                                     :Garis salju di tengah Januari (dikasih sebagai ketinggian kotak)
+STR_PARAM_SNOW_JULY                                             :Garis salju di tengah Juli
+STR_PARAM_SNOW_JULY_DESC                                        :Garis salju di tengah Juli (dikasih sebagai ketinggian kotak)
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (dimana-mana, pesisir tidak akan bersalju)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (hampir dimana-mana)
+STR_PARAM_SNOW_NOWHERE                                          :16 (hampir tidak ada dimanapun)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastruktur
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Dasar lanskap
+
+STR_NAME_WIND_TURBINE                                           :Turbin angin
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Turbin angin terlalu dekat sama
+STR_NAME_COMPANY_LAND                                           :Tanah dipagar
+STR_NAME_ANTENNA                                                :Menara komunikasi
+STR_NAME_LIGHTHOUSE                                             :Mercusuar
+
+STR_NAME_ROCKY_LAND                                             :Tanah berbatu

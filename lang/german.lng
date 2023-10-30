@@ -1,0 +1,68 @@
+##grflangid 0x02
+##plural 0
+##gender p m w n
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} Für eine andere Landschaft im OpenGFX-Stil.{}Programmierung: {SILVER}planetmaker{}{BLACK}Graphiken: {SILVER}Zephyris und andere{}{BLACK}Lizenz: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Die normalen Zäune sind in {RED}{STRING}{WHITE} abgeschaltet. Das umzäunte Land wird deshalb nicht von Zäunen umgeben sein.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Die normalen Zäune wurden in {RED}{STRING}{WHITE} geändert. Deshalb wird das umzäunte Land andere Zäune verwenden.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Alpines Klima funktioniert nur im arktischen Klima. Das für das ausgewählte Klima normale Klima wird stattdessen verwendet.
+
+STR_PARAM_GRID                                                  :Zeige Kachelgrenzen
+STR_PARAM_GRID_DESC                                             :Diese Einstellung erlaubt es, alle Kacheln so zu ersetzen, dass die Landschaft (größtenteils) ohne Kachelgrenzen gezeichnet wird
+STR_PARAM_TRANSMITTER                                           :Sendemast durch Findling ersetzen
+STR_PARAM_TRANSMITTER_DESC                                      :Ersetzt den Sendemast durch einen Findling (nützlich in früh angelegten Szenarien, wo Sendemasten fehl am Platz sind)
+STR_PARAM_PROVIDE_TERRAIN                                       :Bodenkacheln nutzen
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Ersetzt alle Bodenkacheln, unabhängig von der Einstellung zu den Kachelgrenzen. Wenn ausgeschaltet, werden nur die Objekte dieses Sets zur Verfügung gestellt
+STR_PARAM_PROVIDE_FIELDS                                        :Feldkacheln nutzen
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Ersetzt alle landwirtschaftlichen Felder, unabhängig von der Einstellung zu den Kachelgrenzen. Wenn ausgeschaltet, werden die Felder nicht ersetzt. Dieser Parameter wird ignoriert, wenn keine Bodenkacheln zur Verfügung gestellt werden sollen.
+
+STR_PARAM_LANDSCAPE                                             :Landschaftstyp
+STR_PARAM_LANDSCAPE_DESC                                        :Landschaftstype auswählen
+STR_PARAM_LANDSCAPE_NORMAL                                      :standard (gemäß eingestelltem Klima)
+STR_PARAM_LANDSCAPE_ALPINE                                      :alpin (Gras vom gemäßigten Klima im arktischen Klima)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :gemäßigt (nicht implementiert)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :arktisch (nicht implementiert)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :tropisch (nicht implementiert)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :Spielzeugland (nicht implementiert)
+
+STR_PARAM_ROAD_TUNNELS                                          :Straßentunnel
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Wähle die Art der Straßentunnel
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :grauer Beton
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :breit, grauer Beton
+STR_PARAM_ROAD_TUNNELS_OLD                                      :bräunlicher Beton
+
+STR_PARAM_FOUNDATIONS                                           :Art des Unterbaus
+STR_PARAM_FOUNDATIONS_DESC                                      :Gewünschten Unterbau auswählen. Man kann entweder die Vorgabe je nach Klima wählen oder explizit einen Unterbau auswählen. Standard ist: Stein (gemäßigt), Holz (arktisch), Beton (tropisch) und angestrichener Beton (Spielzeugland).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :normal (gemäß Klima)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :gemäßigt (Stein)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :arktisch (Holz)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :tropisch (Beton)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :Spielzeugland
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :grauer Stein
+STR_PARAM_FOUNDATIONS_BRICKS                                    :Ziegel
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :moosbewachsener grauer Stein
+
+STR_PARAM_SNOW_JANUARY                                          :Schneegrenze Mitte Januar
+STR_PARAM_SNOW_JANUARY_DESC                                     :Schneegrenze Mitte Januar gemessen in Höhenstufen. In OpenTTD älter als 1.5.0 oder r27010 kann kein Feld höher als 15 sein.
+STR_PARAM_SNOW_JULY                                             :Schneegrenze Mitte Juli
+STR_PARAM_SNOW_JULY_DESC                                        :Schneegrenze Mitte Juli gemessen in Höhenstufen. In OpenTTD älter als 1.5.0 oder r27010 kann kein Feld höher als 15 sein.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (Küsten sind niemals verschneit)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (fast überall)
+STR_PARAM_SNOW_NOWHERE                                          :255 (nirgends)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastruktur
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Landschaftselemente
+
+STR_NAME_WIND_TURBINE                                           :Windrad
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Windrad zu nahe
+STR_NAME_COMPANY_LAND                                           :umzäuntes Land
+STR_NAME_ANTENNA                                                :Fernmeldemast
+STR_NAME_LIGHTHOUSE                                             :Leuchtturm
+
+STR_NAME_ROCKY_LAND                                             :Felsiges Land

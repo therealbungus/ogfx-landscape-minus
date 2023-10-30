@@ -1,0 +1,68 @@
+##grflangid 0x3a
+##plural 11
+##gender m f
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} 지형 요소를 OpenGFX형식에 따라 재배치합니다.{} 프로그래밍: {SILVER}planetmaker{}{BLACK}그래픽: {SILVER}Zephyris and others{}{BLACK}라이선스: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}당신은 기존 펜스를 사용하지 않음으로 설정했습니다. {RED}{STRING}{WHITE}. 그러므로 펜스가 있는 땅은 펜스를 보이지 않을 것입니다..{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}당신은 기본 담장을 {RED}{STRING}{WHITE}으로 바꾸었습니다. 이 지역의 담장은 다른 모양의 담장을 보여줄 것입니다.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :알파인 지형은 기본 기후 설정 중 냉대 기후 설정에서만 작동합니다.
+
+STR_PARAM_GRID                                                  :격자 선 표시
+STR_PARAM_GRID_DESC                                             :이 설정은 지형 타일의 격자 선을 (거의) 없애줍니다.
+STR_PARAM_TRANSMITTER                                           :송신 탑을 바위에 따라 재배치함
+STR_PARAM_TRANSMITTER_DESC                                      :송신 탑을 바위의 유무에 따라서 재배치할 수 있게 함 (2000년 이전에 시작하는 송신탑이 없는 시나리오에 적용을 추천)
+STR_PARAM_PROVIDE_TERRAIN                                       :지형 스프라이트 제공
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :모든 지형 타일을 재지정 하고, 그리드 설정은 무시합니다. 사용하지 않음으로 설정되어 있을 경우, 이 grf에 있는 오브젝트만 나타날 것 입니다.
+STR_PARAM_PROVIDE_FIELDS                                        :들판의 스프라이트를 제공
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :그리드 설정을 무시한 채 모든 농장 타일을 재설정합니다. 이 설정이 사용 안 함으로 설정될 경우, 농장 타일은 재설정되지 않으며, '지형 스프라이트를 제공'매개 변수가 사용 안 함 으로 설정될 경우 이 매개 변수는 무시됩니다.
+
+STR_PARAM_LANDSCAPE                                             :지형 종류
+STR_PARAM_LANDSCAPE_DESC                                        :사용할 기후(지형 타일)의 종류를 고르세요.
+STR_PARAM_LANDSCAPE_NORMAL                                      :일반 (기후에 따라서)
+STR_PARAM_LANDSCAPE_ALPINE                                      :알파인 지형(온대 기후 지형이 아한대 기후에 나타남)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :온대 기후(시행되지 않음)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :아한대 기후 (구현되지 않음)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :열대 기후(시행되지 않음)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :장난감 나라(시행되지 않음)
+
+STR_PARAM_ROAD_TUNNELS                                          :도로용 터널
+STR_PARAM_ROAD_TUNNELS_DESC                                     :사용할 도로용 터널의 종류를 고르시오
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :회색 콘크리트
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :넓은 회색 콘크리트
+STR_PARAM_ROAD_TUNNELS_OLD                                      :갈색 콘크리트
+
+STR_PARAM_FOUNDATIONS                                           :절벽 종류
+STR_PARAM_FOUNDATIONS_DESC                                      :절벽의 모양을 선택하십시오. 현재 기후에서 사용하는 기본 절벽을 사용할 수도 있고 다른 특정 기후의 절벽을 사용할 수도 있습니다. 기후에 따른 기본값은 다음과 같습니다:{}바위 (온대), 나무 벽 (아한대), 콘크리트 (아열대), 색칠된 콘크리트 (장난감나라)
+STR_PARAM_FOUNDATIONS_NORMAL                                    :일반 (기후에 따라서)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :온대 기후 (바위)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :아한대 (나무 벽)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :열대 기후 (콘크리트)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :장난감 나라
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :회색 돌
+STR_PARAM_FOUNDATIONS_BRICKS                                    :벽돌
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :이끼가 낀 회색 돌
+
+STR_PARAM_SNOW_JANUARY                                          :1월 중순 경의 설선 고도
+STR_PARAM_SNOW_JANUARY_DESC                                     :1월 중순 경의 설선 고도를 설정합니다. 이 값보다 높은 지형에는 눈이 쌓일 것입니다. OpenTTD 1.5.0 또는 r27010 이하의 버전에서는 15가 최대값입니다.
+STR_PARAM_SNOW_JULY                                             :7월 중순 경의 설선 고도
+STR_PARAM_SNOW_JULY_DESC                                        :7월 중순 경의 설선 고도를 설정합니다. 이 값보다 높은 지형에는 눈이 쌓일 것입니다. OpenTTD 1.5.0 또는 r27010 이하의 버전에서는 15가 최대값입니다.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (모든 곳, 해변가는 절대로 눈이 쌓이지 않을 것 입니다.)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (거의 모든 지역)
+STR_PARAM_SNOW_NOWHERE                                          :255 (눈이 아무 곳에도 쌓이지 않음)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :기반 시설
+STR_NAME_OBJCLASS_LANDSCAPE                                     :지형 구성 요소
+
+STR_NAME_WIND_TURBINE                                           :풍력 터빈(발전기)
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :풍력 터빈이 너무 가까이에 있습니다.
+STR_NAME_COMPANY_LAND                                           :담장이 쳐진 땅
+STR_NAME_ANTENNA                                                :통신 탑
+STR_NAME_LIGHTHOUSE                                             :등대
+
+STR_NAME_ROCKY_LAND                                             :암석 대지

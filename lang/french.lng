@@ -1,0 +1,68 @@
+##grflangid 0x03
+##plural 2
+##gender m m2 f
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} Modifie le paysage dans le style OpenGFX.{}Programmation{NBSP}: {SILVER}planetmaker{}{BLACK}Graphismes{NBSP}: {SILVER}Zephyris et d'autres{}{BLACK}Licence{NBSP}: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Les clôtures sont désactivées dans {RED}{STRING}{WHITE}.  Le terrain clôturé sera affecté par ce changement.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Les clôtures par défaut sont changées dans {RED}{STRING}{WHITE}. Le terrain clôturé sera affecté par ce changement.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Le variante Alpine ne fonctionne qu'avec le climat arctique. Le climat par défaut sera utilisé à la place.
+
+STR_PARAM_GRID                                                  :Grille apparente
+STR_PARAM_GRID_DESC                                             :Ce paramètre permet de remplacer les cases de terrain de façon à ce que la grille du paysage soit invisible (la plupart du temps).
+STR_PARAM_TRANSMITTER                                           :Remplacer les antennes par des rochers
+STR_PARAM_TRANSMITTER_DESC                                      :Permet de remplacer les antennes de communications par des rochers (ce qui peut être utile selon l'époque)
+STR_PARAM_PROVIDE_TERRAIN                                       :Remplacer les cases de terrain
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Remplace toutes les cases de terrain, que la grille soit visible ou non. Si ce paramètre est désactivé, seuls les objets de ce set seront chargés.
+STR_PARAM_PROVIDE_FIELDS                                        :Remplacer les champs
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Remplace tous les champs, que la grille soit visible ou non. Si ce paramètre est désactivé, les champs ne sont pas remplacés. Ce paramètre est ignoré si le paramètre 'provide groundsprites' est désactivé.
+
+STR_PARAM_LANDSCAPE                                             :Type de paysage
+STR_PARAM_LANDSCAPE_DESC                                        :Type de paysage à utiliser
+STR_PARAM_LANDSCAPE_NORMAL                                      :normal (selon le climat)
+STR_PARAM_LANDSCAPE_ALPINE                                      :alpin (herbe du climat tempéré dans le climat arctique)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :tempéré (pas implémenté)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :arctique (pas implémenté)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :tropical (pas implémenté)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :monde des jouets (pas implémenté)
+
+STR_PARAM_ROAD_TUNNELS                                          :Tunnels routiers
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Type de tunnels routiers à utiliser
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :béton gris
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :béton gris (large)
+STR_PARAM_ROAD_TUNNELS_OLD                                      :béton marron
+
+STR_PARAM_FOUNDATIONS                                           :Type de fondations
+STR_PARAM_FOUNDATIONS_DESC                                      :Fondations à utiliser. Il est possible de sélectionner les fondations par défaut (selon le climat), mais aussi de choisir un type de fondations d'un autre climat. Par défaut{NBSP}:{}rocher (tempéré), mur de bois (arctique), béton (tropical) and béton de couleur (monde des jouets).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :normal (selon le climat)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :tempéré (rocher)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :arctic (mur de bois)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :tropical (béton)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :monde des jouets
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :granit
+STR_PARAM_FOUNDATIONS_BRICKS                                    :briques
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :granit moussu
+
+STR_PARAM_SNOW_JANUARY                                          :Altitude de la neige à la mi-janvier
+STR_PARAM_SNOW_JANUARY_DESC                                     :Altitude de la neige à la mi-janvier. Les cases plus élevées seront enneigées. Pour les versions d'Open TTD antérieures à 1.5.0 ou r27010, aucune altitude ne peut dépasser 15.
+STR_PARAM_SNOW_JULY                                             :Altitude de la neige à la mi-juillet
+STR_PARAM_SNOW_JULY_DESC                                        :Altitude de la neige à la mi-juillet. Les cases plus élevées seront enneigées. Pour les versions d'Open TTD antérieures à 1.5.0 ou r27010, aucune altitude ne peut dépasser 15.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (partout, sauf sur les côtes)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (presque partout)
+STR_PARAM_SNOW_NOWHERE                                          :255 (nulle part)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastructures
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Éléments du paysage
+
+STR_NAME_WIND_TURBINE                                           :Éolienne
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Une éolienne est trop proche
+STR_NAME_COMPANY_LAND                                           :Terrain clôturé
+STR_NAME_ANTENNA                                                :Antenne de communications
+STR_NAME_LIGHTHOUSE                                             :Phare
+
+STR_NAME_ROCKY_LAND                                             :Terrain rocailleux

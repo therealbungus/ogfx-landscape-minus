@@ -1,0 +1,67 @@
+##grflangid 0x35
+##plural 0
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} Muokkaa maastoa OpenGFX:n tapaan.{}Ohjelmointi: {SILVER}planetmaker{}{BLACK}Grafiikat: {SILVER}Zephyris and others{}{BLACK}Lisenssi: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Poistit vakioaitaukset käytöstä tässä NewGRF:ssä: "{RED}{STRING}{WHITE}", joten aitaukset eivät näy aidatussa maassa.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Vaihdoit vakioaitaukset tässä NewGRF:ssä: "{RED}{STRING}{WHITE}", joten aidattu maa käyttää erilaisia aitauksia.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Alppi-ilmasto on käytettävissä vain pohjoisen ilmaston kanssa. Oletusilmasto otettu käyttöön.
+
+STR_PARAM_GRID                                                  :Näytä ruudukon reunukset
+STR_PARAM_GRID_DESC                                             :Jos tämä asetus on käytössä, suurin osa ruudukosta piirretään ilman reunuksia.
+STR_PARAM_TRANSMITTER                                           :Korvaa telemasto kivellä
+STR_PARAM_TRANSMITTER_DESC                                      :Jos tämä asetus on käytössä, telemasto korvataan kivellä (hyödyllinen varhaisissa skenaarioissa, joissa ei ole käytössä tietoliikennemastoja)
+STR_PARAM_PROVIDE_TERRAIN                                       :Korvaa maastospritet
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Korvaa kaikki ruututyypit ruudukon reunusasetuksesta riippumatta. Tästä setistä otetaan käyttöön vain objektit, jos tämä asetus on pois käytöstä.
+STR_PARAM_PROVIDE_FIELDS                                        :Korvaa maatilaspritet
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Korvaa kaikki maatilaruudut ruudukon reunusasetuksesta riippumatta. Maatilaruutuja ei korvata, jos tämä asetus on pois käytöstä. Tällä parametrilla ei ole vaikutusta, jos parametri "korvaa maastospritet" on pois käytöstä.
+
+STR_PARAM_LANDSCAPE                                             :Maastotyyppi
+STR_PARAM_LANDSCAPE_DESC                                        :Valitse maastotyyppi (maaruudun tyyppi)
+STR_PARAM_LANDSCAPE_NORMAL                                      :tavallinen (ilmastosta riippuvainen)
+STR_PARAM_LANDSCAPE_ALPINE                                      :alppi-ilmasto (lauhkean ilmaston ruohikko pohjoisessa ilmastossa)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :lauhkea ilmasto (toteuttamaton)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :pohjoinen ilmasto (toteuttamaton)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :subtrooppinen ilmasto (toteuttamaton)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :lelumaa (toteuttamaton)
+
+STR_PARAM_ROAD_TUNNELS                                          :Maantietunnelit
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Valitse käytettävä maantietunnelityyppi
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :harmaa betoni
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :harmaa betoni, leveä
+STR_PARAM_ROAD_TUNNELS_OLD                                      :ruskehtava betoni
+
+STR_PARAM_FOUNDATIONS                                           :Perustustyyppi
+STR_PARAM_FOUNDATIONS_DESC                                      :Valitse käytettävä perustustyyppi. Voit valita ilmastoon sidotun oletusasetuksen, tai käyttää eri ilmaston mukaista perustusta. Oletusarvot:{}kivi (lauhkea ilmasto), puuseinä (pohjoinen ilmasto), betoni (subtrooppinen ilmasto) ja maalattu betoni (lelumaa).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :tavallinen (ilmastosta riippuvainen)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :lauhkea ilmasto (kivi)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :pohjoinen ilmasto (puuseinä)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :subtrooppinen ilmasto (betoni)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :lelumaa
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :harmaa kivi
+STR_PARAM_FOUNDATIONS_BRICKS                                    :tiilet
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :sammaloitunut harmaa kivi
+
+STR_PARAM_SNOW_JANUARY                                          :Lumiraja tammikuun puolivälissä
+STR_PARAM_SNOW_JANUARY_DESC                                     :Lumiraja tammikuun puolivälissä (arvo ruudun korkeutena)
+STR_PARAM_SNOW_JULY                                             :Lumiraja heinäkuun puolivälissä
+STR_PARAM_SNOW_JULY_DESC                                        :Lumiraja heinäkuun puolivälissä (arvo ruudun korkeutena)
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (kaikkialla, rannikot eivät ole koskaan lumisia)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (lähes kaikkialla)
+STR_PARAM_SNOW_NOWHERE                                          :255 (ei missään)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastruktuuri
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Maastoelementit
+
+STR_NAME_WIND_TURBINE                                           :Tuuliturbiini
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Tuuliturbiini on liian lähellä
+STR_NAME_COMPANY_LAND                                           :Aidattu maa
+STR_NAME_ANTENNA                                                :Telemasto
+STR_NAME_LIGHTHOUSE                                             :Majakka
+
+STR_NAME_ROCKY_LAND                                             :Kivikkoinen maa

@@ -1,0 +1,69 @@
+##grflangid 0x38
+##plural 6
+##gender male female middle
+##case aku dat gen ins lok nom vok
+STR_GRF_NAME                                                    :OpenGFX+ Landscape {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}OpenGFX+ Landscape{BLACK} Mijenja pejzaž u OpenGFX stil.{}Programiranje: {SILVER}planetmaker{}{BLACK}Grafika: {SILVER}Zephyris and others{}{BLACK}Licenca: {SILVER}GPL v2+
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/ogfx-landscape
+
+STR_OPENTTD_VERSION                                             :1.2.0 (r22723)
+
+STR_ERR_NO_FENCES                                               :{STRING}:{}{WHITE}Isključili ste osnovne ograde u {RED}{STRING}{WHITE}. Radi toga će se ograđeni teren prikazati bez ograde.{}
+STR_WARNING_OTHER_FENCES                                        :{STRING}:{}{WHITE}Promijenili ste osnovne ograde u {RED}{STRING}{WHITE}. Radi toga će ograđeni teren prikazati drugačije ograde.{}
+STR_ERR_ALPINE_IN_ARCTIC                                        :Alpska klima funkcionira samo u Arktičkoj klimi. Koristi se osnovna klima.
+
+STR_PARAM_GRID                                                  :Prikaži linije mreže
+STR_PARAM_GRID_DESC                                             :Ova postavka omogućuje izmjenu svih pločica terena tako da je teren (uglavnom) obojan bez linija mreže.
+STR_PARAM_TRANSMITTER                                           :Zamijeni komunikacijski toranj sa kamenjem
+STR_PARAM_TRANSMITTER_DESC                                      :Ukljičite za zamjenu komunikacijskog tornja sa kamenjem (korisno za rane scenarije bez telekomunikacijskih tornjeva)
+STR_PARAM_PROVIDE_TERRAIN                                       :Pruži sprajtove terena
+STR_PARAM_PROVIDE_TERRAIN_DESC                                  :Mijenja sve pločice terena, neovisno o postavkama mreže. Ako je isključeno, samo objekti unutar ovog seta će biti na raspolaganju.
+STR_PARAM_PROVIDE_FIELDS                                        :Pruži sprajtove terena
+STR_PARAM_PROVIDE_FIELDS_DESC                                   :Mijenja sve pločice farme, neovisno o postavkama mreže. Ako je isključeno, pločice farme se neće mijenjati. Ovaj parametar se ne uvažava ako je 'Pruži sprajtove terena' isključeno.
+
+STR_PARAM_LANDSCAPE                                             :Vrsta pejzaža
+STR_PARAM_LANDSCAPE_DESC                                        :Odaberite vrstu pejzaža (pločice terena)
+STR_PARAM_LANDSCAPE_NORMAL                                      :normalno (ovisno o klimi)
+STR_PARAM_LANDSCAPE_ALPINE                                      :alpska klima (trava iz umjerene klime u arktičkoj klimi)
+STR_PARAM_LANDSCAPE_TEMPERATE                                   :umjerena (nije provedeno)
+STR_PARAM_LANDSCAPE_ARCTIC                                      :arktička (nije provedeno)
+STR_PARAM_LANDSCAPE_TROPICAL                                    :tropska (nije provedeno)
+STR_PARAM_LANDSCAPE_TOYLAND                                     :zemlja igračaka (nije provedeno)
+
+STR_PARAM_ROAD_TUNNELS                                          :Cestovni tuneli
+STR_PARAM_ROAD_TUNNELS_DESC                                     :Odaberite vrstu cestovnih tunela za korištenje
+STR_PARAM_ROAD_TUNNELS_DEFAULT                                  :sivi betonski
+STR_PARAM_ROAD_TUNNELS_WIDE                                     :široki sivi betonski
+STR_PARAM_ROAD_TUNNELS_OLD                                      :smeđi betonski
+
+STR_PARAM_FOUNDATIONS                                           :Vrsta temelja
+STR_PARAM_FOUNDATIONS_DESC                                      :Odaberite vrstu temelja za korištenje. Možete izabrati između osnovnih temelja prema klimi ili koristiti temelje od neke druge klime. Osnovni su:{}kamen (umjerena klima), drveni zid (arktička klima), betonski (tropska klima) i obojeni betonski (zemlja igračaka).
+STR_PARAM_FOUNDATIONS_NORMAL                                    :normalni (ovisno o klimi)
+STR_PARAM_FOUNDATIONS_TEMPERATE                                 :umjerena klima (kamen)
+STR_PARAM_FOUNDATIONS_ARCTIC                                    :arktička klima (drveni zid)
+STR_PARAM_FOUNDATIONS_TROPICAL                                  :tropski (betonski)
+STR_PARAM_FOUNDATIONS_TOYLAND                                   :zemlja igračaka
+STR_PARAM_FOUNDATIONS_STONE_GRAY                                :sivi kameni
+STR_PARAM_FOUNDATIONS_BRICKS                                    :cigleni
+STR_PARAM_FOUNDATIONS_MOSSY_STONE_GRAY                          :sivi kameni s mahovinom
+
+STR_PARAM_SNOW_JANUARY                                          :Linija snijega sredinom siječnja
+STR_PARAM_SNOW_JANUARY_DESC                                     :Snijeg sredinom siječnja (prema visini polja). Polja iznad ove visine biti će pokrivena snijegom. Za OpenTTD verzije prije 1.5.0 ili r27010, nijedno polje ne može biti više od 15.
+STR_PARAM_SNOW_JULY                                             :Linija snijega sredinom srpnja
+STR_PARAM_SNOW_JULY_DESC                                        :Snijeg sredinom srpnja (prema visini polja). Polja iznad ove visine biti će pokrivena snijegom. Za OpenTTD verzije prije 1.5.0 ili r27010, nijedno polje ne može biti više od 15.
+STR_PARAM_SNOW_TOO_LOW1                                         :0 (posvuda, obale nikada neće imati snijeg)
+STR_PARAM_SNOW_EVERYWHERE                                       :1 (gotovo posvuda)
+STR_PARAM_SNOW_NOWHERE                                          :255 (nigdje)
+
+
+
+STR_NAME_OBJCLASS_INFRASTRUCTURE                                :Infrastruktura
+STR_NAME_OBJCLASS_LANDSCAPE                                     :Dijelovi pejzaža
+
+STR_NAME_WIND_TURBINE                                           :Vjetroturbina
+STR_ERR_WIND_TURBINE_TOO_CLOSE                                  :Vjetroturbina je preblizu
+STR_NAME_COMPANY_LAND                                           :Ograđeni teren
+STR_NAME_ANTENNA                                                :Komunikacijski toranj
+STR_NAME_LIGHTHOUSE                                             :Svjetionik
+
+STR_NAME_ROCKY_LAND                                             :Kameniti teren
